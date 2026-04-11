@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prestige Park Factors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root {
+  --bg: #faf8f5;
+  --surface: #f0ece6;
+  --surface-raised: #fff;
+  --ink: #1a1714;
+  --ink-soft: #6b6258;
+  --ink-muted: #9e9487;
+  --accent: #b44a1c;
+  --accent-soft: #d4885e;
+  --positive: #2d7a4f;
+  --negative: #a63d2f;
+  --dome: #6b7b8d;
+  --border: #e0dbd3;
+  --border-light: #ece8e1;
+  --font-display: 'DM Serif Display', Georgia, serif;
+  --font-body: 'IBM Plex Sans', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+}
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* ─── HEADER ─── */
+.header {
+  padding: clamp(1.5rem, 4vw, 3rem) clamp(1.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.header-left { display: flex; align-items: baseline; gap: 1.25rem; }
+.header h1 {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+}
+.header .date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.header-meta {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.78rem;
+  color: var(--ink-muted);
+}
+.header-meta dt { font-weight: 500; text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.68rem; }
+.header-meta dd { font-family: var(--font-mono); font-size: 0.82rem; color: var(--ink-soft); margin-top: 0.15rem; }
+
+/* ─── SUMMARY BAR ─── */
+.summary {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+}
+.summary-stat {
+  padding: 1rem clamp(1.5rem, 3vw, 2.5rem);
+  border-right: 1px solid var(--border-light);
+  min-width: 140px;
+  flex-shrink: 0;
+}
+.summary-stat:last-child { border-right: none; }
+.summary-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  font-weight: 500;
+}
+.summary-value {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ink);
+  margin-top: 0.2rem;
+}
+.summary-value.positive { color: var(--positive); }
+.summary-value.negative { color: var(--negative); }
+
+/* ─── MAIN TABLE AREA ─── */
+.content {
+  padding: clamp(1rem, 3vw, 2rem) clamp(1.5rem, 5vw, 4rem);
+}
+
+/* ─── GAME TABLE ─── */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  table-layout: auto;
+}
+thead th {
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--ink-muted);
+  font-weight: 500;
+  border-bottom: 2px solid var(--ink);
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  background: var(--bg);
+  z-index: 1;
+}
+thead th.num { text-align: right; }
+tbody tr {
+  border-bottom: 1px solid var(--border-light);
+  transition: background 0.15s ease;
+}
+tbody tr:hover { background: var(--surface); }
+td {
+  padding: 0.7rem 0.75rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+td.num {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+/* ─── MATCHUP CELL ─── */
+.matchup { display: flex; flex-direction: column; gap: 0.1rem; min-width: 140px; }
+.matchup-teams {
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: -0.01em;
+}
+.matchup-teams .at { color: var(--ink-muted); font-weight: 400; margin: 0 0.2rem; font-size: 0.75rem; }
+.matchup-venue {
+  font-size: 0.68rem;
+  color: var(--ink-muted);
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ─── PITCHER CELL ─── */
+.pitchers { display: flex; flex-direction: column; gap: 0.15rem; min-width: 150px; }
+.pitcher-name { font-size: 0.78rem; font-weight: 400; }
+.pitcher-away { color: var(--ink-soft); }
+
+/* ─── DELTA BAR ─── */
+.delta-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 140px;
+}
+.delta-bar-track {
+  width: 60px;
+  height: 3px;
+  background: var(--border);
+  position: relative;
+  border-radius: 1px;
+  flex-shrink: 0;
+}
+.delta-bar-center {
+  position: absolute;
+  left: 50%;
+  top: -2px;
+  width: 1px;
+  height: 7px;
+  background: var(--ink-muted);
+}
+.delta-bar-fill {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  border-radius: 1px;
+  transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.delta-bar-fill.positive {
+  left: 50%;
+  background: var(--positive);
+}
+.delta-bar-fill.negative {
+  right: 50%;
+  background: var(--negative);
+}
+.delta-value {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 500;
+  min-width: 50px;
+}
+.delta-value.positive { color: var(--positive); }
+.delta-value.negative { color: var(--negative); }
+.delta-value.neutral { color: var(--ink-muted); }
+
+/* ─── DOME TAG ─── */
+.dome-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
+  color: var(--dome);
+  background: #e8ecf0;
+  padding: 0.15rem 0.45rem;
+  border-radius: 2px;
+}
+
+/* ─── WEATHER CELL ─── */
+.weather {
+  display: flex;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  min-width: 160px;
+}
+.weather span { white-space: nowrap; }
+.weather .label { font-size: 0.6rem; color: var(--ink-muted); text-transform: uppercase; margin-right: 0.15rem; }
+
+/* ─── PF BAR VISUALIZATION ─── */
+.pf-bar-cell { min-width: 120px; }
+.pf-bar-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pf-bar-track {
+  flex: 1;
+  height: 18px;
+  background: var(--surface);
+  border-radius: 2px;
+  position: relative;
+  overflow: hidden;
+  max-width: 70px;
+}
+.pf-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  background: var(--accent-soft);
+  transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 0.7;
+}
+.pf-bar-value {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 500;
+  min-width: 38px;
+}
+
+/* ─── FOOTER ─── */
+.footer {
+  padding: 1.5rem clamp(1.5rem, 5vw, 4rem);
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.footer-left {
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+  line-height: 1.7;
+}
+.footer-right {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--ink-muted);
+}
+
+/* ─── SORT CONTROLS ─── */
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+.controls label {
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  font-weight: 500;
+}
+.sort-btn {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--border);
+  background: var(--surface-raised);
+  color: var(--ink-soft);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 0.12s ease;
+}
+.sort-btn:hover { border-color: var(--ink-soft); color: var(--ink); }
+.sort-btn.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+
+/* ─── STAGGER ANIMATION ─── */
+tbody tr {
+  opacity: 0;
+  transform: translateY(6px);
+  animation: fadeInRow 0.3s ease-out forwards;
+}
+@keyframes fadeInRow {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  .header { flex-direction: column; }
+  .header-meta { gap: 1.25rem; }
+  .controls { flex-wrap: wrap; }
+}
+/* ─── AUTH GATE ─── */
+.auth-gate {
+  position: fixed; inset: 0; z-index: 9999;
+  background: var(--bg);
+  display: flex; align-items: center; justify-content: center;
+  flex-direction: column; gap: 1.5rem;
+}
+.auth-gate.hidden { display: none; }
+.auth-gate h2 {
+  font-family: var(--font-display);
+  font-size: 1.4rem; font-weight: 400;
+  color: var(--ink);
+}
+.auth-gate input {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+  border: 1px solid var(--border);
+  background: var(--surface-raised);
+  color: var(--ink);
+  width: 240px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  border-radius: 2px;
+}
+.auth-gate input:focus { outline: none; border-color: var(--ink); }
+.auth-gate .auth-hint {
+  font-size: 0.68rem;
+  color: var(--ink-muted);
+}
+.auth-gate .auth-err {
+  font-size: 0.72rem;
+  color: var(--negative);
+  min-height: 1rem;
+}
+/* ─── STALENESS ─── */
+.staleness-fresh { color: #22c55e; }
+.staleness-warm { color: #eab308; }
+.staleness-stale { color: #ef4444; font-weight: 600; }
+/* ─── LINEUP STATUS ─── */
+.lu-confirmed { color: #22c55e; font-weight: 600; }
+.lu-projected { color: #ef4444; }
+.lu-unknown { color: var(--ink-muted); }
+/* ─── PREDICTION CELLS ─── */
+.rec-bet { color: #22c55e; font-weight: 700; font-size: 0.72rem; letter-spacing: 0.05em; }
+.rec-pass { color: var(--ink-muted); font-size: 0.68rem; }
+.cgsi-high { background: rgba(34,197,94,0.12); color: #22c55e; padding: 0.15rem 0.4rem; border-radius: 2px; font-size: 0.62rem; font-weight: 600; }
+.cgsi-low, .cgsi-very_low { background: rgba(239,68,68,0.1); color: #ef4444; padding: 0.15rem 0.4rem; border-radius: 2px; font-size: 0.62rem; }
+.cgsi-med { background: rgba(234,179,8,0.12); color: #eab308; padding: 0.15rem 0.4rem; border-radius: 2px; font-size: 0.62rem; }
+</style>
+</head>
+<body>
+
+<div class="auth-gate" id="authGate">
+  <h2>Prestige Intelligence</h2>
+  <input type="password" id="authInput" placeholder="Access code" autofocus>
+  <div class="auth-err" id="authErr"></div>
+  <div class="auth-hint">Authorized personnel only</div>
+</div>
+
+<header class="header">
+  <div class="header-left">
+    <h1>Daily Park Factors</h1>
+    <div style="display:flex;align-items:center;gap:0.5rem">
+      <button id="prevDate" style="background:none;border:1px solid var(--border);color:var(--ink);cursor:pointer;padding:0.15rem 0.4rem;font-size:0.7rem;border-radius:2px">&larr;</button>
+      <span class="date" id="dateLabel">--</span>
+      <button id="nextDate" style="background:none;border:1px solid var(--border);color:var(--ink);cursor:pointer;padding:0.15rem 0.4rem;font-size:0.7rem;border-radius:2px">&rarr;</button>
+      <button id="todayBtn" style="background:none;border:1px solid var(--border);color:var(--ink);cursor:pointer;padding:0.15rem 0.5rem;font-size:0.62rem;border-radius:2px;text-transform:uppercase;letter-spacing:0.05em">Today</button>
+    </div>
+  </div>
+  <div class="header-meta">
+    <dl><dt>Games</dt><dd id="gameCount">--</dd></dl>
+    <dl><dt>Model</dt><dd>v2.0 + Lineup</dd></dl>
+    <dl><dt>Updated</dt><dd id="stalenessLabel" class="staleness-fresh">--</dd></dl>
+  </div>
+</header>
+
+<div class="summary" id="summary"></div>
+
+<main class="content">
+  <div class="controls">
+    <label>Sort by</label>
+    <button class="sort-btn active" data-sort="delta">Weather Delta</button>
+    <button class="sort-btn" data-sort="pf">Daily PF</button>
+    <button class="sort-btn" data-sort="hr">HR Factor</button>
+    <button class="sort-btn" data-sort="lineup">Lineup HR Diff</button>
+    <button class="sort-btn" data-sort="edge">Edge</button>
+    <button class="sort-btn" data-sort="time">Game Time</button>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:30px"></th>
+          <th>Matchup</th>
+          <th>Pitchers</th>
+          <th class="num">Daily PF</th>
+          <th>Runs Delta</th>
+          <th class="num">HR Factor</th>
+          <th>LU HR Diff</th>
+          <th class="num" style="font-size:0.6rem">Win%</th>
+          <th style="font-size:0.6rem">Edge</th>
+          <th style="font-size:0.6rem">Rec</th>
+          <th>Weather</th>
+          <th class="num" style="font-size:0.6rem">Time (ET)</th>
+        </tr>
+      </thead>
+      <tbody id="tableBody"></tbody>
+    </table>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="footer-left">
+    Approach B: venue-level daily PF = seasonal baseline x weather multiplier (XGBoost, 21K games)<br>
+    Approach C: lineup-level HR factor from batter profiles x trajectory physics x park geometry (839 batters, 372K BBE)<br>
+    LU HR Diff = home lineup HR factor minus away lineup HR factor (positive = home lineup has more HR power at this venue)
+  </div>
+  <div class="footer-right">Prestige Intelligence</div>
+</footer>
+
+<script>
+// Auth gate — simple client-side code check
+// Hash of access code (SHA-256 of "prestige2026")
+const AUTH_HASH = "a]PRESTIGE_HASH[z";
+(function() {
+  const stored = sessionStorage.getItem('prestige_auth');
+  if (stored === 'granted') { document.getElementById('authGate').classList.add('hidden'); return; }
+  const input = document.getElementById('authInput');
+  const err = document.getElementById('authErr');
+  input.addEventListener('keydown', async (e) => {
+    if (e.key !== 'Enter') return;
+    const code = input.value.trim();
+    if (!code) return;
+    // Simple check: code must match "prestige2026" (change this to whatever you want)
+    if (code === 'LAWSON') {
+      sessionStorage.setItem('prestige_auth', 'granted');
+      document.getElementById('authGate').classList.add('hidden');
+    } else {
+      err.textContent = 'Invalid code';
+      input.value = '';
+      input.focus();
+    }
+  });
+})();
+
+let DATA = null;
+// Load data from external file (generated by automated pipeline)
+// Falls back to inline for offline/dev use
+async function loadData() {
+  try {
+    const resp = await fetch('data.json?t=' + Date.now());
+    if (resp.ok) { DATA = await resp.json(); return; }
+  } catch(e) {}
+  // No external data available — show error state
+  DATA = { date: new Date().toISOString().slice(0,10), generated_at: null, predictions_available: false, games: [] };
+}
+// Removed stale inline fallback — data.json is the single source of truth
+const _REMOVED_INLINE = {"date":"2026-04-10","games":[{"game_pk":823482,"home_team":"PHI","away_team":"ARI","venue":"Citizens Bank Park","home_pitcher":"Jes\u00fas Luzardo","away_pitcher":"Michael Soroka","game_time":"2026-04-10T22:40:00Z","temperature_f":67.0,"humidity_pct":40.0,"wind_speed_mph":9.0,"wind_carry_mph":8.2,"air_density_index":98.1,"dome_active":0,"seasonal_pf_runs":1.06,"daily_pf_runs":1.1108,"daily_pf_hr":1.1771,"pf_weather_delta_runs":0.0508,"pf_weather_delta_hr":0.0641,"wind_venue_sensitivity":1.0,"home_lineup_pf_hr":2.795,"away_lineup_pf_hr":2.772,"lineup_pf_hr_diff":0.0234,"lineup_pf_hr_residual":1.6182,"has_lineups":true},{"game_pk":824297,"home_team":"DET","away_team":"MIA","venue":"Comerica Park","home_pitcher":"Keider Montero","away_pitcher":"Chris Paddack","game_time":"2026-04-10T22:40:00Z","temperature_f":49.0,"humidity_pct":81.0,"wind_speed_mph":8.0,"wind_carry_mph":7.1,"air_density_index":99.4,"dome_active":0,"seasonal_pf_runs":0.96,"daily_pf_runs":0.922,"daily_pf_hr":0.8576,"pf_weather_delta_runs":-0.038,"pf_weather_delta_hr":-0.1504,"wind_venue_sensitivity":1.0,"home_lineup_pf_hr":2.755,"away_lineup_pf_hr":2.942,"lineup_pf_hr_diff":-0.1873,"lineup_pf_hr_residual":1.8975,"has_lineups":true},{"game_pk":824534,"home_team":"CIN","away_team":"LAA","venue":"Great American Ball Park","home_pitcher":"Chase Burns","away_pitcher":"Jack Kochanowicz","game_time":"2026-04-10T22:45:00Z","temperature_f":71.0,"humidity_pct":58.0,"wind_speed_mph":9.0,"wind_carry_mph":-8.3,"air_density_index":95.4,"dome_active":0,"seasonal_pf_runs":1.08,"daily_pf_runs":1.0492,"daily_pf_hr":1.1232,"pf_weather_delta_runs":-0.0308,"pf_weather_delta_hr":-0.0108,"wind_venue_sensitivity":1.0,"home_lineup_pf_hr":2.303,"away_lineup_pf_hr":2.23,"lineup_pf_hr_diff":0.073,"lineup_pf_hr_residual":1.1797,"has_lineups":true},{"game_pk":822829,"home_team":"TOR","away_team":"MIN","venue":"Rogers Centre","home_pitcher":"Patrick Corbin","away_pitcher":"Simeon Woods Richardson","game_time":"2026-04-10T23:07:00Z","temperature_f":72.0,"humidity_pct":50.0,"wind_speed_mph":0.0,"wind_carry_mph":-0.0,"air_density_index":96.1,"dome_active":0,"seasonal_pf_runs":1.0,"daily_pf_runs":0.9854,"daily_pf_hr":1.0082,"pf_weather_delta_runs":-0.0146,"pf_weather_delta_hr":-0.0418,"wind_venue_sensitivity":0.5,"home_lineup_pf_hr":2.312,"away_lineup_pf_hr":2.652,"lineup_pf_hr_diff":-0.3398,"lineup_pf_hr_residual":1.3038,"has_lineups":true},{"game_pk":823643,"home_team":"NYM","away_team":"OAK","venue":"Citi Field","home_pitcher":"Clay Holmes","away_pitcher":"J.T. Ginn","game_time":"2026-04-10T23:10:00Z","temperature_f":54.0,"humidity_pct":64.0,"wind_speed_mph":13.0,"wind_carry_mph":9.9,"air_density_index":100.6,"dome_active":0,"seasonal_pf_runs":0.94,"daily_pf_runs":0.9059,"daily_pf_hr":0.9254,"pf_weather_delta_runs":-0.0341,"pf_weather_delta_hr":-0.0616,"wind_venue_sensitivity":1.0,"home_lineup_pf_hr":2.802,"away_lineup_pf_hr":2.861,"lineup_pf_hr_diff":-0.0596,"lineup_pf_hr_residual":1.8762,"has_lineups":true},{"game_pk":822997,"home_team":"TB","away_team":"NYY","venue":"Tropicana Field","home_pitcher":"Steven Matz","away_pitcher":"Luis Gil","game_time":"2026-04-10T23:10:00Z","temperature_f":72.0,"humidity_pct":50.0,"wind_speed_mph":0.0,"wind_carry_mph":-0.0,"air_density_index":96.9,"dome_active":1,"seasonal_pf_runs":0.91,"daily_pf_runs":0.91,"daily_pf_hr":0.9555,"pf_weather_delta_runs":0.0,"pf_weather_delta_hr":-0.0,"wind_venue_sensitivity":0.0,"home_lineup_pf_hr":2.557,"away_lineup_pf_hr":2.851,"lineup_pf_hr_diff":-0.2939,"lineup_pf_hr_residual":1.6018,"has_lineups":true},{"game_pk":824858,"home_team":"BAL","away_team":"SF","venue":"Oriole Park at Camden Yards","home_pitcher":"Shane Baz","away_pitcher":"Landen Roupp","game_time":"2026-04-10T23:15:00Z","temperature_f":66.0,"humidity_pct":42.0,"wind_speed_mph":6.0,"wind_carry_mph":3.6,"air_density_index":98.2,"dome_active":0,"seasonal_pf_runs":1.02,"daily_pf_runs":1.0275,"daily_pf_hr":1.0246,"pf_weather_delta_runs":0.0075,"pf_weather_delta_hr":-0.0464,"wind_venue_sensitivity":1.0,"home_lineup_pf_hr":2.989,"away_lineup_pf_hr":2.99,"lineup_pf_hr_diff":-0.002,"lineup_pf_hr_residual":1.9639,"has_lineups":true},{"game_pk":824941,"home_team":"ATL","away_team":"CLE","venue":"Truist Park","home_pitcher":"Bryce Elder","away_pitcher":"Slade Cecconi","game_time":"2026-04-10T23:15:00Z","temperature_f":77.0,"humidity_pct":28.0,"wind_speed_mph":2.0,"wind_carry_mph":0.9,"air_density_index":92.7,"dome_active":0,"seasonal_pf_runs":1.014,"daily_pf_runs":1.0329,"daily_pf_hr":1.1,"pf_weather_delta_runs":0.0189,"pf_weather_delta_hr":0.0353,"wind_venue_sensitivity":1.0,"home_lineup_pf_hr":2.837,"away_lineup_pf_hr":2.35,"lineup_pf_hr_diff":0.4862,"lineup_pf_hr_residual":1.7366,"has_lineups":true},{"game_pk":824128,"home_team":"KC","away_team":"CHW","venue":"Kauffman Stadium","home_pitcher":"Kris Bubic","away_pitcher":"Davis Martin","game_time":"2026-04-10T23:40:00Z","temperature_f":53.0,"humidity_pct":96.0,"wind_speed_mph":6.0,"wind_carry_mph":-5.6,"air_density_index":97.7,"dome_active":0,"seasonal_pf_runs":0.99,"daily_pf_runs":0.9202,"daily_pf_hr":0.8149,"pf_weather_delta_runs":-0.0698,"pf_weather_delta_hr":-0.2246,"wind_venue_sensitivity":1.0,"home_lineup_pf_hr":2.562,"away_lineup_pf_hr":2.247,"lineup_pf_hr_diff":0.3149,"lineup_pf_hr_residual":1.7468,"has_lineups":true},{"game_pk":823808,"home_team":"MIL","away_team":"WSH","venue":"American Family Field","home_pitcher":"Aaron Ashby","away_pitcher":"Jake Irvin","game_time":"2026-04-10T23:40:00Z","temperature_f":47.0,"humidity_pct":70.0,"wind_speed_mph":5.0,"wind_carry_mph":-4.3,"air_density_index":99.7,"dome_active":0,"seasonal_pf_runs":1.02,"daily_pf_runs":0.9308,"daily_pf_hr":0.9173,"pf_weather_delta_runs":-0.0892,"pf_weather_delta_hr":-0.1537,"wind_venue_sensitivity":0.5,"home_lineup_pf_hr":1.905,"away_lineup_pf_hr":2.047,"lineup_pf_hr_diff":-0.1418,"lineup_pf_hr_residual":0.9876,"has_lineups":true},{"game_pk":823076,"home_team":"STL","away_team":"BOS","venue":"Busch Stadium","home_pitcher":"Dustin May","away_pitcher":"Connelly Early","game_time":"2026-04-11T00:15:00Z","temperature_f":65.0,"humidity_pct":65.0,"wind_speed_mph":8.0,"wind_carry_mph":-5.7,"air_density_index":96.7,"dome_active":0,"seasonal_pf_runs":0.97,"daily_pf_runs":0.9002,"daily_pf_hr":0.9137,"pf_weather_delta_runs":-0.0698,"pf_weather_delta_hr":-0.1048,"wind_venue_sensitivity":1.0,"home_lineup_pf_hr":1.76,"away_lineup_pf_hr":2.235,"lineup_pf_hr_diff":-0.4752,"lineup_pf_hr_residual":0.8465,"has_lineups":true},{"game_pk":823318,"home_team":"SD","away_team":"COL","venue":"Petco Park","home_pitcher":"Walker Buehler","away_pitcher":"Tomoyuki Sugano","game_time":"2026-04-11T01:40:00Z","temperature_f":65.0,"humidity_pct":78.0,"wind_speed_mph":6.0,"wind_carry_mph":-3.0,"air_density_index":98.2,"dome_active":0,"seasonal_pf_runs":0.92,"daily_pf_runs":0.8545,"daily_pf_hr":0.8626,"pf_weather_delta_runs":-0.0655,"pf_weather_delta_hr":-0.1034,"wind_venue_sensitivity":1.0,"home_lineup_pf_hr":2.21,"away_lineup_pf_hr":2.171,"lineup_pf_hr_diff":0.039,"lineup_pf_hr_residual":1.3478,"has_lineups":true},{"game_pk":823156,"home_team":"SEA","away_team":"HOU","venue":"T-Mobile Park","home_pitcher":"Emerson Hancock","away_pitcher":"Tatsuya Imai","game_time":"2026-04-11T01:40:00Z","temperature_f":64.0,"humidity_pct":55.0,"wind_speed_mph":4.0,"wind_carry_mph":-3.8,"air_density_index":98.6,"dome_active":0,"seasonal_pf_runs":0.94,"daily_pf_runs":0.8975,"daily_pf_hr":0.9568,"pf_weather_delta_runs":-0.0425,"pf_weather_delta_hr":-0.0302,"wind_venue_sensitivity":0.5,"home_lineup_pf_hr":2.193,"away_lineup_pf_hr":2.281,"lineup_pf_hr_diff":-0.0875,"lineup_pf_hr_residual":1.2367,"has_lineups":true},{"game_pk":823968,"home_team":"LAD","away_team":"TEX","venue":"UNIQLO Field at Dodger Stadium","home_pitcher":"Tyler Glasnow","away_pitcher":"Kumar Rocker","game_time":"2026-04-11T02:10:00Z","temperature_f":64.0,"humidity_pct":72.0,"wind_speed_mph":11.0,"wind_carry_mph":1.9,"air_density_index":96.7,"dome_active":0,"seasonal_pf_runs":0.97,"daily_pf_runs":0.9236,"daily_pf_hr":0.9591,"pf_weather_delta_runs":-0.0464,"pf_weather_delta_hr":-0.0594,"wind_venue_sensitivity":1.0,"home_lineup_pf_hr":2.941,"away_lineup_pf_hr":2.72,"lineup_pf_hr_diff":0.2216,"lineup_pf_hr_residual":1.9823,"has_lineups":true}],"model_version":"v2.0-approach-c"};
+
+function formatTime(utc) {
+  const d = new Date(utc);
+  return d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' });
+}
+
+function deltaClass(v) {
+  if (v > 0.005) return 'positive';
+  if (v < -0.005) return 'negative';
+  return 'neutral';
+}
+
+function deltaBar(v, maxDelta) {
+  const pct = Math.min(Math.abs(v) / maxDelta * 50, 50);
+  const cls = v >= 0 ? 'positive' : 'negative';
+  const style = cls === 'positive'
+    ? `left:50%;width:${pct}%`
+    : `right:50%;width:${pct}%`;
+  return `<div class="delta-bar-track"><div class="delta-bar-center"></div><div class="delta-bar-fill ${cls}" style="${style}"></div></div>`;
+}
+
+function pfBar(v) {
+  // Dynamic scale: 0.80 to 1.15 covers most realistic daily PFs
+  const pct = Math.max(0, Math.min(100, ((v - 0.80) / 0.35) * 100));
+  return `<div class="pf-bar-wrap">
+    <div class="pf-bar-track"><div class="pf-bar-fill" style="width:${pct}%"></div></div>
+    <span class="pf-bar-value">${v.toFixed(3)}</span>
+  </div>`;
+}
+
+function luStatus(status) {
+  if (status === 'CONFIRMED') return '<span class="lu-confirmed" title="Lineup confirmed">&#10003;</span>';
+  if (status === 'PROJECTED') return '<span class="lu-projected" title="Projected lineup">&#10033;</span>';
+  return '<span class="lu-unknown" title="Lineup unknown">—</span>';
+}
+
+function updateStaleness() {
+  if (!DATA || !DATA.generated_at) return;
+  const gen = new Date(DATA.generated_at);
+  const now = new Date();
+  const diffMin = Math.round((now - gen) / 60000);
+  const label = document.getElementById('stalenessLabel');
+  if (!label) return;
+  let text, cls;
+  if (diffMin < 60) { text = diffMin + 'm ago'; cls = 'staleness-fresh'; }
+  else if (diffMin < 180) { text = Math.round(diffMin/60) + 'h ago'; cls = 'staleness-warm'; }
+  else { text = Math.round(diffMin/60) + 'h ago — STALE'; cls = 'staleness-stale'; }
+  label.textContent = text;
+  label.className = cls;
+}
+
+let currentSort = 'delta';
+function sortGames(games, key) {
+  const sorted = [...games];
+  switch(key) {
+    case 'delta': sorted.sort((a, b) => b.pf_weather_delta_runs - a.pf_weather_delta_runs); break;
+    case 'pf': sorted.sort((a, b) => b.daily_pf_runs - a.daily_pf_runs); break;
+    case 'hr': sorted.sort((a, b) => b.daily_pf_hr - a.daily_pf_hr); break;
+    case 'lineup': sorted.sort((a, b) => (b.lineup_pf_hr_diff||0) - (a.lineup_pf_hr_diff||0)); break;
+    case 'edge': sorted.sort((a, b) => (b.edge||0) - (a.edge||0)); break;
+    case 'time': sorted.sort((a, b) => new Date(a.game_time) - new Date(b.game_time)); break;
+  }
+  return sorted;
+}
+
+function render() {
+  const games = DATA.games || [];
+  if (games.length === 0) {
+    const d = new Date(DATA.date + 'T12:00:00');
+    document.getElementById('dateLabel').textContent = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    document.getElementById('gameCount').textContent = '0';
+    document.getElementById('summary').innerHTML = '<div class="summary-stat"><div class="summary-label">No games</div><div class="summary-value">Data not yet available</div></div>';
+    document.getElementById('tableBody').innerHTML = '<tr><td colspan="12" style="text-align:center;padding:3rem;color:var(--ink-muted)">No game data for this date. Use arrows to navigate.</td></tr>';
+    return;
+  }
+  const maxDelta = Math.max(...games.map(g => Math.abs(g.pf_weather_delta_runs)), 0.03);
+
+  // FIX #1: Date label from data, not hardcoded
+  const d = new Date(DATA.date + 'T12:00:00');
+  document.getElementById('dateLabel').textContent = d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+
+  // Summary
+  const avgDelta = games.reduce((s, g) => s + g.pf_weather_delta_runs, 0) / games.length;
+  const avgPf = games.reduce((s, g) => s + g.daily_pf_runs, 0) / games.length;
+  // FIX #3: "Biggest Boost" not "Least Affected"
+  const maxBoost = games.reduce((best, g) => g.pf_weather_delta_runs > best.pf_weather_delta_runs ? g : best);
+  const maxSupp = games.reduce((best, g) => g.pf_weather_delta_runs < best.pf_weather_delta_runs ? g : best);
+  const domes = games.filter(g => g.dome_active).length;
+  const confirmed = games.filter(g => g.home_lineup_status === 'CONFIRMED' && g.away_lineup_status === 'CONFIRMED').length;
+  const bets = games.filter(g => g.recommendation === 'BET').length;
+
+  document.getElementById('gameCount').textContent = games.length;
+  document.getElementById('summary').innerHTML = `
+    <div class="summary-stat">
+      <div class="summary-label">Slate Avg PF</div>
+      <div class="summary-value">${avgPf.toFixed(3)}</div>
+    </div>
+    <div class="summary-stat">
+      <div class="summary-label">Avg Weather Delta</div>
+      <div class="summary-value ${deltaClass(avgDelta)}">${avgDelta >= 0 ? '+' : ''}${avgDelta.toFixed(4)}</div>
+    </div>
+    <div class="summary-stat">
+      <div class="summary-label">Biggest Boost</div>
+      <div class="summary-value positive">${maxBoost.home_team} ${maxBoost.pf_weather_delta_runs >= 0 ? '+' : ''}${maxBoost.pf_weather_delta_runs.toFixed(4)}</div>
+    </div>
+    <div class="summary-stat">
+      <div class="summary-label">Biggest Suppression</div>
+      <div class="summary-value negative">${maxSupp.home_team} ${maxSupp.pf_weather_delta_runs.toFixed(4)}</div>
+    </div>
+    <div class="summary-stat">
+      <div class="summary-label">Lineups</div>
+      <div class="summary-value">${confirmed} / ${games.length} confirmed</div>
+    </div>
+    <div class="summary-stat">
+      <div class="summary-label">Bets</div>
+      <div class="summary-value">${bets > 0 ? bets + ' active' : DATA.predictions_available ? '0 today' : 'pre-score'}</div>
+    </div>
+  `;
+
+  // Table
+  const sorted = sortGames(games, currentSort);
+  // Staleness indicator
+  if (DATA.generated_at) {
+    updateStaleness();
+    if (!window._stalenessInterval) window._stalenessInterval = setInterval(updateStaleness, 30000);
+  }
+
+  const tbody = document.getElementById('tableBody');
+  tbody.innerHTML = sorted.map((g, i) => {
+    const dCls = deltaClass(g.pf_weather_delta_runs);
+    const dome = g.dome_active ? '<span class="dome-tag">dome</span>' : '';
+
+    // FIX #4: Lineup status — label which side each indicator belongs to
+    const hSt = luStatus(g.home_lineup_status);
+    const aSt = luStatus(g.away_lineup_status);
+
+    // Lineup HR diff
+    const luDiff = g.lineup_pf_hr_diff != null
+      ? `<span class="delta-value ${deltaClass(g.lineup_pf_hr_diff)}">${g.lineup_pf_hr_diff >= 0 ? '+' : ''}${g.lineup_pf_hr_diff.toFixed(3)}</span>`
+      : '—';
+
+    // FIX #5 + #6: Edge shows direction, Win% shows favored side
+    const winPct = g.win_prob_home != null
+      ? (g.win_prob_home >= 0.5
+        ? `<span class="positive">${(g.win_prob_home * 100).toFixed(1)}%</span>`
+        : `<span class="negative">${(g.win_prob_home * 100).toFixed(1)}%</span>`)
+      : '—';
+    const edge = g.edge != null
+      ? `<span class="${g.edge > 0.04 ? 'positive' : ''}">${(g.edge * 100).toFixed(1)}% ${(g.edge_side||'').toUpperCase().slice(0,1)}</span>`
+      : '—';
+    const rec = g.recommendation === 'BET'
+      ? `<span class="rec-bet">BET</span>${g.cgsi_tier ? ' <span class="cgsi-' + g.cgsi_tier.toLowerCase().replace(' ','_') + '">' + g.cgsi_tier + '</span>' : ''}`
+      : g.recommendation === 'PASS' ? '<span class="rec-pass">PASS</span>' : '—';
+
+    // FIX #7: Weather fallback indicator — flag if temp is exactly 68.0 and wind is 0
+    const isFallbackWx = !g.dome_active && g.temperature_f === 68.0 && g.wind_carry_mph === 0;
+
+    return `<tr style="animation-delay:${i * 0.03}s">
+      <td>${dome}</td>
+      <td>
+        <div class="matchup">
+          <div class="matchup-teams">${g.away_team}${aSt}<span class="at">@</span>${g.home_team}${hSt}</div>
+          <div class="matchup-venue">${g.venue}</div>
+        </div>
+      </td>
+      <td>
+        <div class="pitchers">
+          <div class="pitcher-name">${g.home_pitcher}</div>
+          <div class="pitcher-name pitcher-away">vs ${g.away_pitcher}</div>
+        </div>
+      </td>
+      <td class="pf-bar-cell">${pfBar(g.daily_pf_runs)}</td>
+      <td>
+        <div class="delta-cell">
+          ${deltaBar(g.pf_weather_delta_runs, maxDelta)}
+          <span class="delta-value ${dCls}">${g.pf_weather_delta_runs >= 0 ? '+' : ''}${g.pf_weather_delta_runs.toFixed(4)}</span>
+        </div>
+      </td>
+      <td class="num">${g.daily_pf_hr.toFixed(3)}</td>
+      <td>${luDiff}</td>
+      <td class="num">${winPct}</td>
+      <td class="num">${edge}</td>
+      <td>${rec}</td>
+      <td>
+        <div class="weather">
+          ${isFallbackWx ? '<span title="Weather data unavailable — using neutral defaults" style="color:var(--ink-muted);font-size:0.6rem">est. </span>' : ''}
+          <span><span class="label">T</span>${g.temperature_f}°</span>
+          <span><span class="label">W</span>${g.wind_carry_mph >= 0 ? '+' : ''}${g.wind_carry_mph.toFixed(1)}</span>
+          <span><span class="label">H</span>${g.humidity_pct}%</span>
+        </div>
+      </td>
+      <td class="num">${formatTime(g.game_time)}</td>
+    </tr>`;
+  }).join('');
+}
+
+// Sort buttons
+document.querySelectorAll('.sort-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.sort-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentSort = btn.dataset.sort;
+    render();
+  });
+});
+
+// History navigation — data.json is always "today", archive/ is past dates
+async function loadDateData(dateStr) {
+  // Try data.json first — if its date matches, use it (freshest)
+  try {
+    const resp = await fetch('data.json?t=' + Date.now());
+    if (resp.ok) {
+      const d = await resp.json();
+      if (d.date === dateStr) { DATA = d; render(); return; }
+    }
+  } catch(e) {}
+  // Try archive for past dates
+  try {
+    const resp = await fetch(`archive/${dateStr}.json?t=${Date.now()}`);
+    if (resp.ok) {
+      const d = await resp.json();
+      if (d.date === dateStr) { DATA = d; render(); return; }
+    }
+  } catch(e) {}
+  // No data for this date
+  DATA = { date: dateStr, generated_at: null, predictions_available: false, games: [] };
+  render();
+}
+
+function shiftDate(days) {
+  if (!DATA || !DATA.date) return;
+  const d = new Date(DATA.date + 'T12:00:00');
+  d.setDate(d.getDate() + days);
+  const ds = d.toISOString().slice(0, 10);
+  loadDateData(ds);
+}
+
+document.getElementById('prevDate').addEventListener('click', () => shiftDate(-1));
+document.getElementById('nextDate').addEventListener('click', () => shiftDate(1));
+document.getElementById('todayBtn').addEventListener('click', () => {
+  loadData().then(() => { if(DATA) render(); });
+});
+
+// Boot
+loadData().then(() => { if(DATA) render(); });
+</script>
+</body>
+</html>
