@@ -395,6 +395,100 @@ tbody tr {
 .cgsi-high { background: rgba(34,197,94,0.12); color: #22c55e; padding: 0.15rem 0.4rem; border-radius: 2px; font-size: 0.62rem; font-weight: 600; }
 .cgsi-low, .cgsi-very_low { background: rgba(239,68,68,0.1); color: #ef4444; padding: 0.15rem 0.4rem; border-radius: 2px; font-size: 0.62rem; }
 .cgsi-med { background: rgba(234,179,8,0.12); color: #eab308; padding: 0.15rem 0.4rem; border-radius: 2px; font-size: 0.62rem; }
+
+/* ─── HELP OVERLAY ─── */
+.help-overlay {
+  position: fixed; inset: 0; z-index: 9998;
+  background: var(--bg);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: clamp(1.5rem, 5vw, 4rem);
+  padding-top: 2rem;
+}
+.help-overlay.hidden { display: none; }
+.help-close {
+  position: fixed; top: 1.2rem; right: 1.5rem; z-index: 9999;
+  background: var(--ink); color: var(--bg);
+  border: none; cursor: pointer;
+  width: 2.2rem; height: 2.2rem;
+  border-radius: 50%; font-size: 1.1rem;
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity 0.15s;
+}
+.help-close:hover { opacity: 0.8; }
+.help-inner { max-width: 720px; margin: 0 auto; padding-bottom: 4rem; }
+.help-inner h2 {
+  font-family: var(--font-display);
+  font-size: 1.6rem; font-weight: 400;
+  margin-bottom: 1.5rem;
+  color: var(--ink);
+}
+.help-inner h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem; font-weight: 400;
+  margin: 2rem 0 0.75rem;
+  color: var(--ink);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border);
+}
+.help-cheat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 2rem;
+}
+.help-cheat-title {
+  font-weight: 600; font-size: 0.75rem;
+  text-transform: uppercase; letter-spacing: 0.07em;
+  color: var(--ink-muted); margin-bottom: 0.75rem;
+}
+.help-cheat ul { list-style: none; padding: 0; }
+.help-cheat li {
+  font-size: 0.85rem; line-height: 1.7;
+  padding-left: 1.5rem; position: relative;
+  color: var(--ink-soft);
+}
+.help-cheat li::before {
+  position: absolute; left: 0; font-weight: 600;
+}
+.help-cheat li:nth-child(1)::before { content: "OVER"; color: var(--positive); }
+.help-cheat li:nth-child(2)::before { content: "UNDR"; color: var(--negative); }
+.help-cheat li:nth-child(3)::before { content: "HR"; color: var(--accent); }
+.help-cheat li:nth-child(4)::before { content: "WAIT"; color: var(--ink-muted); }
+.help-card {
+  margin-bottom: 1.5rem;
+}
+.help-card dt {
+  font-weight: 600; font-size: 0.72rem;
+  text-transform: uppercase; letter-spacing: 0.06em;
+  color: var(--ink-muted); margin-bottom: 0.3rem;
+}
+.help-card dd {
+  font-size: 0.85rem; line-height: 1.65;
+  color: var(--ink-soft); margin-bottom: 0.6rem;
+  margin-left: 0;
+}
+.help-card .help-example {
+  font-size: 0.8rem; font-style: italic;
+  color: var(--ink-muted); line-height: 1.6;
+  padding-left: 1rem;
+  border-left: 2px solid var(--border);
+}
+.help-btn {
+  background: none; border: 1px solid var(--border);
+  color: var(--ink-muted); cursor: pointer;
+  width: 1.6rem; height: 1.6rem;
+  border-radius: 50%; font-size: 0.75rem; font-weight: 600;
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.12s;
+  font-family: var(--font-body);
+}
+.help-btn:hover { border-color: var(--ink); color: var(--ink); }
+@media (max-width: 600px) {
+  .help-overlay { padding: 1rem; padding-top: 3rem; }
+  .help-close { top: 0.8rem; right: 0.8rem; }
+}
 </style>
 </head>
 <body>
@@ -406,6 +500,123 @@ tbody tr {
   <div class="auth-hint">Authorized personnel only</div>
 </div>
 
+<div class="help-overlay hidden" id="helpOverlay">
+  <button class="help-close" id="helpClose">&times;</button>
+  <div class="help-inner">
+    <h2>How to Read This Dashboard</h2>
+
+    <div class="help-cheat">
+      <div class="help-cheat-title">Quick Cheat Sheet</div>
+      <ul>
+        <li> &mdash; Daily PF above 1.00 + green Runs Delta + HR Factor above 1.00 + warm weather + wind blowing out</li>
+        <li> &mdash; Daily PF below 0.95 + red Runs Delta + HR Factor below 0.95 + cold weather + wind blowing in</li>
+        <li> &mdash; HR Factor above 1.05 + positive LU HR Diff + confirmed lineups (green checkmarks)</li>
+        <li> &mdash; Dashes in lineup columns, "est." in weather, or dashes in Win%/Edge &mdash; data isn't ready, check back later</li>
+      </ul>
+    </div>
+
+    <h3>Matchup</h3>
+    <div class="help-card">
+      <dl>
+        <dt>What it is</dt>
+        <dd>The two teams playing and whether we know their actual batting lineups yet.</dd>
+        <dt>What to look for</dt>
+        <dd>Green checkmark = real lineup posted by the team. Dash = we're still guessing. "DOME" tag = indoor game, weather doesn't matter for that one.</dd>
+        <dt>Example</dt>
+        <dd class="help-example">"If you see dashes on both sides, the park factor numbers are solid but the Lineup HR Diff column is a guess &mdash; wait for checkmarks before using that one."</dd>
+      </dl>
+    </div>
+
+    <h3>Pitchers</h3>
+    <div class="help-card">
+      <dl>
+        <dt>What it is</dt>
+        <dd>Who's starting on the mound for each side. Home pitcher listed first.</dd>
+        <dt>What to look for</dt>
+        <dd>This is context, not a signal by itself. But a flyball pitcher at a wind-blowing-out park is a different story than a groundball pitcher at the same park.</dd>
+        <dt>Example</dt>
+        <dd class="help-example">"If you see a known flyball guy pitching at Wrigley and the wind column shows +12, that's a HR party waiting to happen."</dd>
+      </dl>
+    </div>
+
+    <h3>Daily PF (Park Factor)</h3>
+    <div class="help-card">
+      <dl>
+        <dt>What it is</dt>
+        <dd>Is this ballpark playing hitter-friendly or pitcher-friendly TODAY? Think of 1.000 as perfectly neutral. Higher means more runs expected. Lower means fewer runs.</dd>
+        <dt>What to look for</dt>
+        <dd>Above 1.02 is noticeably hitter-friendly. Below 0.95 is noticeably pitcher-friendly. Most games land between 0.93 and 1.08.</dd>
+        <dt>Example</dt>
+        <dd class="help-example">"Coors Field almost always shows high here. But Petco Park on a cold night might show 0.88 &mdash; that's a graveyard for offense."</dd>
+      </dl>
+    </div>
+
+    <h3>Runs Delta &mdash; The Money Column</h3>
+    <div class="help-card">
+      <dl>
+        <dt>What it is</dt>
+        <dd>How much is TODAY'S weather pushing scoring away from what the market already expects at this park? The betting market already knows Coors is a hitter's park. What it doesn't know is whether TODAY at Coors is even more hitter-friendly than usual, or less. That gap is where the edge lives.</dd>
+        <dt>What to look for</dt>
+        <dd>Green/positive = weather is boosting runs ABOVE what the market prices in. Red/negative = weather is suppressing runs BELOW expectations. The bigger the number, the bigger the potential edge.</dd>
+        <dt>Example</dt>
+        <dd class="help-example">"Wrigley has a seasonal park factor of 1.04. Today it shows +0.06 delta because it's 85 degrees with wind blowing out. The market set the total based on 'Wrigley is slightly hitter-friendly.' The weather today says it's WAY more hitter-friendly than that. That gap is where you find over/under value."</dd>
+      </dl>
+    </div>
+
+    <h3>HR Factor</h3>
+    <div class="help-card">
+      <dl>
+        <dt>What it is</dt>
+        <dd>Same idea as Daily PF but specifically for home runs. How much does today's venue + weather help or hurt the long ball?</dd>
+        <dt>What to look for</dt>
+        <dd>Above 1.05 = home runs are flying today. Below 0.90 = the ball is dying at the warning track. This is your HR prop column.</dd>
+        <dt>Example</dt>
+        <dd class="help-example">"HR Factor at 1.12 + a power hitter in the lineup = look at his HR prop. HR Factor at 0.85 = fade HR props, take strikeout props instead."</dd>
+      </dl>
+    </div>
+
+    <h3>LU HR Diff (Lineup HR Difference)</h3>
+    <div class="help-card">
+      <dl>
+        <dt>What it is</dt>
+        <dd>Does the home team's batting lineup have more home run power AT THIS SPECIFIC PARK than the visiting lineup? This isn't just "who has more power" &mdash; it's "whose power matches this park's shape."</dd>
+        <dt>What to look for</dt>
+        <dd>Big positive = home lineup's hitters are built for this park. Big negative = visitors have the power advantage. Near zero = roughly even.</dd>
+        <dt>Example</dt>
+        <dd class="help-example">"A team full of left-handed pull hitters at Yankee Stadium (short right field) will show a huge advantage here. That same lineup at Fenway (deep right, short left) might show the opposite. It's not about who hits harder &mdash; it's about who hits harder IN THIS PARK."</dd>
+      </dl>
+    </div>
+
+    <h3>Win% / Edge / Rec</h3>
+    <div class="help-card">
+      <dl>
+        <dt>What it is</dt>
+        <dd>Our model's pre-game prediction. Win% is the home team's chance of winning. Edge is how much our number disagrees with the betting line. Rec tells you whether the edge is big enough to bet.</dd>
+        <dt>What to look for</dt>
+        <dd>"BET" in green with a tier badge = we found value. "PASS" = not enough edge. Dashes = model hasn't scored this game yet (check back later).</dd>
+        <dt>Example</dt>
+        <dd class="help-example">"Win% shows 58% home, the book has them at -130 (implied 56.5%). Our edge is 1.5% on the home side. If the Rec says BET, our confidence system says that 1.5% is real and big enough to act on."</dd>
+      </dl>
+    </div>
+
+    <h3>Weather (T / W / H)</h3>
+    <div class="help-card">
+      <dl>
+        <dt>What it is</dt>
+        <dd>Temperature, wind direction, and humidity at game time. These are the raw ingredients that drive the park factor numbers above.</dd>
+        <dt>What to look for</dt>
+        <dd><strong>T (temp):</strong> Hot = more offense. Cold = less. Above 72&deg;F the ball starts carrying noticeably better.<br>
+        <strong>W (wind):</strong> Positive = blowing OUT toward the outfield (helps HR, more runs). Negative = blowing IN (kills HR, fewer runs). Already adjusted for which direction center field faces.<br>
+        <strong>H (humidity):</strong> Higher humidity actually means slightly MORE carry &mdash; water vapor is lighter than dry air. Small effect compared to temp and wind.<br>
+        <strong>"est."</strong> prefix = we don't have real weather data yet. These are placeholder numbers. Don't bet based on estimated weather.</dd>
+        <dt>Example</dt>
+        <dd class="help-example">"82&deg;F, +11 wind, 45% humidity at Wrigley = absolute launch pad. 48&deg;F, -7 wind, 80% humidity at Guaranteed Rate = bring a sleeping bag, nothing is leaving the yard."</dd>
+      </dl>
+    </div>
+
+  </div>
+</div>
+
 <header class="header">
   <div class="header-left">
     <h1>Daily Park Factors</h1>
@@ -414,6 +625,7 @@ tbody tr {
       <span class="date" id="dateLabel">--</span>
       <button id="nextDate" style="background:none;border:1px solid var(--border);color:var(--ink);cursor:pointer;padding:0.15rem 0.4rem;font-size:0.7rem;border-radius:2px">&rarr;</button>
       <button id="todayBtn" style="background:none;border:1px solid var(--border);color:var(--ink);cursor:pointer;padding:0.15rem 0.5rem;font-size:0.62rem;border-radius:2px;text-transform:uppercase;letter-spacing:0.05em">Today</button>
+      <button class="help-btn" id="helpBtn" title="How to read this dashboard">?</button>
     </div>
   </div>
   <div class="header-meta">
@@ -440,16 +652,16 @@ tbody tr {
       <thead>
         <tr>
           <th style="width:30px"></th>
-          <th>Matchup</th>
-          <th>Pitchers</th>
-          <th class="num">Daily PF</th>
-          <th>Runs Delta</th>
-          <th class="num">HR Factor</th>
-          <th>LU HR Diff</th>
-          <th class="num" style="font-size:0.6rem">Win%</th>
-          <th style="font-size:0.6rem">Edge</th>
-          <th style="font-size:0.6rem">Rec</th>
-          <th>Weather</th>
+          <th title="The two teams and whether their real lineups are posted yet">Matchup</th>
+          <th title="Starting pitchers — home team listed first">Pitchers</th>
+          <th class="num" title="Is this park playing hitter-friendly or pitcher-friendly today? 1.000 = neutral.">Daily PF</th>
+          <th title="How much today's weather shifts scoring vs what the market expects — the edge column">Runs Delta</th>
+          <th class="num" title="How much today's conditions help or hurt home runs specifically">HR Factor</th>
+          <th title="Does the home lineup's power fit this park better than the visitors?">LU HR Diff</th>
+          <th class="num" style="font-size:0.6rem" title="Our model's estimated home win probability">Win%</th>
+          <th style="font-size:0.6rem" title="How much our number disagrees with the betting line">Edge</th>
+          <th style="font-size:0.6rem" title="BET = edge is big enough to act on. PASS = not enough value.">Rec</th>
+          <th title="Temperature, wind direction (+ = blowing out, - = blowing in), and humidity at game time">Weather</th>
           <th class="num" style="font-size:0.6rem">Time (ET)</th>
         </tr>
       </thead>
@@ -744,6 +956,17 @@ function shiftDate(days) {
 
 document.getElementById('prevDate').addEventListener('click', () => shiftDate(-1));
 document.getElementById('nextDate').addEventListener('click', () => shiftDate(1));
+
+// Help overlay toggle
+document.getElementById('helpBtn').addEventListener('click', () => {
+  document.getElementById('helpOverlay').classList.remove('hidden');
+});
+document.getElementById('helpClose').addEventListener('click', () => {
+  document.getElementById('helpOverlay').classList.add('hidden');
+});
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') document.getElementById('helpOverlay').classList.add('hidden');
+});
 document.getElementById('todayBtn').addEventListener('click', () => {
   loadData().then(() => { if(DATA) render(); });
 });
