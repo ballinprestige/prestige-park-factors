@@ -1,6 +1,6 @@
 {
   "date": "2026-04-20",
-  "generated_at": "2026-04-20T18:13:19.025852+00:00",
+  "generated_at": "2026-04-20T20:56:12.780997+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -79,7 +79,7 @@
       "home_team": "TB",
       "away_team": "CIN",
       "venue": "Tropicana Field",
-      "home_pitcher": "",
+      "home_pitcher": "Jesse Scholtens",
       "away_pitcher": "Rhett Lowder",
       "game_time": "2026-04-20T22:40:00Z",
       "temperature_f": 72.0,
