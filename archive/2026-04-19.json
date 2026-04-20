@@ -1,6 +1,6 @@
 {
   "date": "2026-04-19",
-  "generated_at": "2026-04-20T05:15:54.711404+00:00",
+  "generated_at": "2026-04-20T05:31:00.804376+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -31,13 +31,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.518,
-      "edge": 0.0084,
+      "win_prob_home": 0.497,
+      "edge": 0.0299,
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.75,
-      "n_specialists_agree": 9
+      "consensus_ratio": 0.5,
+      "n_specialists_agree": 6
     }
   ]
 }
