@@ -1,6 +1,6 @@
 {
   "date": "2026-04-21",
-  "generated_at": "2026-04-21T18:16:44.257168+00:00",
+  "generated_at": "2026-04-21T18:31:45.986176+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -35,7 +35,7 @@
       "edge": 0.0191,
       "edge_side": "away",
       "recommendation": "PASS",
-      "cgsi_tier": "VERY_LOW",
+      "cgsi_tier": "LOW",
       "consensus_ratio": 0.92,
       "n_specialists_agree": 11
     },
@@ -210,7 +210,7 @@
       "edge": 0.0164,
       "edge_side": "home",
       "recommendation": "PASS",
-      "cgsi_tier": "VERY_LOW",
+      "cgsi_tier": "LOW",
       "consensus_ratio": 0.92,
       "n_specialists_agree": 11
     },
@@ -315,7 +315,7 @@
       "edge": 0.0132,
       "edge_side": "home",
       "recommendation": "PASS",
-      "cgsi_tier": "VERY_LOW",
+      "cgsi_tier": "LOW",
       "consensus_ratio": 0.92,
       "n_specialists_agree": 11
     },
@@ -374,20 +374,20 @@
       "pf_weather_delta_runs": 0.0174,
       "pf_weather_delta_hr": -0.1805,
       "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": null,
+      "home_lineup_pf_hr": 2.603,
       "away_lineup_pf_hr": null,
       "lineup_pf_hr_diff": null,
-      "lineup_pf_hr_residual": null,
+      "lineup_pf_hr_residual": 1.4595,
       "has_lineups": false,
-      "home_lineup_status": "UNKNOWN",
+      "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "UNKNOWN",
-      "win_prob_home": 0.456,
-      "edge": 0.0258,
+      "win_prob_home": 0.497,
+      "edge": 0.0666,
       "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.67,
-      "n_specialists_agree": 8
+      "consensus_ratio": 0.5,
+      "n_specialists_agree": 6
     },
     {
       "game_pk": 824045,
@@ -455,7 +455,7 @@
       "edge": 0.0113,
       "edge_side": "home",
       "recommendation": "PASS",
-      "cgsi_tier": "VERY_LOW",
+      "cgsi_tier": "LOW",
       "consensus_ratio": 1.0,
       "n_specialists_agree": 12
     },
