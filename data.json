@@ -1,6 +1,6 @@
 {
   "date": "2026-04-21",
-  "generated_at": "2026-04-21T12:47:10.495293+00:00",
+  "generated_at": "2026-04-21T16:22:40.693803+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -325,7 +325,7 @@
       "away_team": "PIT",
       "venue": "Globe Life Field",
       "home_pitcher": "",
-      "away_pitcher": "",
+      "away_pitcher": "Carmen Mlodzinski",
       "game_time": "2026-04-22T00:05:00Z",
       "temperature_f": 68.0,
       "humidity_pct": 50.0,
