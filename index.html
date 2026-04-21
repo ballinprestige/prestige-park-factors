@@ -587,6 +587,30 @@ tbody tr {
       </dl>
     </div>
 
+    <h3>SP Tunnel (Pitch Tunneling Score)</h3>
+    <div class="help-card">
+      <dl>
+        <dt>What it is</dt>
+        <dd>How well each starter disguises different pitches at the batter's decision point (23.77 ft from home plate). Two pitches that look identical there but end up in different locations cause decision errors. Format: Home / Away, rolling average of last 5 starts.</dd>
+        <dt>What to look for</dt>
+        <dd>Higher = more deception. Typical range ~1.30–1.50. Pitcher with noticeably higher tunnel score has a stuff advantage over the opposing batters on this slate that isn't priced into velocity or spin.</dd>
+        <dt>Example</dt>
+        <dd class="help-example">"Corbin shows 1.456 tonight vs Castillo at 1.371. Corbin's fastball and slider look the same coming out of his hand, making his 88 mph fastball play up. Elite tunnelers beat their Stuff+ rating by 10–20% in whiff rate."</dd>
+      </dl>
+    </div>
+
+    <h3>F5 Exit Risk (First-5 Early Exit)</h3>
+    <div class="help-card">
+      <dl>
+        <dt>What it is</dt>
+        <dd>Modeled probability that the starter fails to complete 5 innings, based on pitch efficiency, walk rate, and recent stamina. Format: Home / Away. Feeds F5 totals and runline bets directly.</dd>
+        <dt>What to look for</dt>
+        <dd>Below 0.03 = extremely durable (green). Above 0.10 = real risk (red) — bullpen gets exposed in inning 4–5. Big gap between home and away suggests F5 value.</dd>
+        <dt>Example</dt>
+        <dd class="help-example">"Sean Burke at 0.321 means the model thinks there's a 32% chance he doesn't reach the 5th. If the market is pricing F5 based on his season line, the over on F5 total runs has hidden value because the bullpen is coming in early."</dd>
+      </dl>
+    </div>
+
     <h3>Win% / Edge / Rec</h3>
     <div class="help-card">
       <dl>
@@ -658,6 +682,8 @@ tbody tr {
           <th title="How much today's weather shifts scoring vs what the market expects — the edge column">Runs Delta</th>
           <th class="num" title="How much today's conditions help or hurt home runs specifically">HR Factor</th>
           <th title="Does the home lineup's power fit this park better than the visitors?">LU HR Diff</th>
+          <th title="Pitch tunneling (IP-1): how well each SP disguises pitches at the 23.77ft batter decision point. Higher = more deception. Home / Away, rolling L5 starts.">SP Tunnel</th>
+          <th title="F5 early-exit risk: modeled probability each SP fails to reach inning 5. Home / Away. Red flag > 0.10.">F5 Exit</th>
           <th class="num" style="font-size:0.6rem" title="Our model's estimated home win probability">Win%</th>
           <th style="font-size:0.6rem" title="How much our number disagrees with the betting line">Edge</th>
           <th style="font-size:0.6rem" title="BET = edge is big enough to act on. PASS = not enough value.">Rec</th>
@@ -858,6 +884,26 @@ function render() {
       ? `<span class="delta-value ${deltaClass(g.lineup_pf_hr_diff)}">${g.lineup_pf_hr_diff >= 0 ? '+' : ''}${g.lineup_pf_hr_diff.toFixed(3)}</span>`
       : '—';
 
+    // SP tunnel (IP-1 pitch tunneling score, rolling L5). Higher = more deceptive.
+    const fmtTun = v => v != null ? v.toFixed(3) : '—';
+    const hTun = g.home_sp_tunnel_score;
+    const aTun = g.away_sp_tunnel_score;
+    const tunAdv = (hTun != null && aTun != null)
+      ? (hTun > aTun ? 'positive' : hTun < aTun ? 'negative' : '')
+      : '';
+    const tunCell = (hTun != null || aTun != null)
+      ? `<span class="${tunAdv}" title="Home ${fmtTun(hTun)} vs Away ${fmtTun(aTun)}">${fmtTun(hTun)} / ${fmtTun(aTun)}</span>`
+      : '—';
+
+    // F5 early-exit risk (probability SP doesn't reach inning 5)
+    const fmtExit = v => v != null ? v.toFixed(3) : '—';
+    const riskClass = v => v == null ? '' : v > 0.10 ? 'negative' : v < 0.03 ? 'positive' : '';
+    const hExit = g.home_sp_f5_early_exit_risk;
+    const aExit = g.away_sp_f5_early_exit_risk;
+    const exitCell = (hExit != null || aExit != null)
+      ? `<span title="Home ${fmtExit(hExit)} vs Away ${fmtExit(aExit)}. >0.10 = red flag."><span class="${riskClass(hExit)}">${fmtExit(hExit)}</span> / <span class="${riskClass(aExit)}">${fmtExit(aExit)}</span></span>`
+      : '—';
+
     // FIX #5 + #6: Edge shows direction, Win% shows favored side
     const winPct = g.win_prob_home != null
       ? (g.win_prob_home >= 0.5
@@ -897,6 +943,8 @@ function render() {
       </td>
       <td class="num">${g.daily_pf_hr.toFixed(3)}</td>
       <td>${luDiff}</td>
+      <td class="num">${tunCell}</td>
+      <td class="num">${exitCell}</td>
       <td class="num">${winPct}</td>
       <td class="num">${edge}</td>
       <td>${rec}</td>
