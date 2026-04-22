@@ -680,6 +680,9 @@ tbody tr {
     <button class="sort-btn" data-sort="pf">Daily PF</button>
     <button class="sort-btn" data-sort="hr">HR Factor</button>
     <button class="sort-btn" data-sort="lineup">Lineup HR Diff</button>
+    <button class="sort-btn" data-sort="tunnel">SP Tunnel</button>
+    <button class="sort-btn" data-sort="injury">Injury Runs</button>
+    <button class="sort-btn" data-sort="war_delta">LU WAR &Delta;</button>
     <button class="sort-btn" data-sort="edge">Edge</button>
     <button class="sort-btn" data-sort="time">Game Time</button>
   </div>
@@ -808,6 +811,21 @@ function updateStaleness() {
 }
 
 let currentSort = 'delta';
+
+// Sort helpers: null/undefined values sort to the bottom so games without
+// data never outrank games with real numbers on the active metric.
+const SORT_NULL_LAST = -Infinity;
+const numOrNull = v => (v == null || Number.isNaN(v)) ? null : Number(v);
+const maxNonNull = (...xs) => {
+  const vals = xs.map(numOrNull).filter(v => v !== null);
+  return vals.length ? Math.max(...vals) : null;
+};
+const sumNonNull = (...xs) => {
+  const vals = xs.map(numOrNull).filter(v => v !== null);
+  return vals.length ? vals.reduce((a, b) => a + b, 0) : null;
+};
+const byDesc = (va, vb) => (vb == null ? SORT_NULL_LAST : vb) - (va == null ? SORT_NULL_LAST : va);
+
 function sortGames(games, key) {
   const sorted = [...games];
   switch(key) {
@@ -815,6 +833,35 @@ function sortGames(games, key) {
     case 'pf': sorted.sort((a, b) => b.daily_pf_runs - a.daily_pf_runs); break;
     case 'hr': sorted.sort((a, b) => b.daily_pf_hr - a.daily_pf_hr); break;
     case 'lineup': sorted.sort((a, b) => (b.lineup_pf_hr_diff||0) - (a.lineup_pf_hr_diff||0)); break;
+    case 'tunnel': {
+      // Rank by the best tunneler on the mound — max(home, away). Null when
+      // both SP are unknown/stale, which sinks to the bottom.
+      sorted.sort((a, b) => byDesc(
+        maxNonNull(a.home_sp_tunnel_score, a.away_sp_tunnel_score),
+        maxNonNull(b.home_sp_tunnel_score, b.away_sp_tunnel_score),
+      ));
+      break;
+    }
+    case 'injury': {
+      // Total runs impact on the game — offense loss + pitching allowed-increase,
+      // both sides. Surfaces the most injury-distorted games (totals edge).
+      sorted.sort((a, b) => byDesc(
+        sumNonNull(a.home_injury_runs_loss, a.away_injury_runs_loss,
+                   a.home_injury_runs_allowed_increase, a.away_injury_runs_allowed_increase),
+        sumNonNull(b.home_injury_runs_loss, b.away_injury_runs_loss,
+                   b.home_injury_runs_allowed_increase, b.away_injury_runs_allowed_increase),
+      ));
+      break;
+    }
+    case 'war_delta': {
+      // Combined lineup weakening (home_delta + away_delta). Positive = weakened.
+      // Sort descending = "games with the most injury/scratch distortion tonight."
+      sorted.sort((a, b) => byDesc(
+        sumNonNull(a.home_lineup_war_delta, a.away_lineup_war_delta),
+        sumNonNull(b.home_lineup_war_delta, b.away_lineup_war_delta),
+      ));
+      break;
+    }
     case 'edge': sorted.sort((a, b) => (b.edge||0) - (a.edge||0)); break;
     case 'time': sorted.sort((a, b) => new Date(a.game_time) - new Date(b.game_time)); break;
   }
