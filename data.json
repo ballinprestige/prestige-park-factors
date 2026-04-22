@@ -1,6 +1,6 @@
 {
   "date": "2026-04-22",
-  "generated_at": "2026-04-22T13:38:37.990148+00:00",
+  "generated_at": "2026-04-22T13:49:59.104150+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -255,7 +255,7 @@
       "away_team": "ATL",
       "venue": "Nationals Park",
       "home_pitcher": "Zack Littell",
-      "away_pitcher": "Mart\u00edn P\u00e9rez",
+      "away_pitcher": "Didier Fuentes",
       "game_time": "2026-04-22T22:45:00Z",
       "temperature_f": 76.6,
       "humidity_pct": 44.0,
