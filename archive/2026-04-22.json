@@ -1,6 +1,6 @@
 {
   "date": "2026-04-22",
-  "generated_at": "2026-04-23T02:36:30.132675+00:00",
+  "generated_at": "2026-04-23T02:54:31.131554+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -656,9 +656,9 @@
       "home_lineup_war_expected": 19.33,
       "away_lineup_war_expected": 15.86,
       "home_lineup_war_actual": 13.66,
-      "away_lineup_war_actual": 11.81,
+      "away_lineup_war_actual": 12.79,
       "home_lineup_war_delta": 5.66,
-      "away_lineup_war_delta": 4.05,
+      "away_lineup_war_delta": 3.07,
       "home_lineup_slots_downgraded": 8,
       "away_lineup_slots_downgraded": 5,
       "home_lineup_top3_intact": null,
