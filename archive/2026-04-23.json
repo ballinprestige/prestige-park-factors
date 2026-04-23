@@ -1,6 +1,6 @@
 {
   "date": "2026-04-23",
-  "generated_at": "2026-04-23T21:56:26.859266+00:00",
+  "generated_at": "2026-04-23T22:10:42.526015+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -472,7 +472,7 @@
       "lineup_pf_hr_residual": 1.7938,
       "has_lineups": false,
       "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "UNKNOWN",
+      "away_lineup_status": "CONFIRMED",
       "win_prob_home": 0.497,
       "edge": 0.0976,
       "edge_side": "away",
