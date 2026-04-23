@@ -1,6 +1,6 @@
 {
   "date": "2026-04-24",
-  "generated_at": "2026-04-23T06:11:08.233420+00:00",
+  "generated_at": "2026-04-23T06:26:17.022574+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -406,9 +406,9 @@
       "air_density_index": 96.6,
       "dome_active": 0,
       "seasonal_pf_runs": 1.01,
-      "daily_pf_runs": 1.0099,
+      "daily_pf_runs": 1.0015,
       "daily_pf_hr": 1.1037,
-      "pf_weather_delta_runs": -0.0001,
+      "pf_weather_delta_runs": -0.0085,
       "pf_weather_delta_hr": 0.0432,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": null,
