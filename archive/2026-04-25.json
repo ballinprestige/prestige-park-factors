@@ -1,6 +1,6 @@
 {
   "date": "2026-04-25",
-  "generated_at": "2026-04-24T04:12:02.566321+00:00",
+  "generated_at": "2026-04-24T04:57:21.125729+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -430,9 +430,9 @@
       "home_sp_tunnel_tightness": null,
       "away_sp_tunnel_tightness": null,
       "home_injury_runs_loss": 0.01,
-      "away_injury_runs_loss": 0.001,
+      "away_injury_runs_loss": null,
       "home_injury_runs_allowed_increase": 0.879,
-      "away_injury_runs_allowed_increase": 0.669,
+      "away_injury_runs_allowed_increase": null,
       "home_lineup_war_expected": null,
       "away_lineup_war_expected": null,
       "home_lineup_war_actual": null,
