@@ -1,6 +1,6 @@
 {
   "date": "2026-04-26",
-  "generated_at": "2026-04-26T18:13:25.771559+00:00",
+  "generated_at": "2026-04-26T18:26:13.710685+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -66,13 +66,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.518,
-      "edge": 0.1005,
+      "win_prob_home": 0.605,
+      "edge": 0.0136,
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.67,
-      "n_specialists_agree": 8
+      "consensus_ratio": 1.0,
+      "n_specialists_agree": 12
     },
     {
       "game_pk": 822824,
@@ -101,13 +101,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.497,
-      "edge": 0.0613,
+      "win_prob_home": 0.555,
+      "edge": 0.0033,
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.25,
-      "n_specialists_agree": 3
+      "consensus_ratio": 0.83,
+      "n_specialists_agree": 10
     },
     {
       "game_pk": 824528,
@@ -136,13 +136,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.497,
-      "edge": 0.0083,
-      "edge_side": "away",
+      "win_prob_home": 0.555,
+      "edge": 0.0497,
+      "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.33,
-      "n_specialists_agree": 4
+      "consensus_ratio": 0.83,
+      "n_specialists_agree": 10
     },
     {
       "game_pk": 823635,
@@ -241,13 +241,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.497,
-      "edge": 0.0775,
+      "win_prob_home": 0.518,
+      "edge": 0.056,
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.5,
-      "n_specialists_agree": 6
+      "consensus_ratio": 0.92,
+      "n_specialists_agree": 11
     },
     {
       "game_pk": 824612,
@@ -276,13 +276,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.497,
-      "edge": 0.0406,
+      "win_prob_home": 0.518,
+      "edge": 0.0191,
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.42,
-      "n_specialists_agree": 5
+      "consensus_ratio": 0.75,
+      "n_specialists_agree": 9
     },
     {
       "game_pk": 824202,
@@ -311,13 +311,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.497,
-      "edge": 0.0483,
+      "win_prob_home": 0.479,
+      "edge": 0.0308,
       "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.33,
-      "n_specialists_agree": 4
+      "consensus_ratio": 0.75,
+      "n_specialists_agree": 9
     },
     {
       "game_pk": 823797,
@@ -350,9 +350,9 @@
       "edge": 0.024,
       "edge_side": "home",
       "recommendation": "PASS",
-      "cgsi_tier": "MEDIUM",
-      "consensus_ratio": 0.92,
-      "n_specialists_agree": 11
+      "cgsi_tier": "VERY_LOW",
+      "consensus_ratio": 0.83,
+      "n_specialists_agree": 10
     },
     {
       "game_pk": 823068,
@@ -386,8 +386,8 @@
       "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.58,
-      "n_specialists_agree": 7
+      "consensus_ratio": 0.42,
+      "n_specialists_agree": 5
     },
     {
       "game_pk": 822911,
@@ -486,11 +486,11 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.555,
-      "edge": 0.0068,
-      "edge_side": "home",
+      "win_prob_home": 0.518,
+      "edge": 0.0297,
+      "edge_side": "away",
       "recommendation": "PASS",
-      "cgsi_tier": "MEDIUM",
+      "cgsi_tier": "VERY_LOW",
       "consensus_ratio": 0.83,
       "n_specialists_agree": 10
     },
@@ -526,8 +526,8 @@
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.42,
-      "n_specialists_agree": 5
+      "consensus_ratio": 0.25,
+      "n_specialists_agree": 3
     },
     {
       "game_pk": 823959,
@@ -550,19 +550,19 @@
       "pf_weather_delta_hr": -0.0587,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 2.773,
-      "away_lineup_pf_hr": null,
-      "lineup_pf_hr_diff": null,
+      "away_lineup_pf_hr": 2.619,
+      "lineup_pf_hr_diff": 0.1534,
       "lineup_pf_hr_residual": 1.8129,
-      "has_lineups": false,
+      "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "PROJECTED",
-      "win_prob_home": 0.518,
-      "edge": 0.0245,
+      "away_lineup_status": "CONFIRMED",
+      "win_prob_home": 0.497,
+      "edge": 0.046,
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.67,
-      "n_specialists_agree": 8
+      "consensus_ratio": 0.42,
+      "n_specialists_agree": 5
     }
   ]
 }
