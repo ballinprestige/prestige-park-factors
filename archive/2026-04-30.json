@@ -1,6 +1,6 @@
 {
   "date": "2026-04-30",
-  "generated_at": "2026-04-30T00:53:26.907352+00:00",
+  "generated_at": "2026-04-30T01:08:32.651536+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -219,7 +219,7 @@
       "home_team": "PHI",
       "away_team": "SF",
       "venue": "Citizens Bank Park",
-      "home_pitcher": "",
+      "home_pitcher": "Cristopher S\u00e1nchez",
       "away_pitcher": "Logan Webb",
       "game_time": "2026-04-30T16:35:00Z",
       "temperature_f": 59.5,
@@ -254,7 +254,7 @@
       "home_team": "PHI",
       "away_team": "SF",
       "venue": "Citizens Bank Park",
-      "home_pitcher": "",
+      "home_pitcher": "Cristopher S\u00e1nchez",
       "away_pitcher": "Logan Webb",
       "game_time": "2026-04-30T16:35:00Z",
       "temperature_f": 59.5,
