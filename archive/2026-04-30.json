@@ -1,6 +1,6 @@
 {
   "date": "2026-04-30",
-  "generated_at": "2026-04-30T19:31:46.315956+00:00",
+  "generated_at": "2026-04-30T20:02:09.878617+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -289,7 +289,7 @@
       "home_team": "PHI",
       "away_team": "SF",
       "venue": "Citizens Bank Park",
-      "home_pitcher": "",
+      "home_pitcher": "Tim Mayza",
       "away_pitcher": "Adrian Houser",
       "game_time": "2026-04-30T21:35:00Z",
       "temperature_f": 68.0,
@@ -324,7 +324,7 @@
       "home_team": "PHI",
       "away_team": "SF",
       "venue": "Citizens Bank Park",
-      "home_pitcher": "",
+      "home_pitcher": "Tim Mayza",
       "away_pitcher": "Adrian Houser",
       "game_time": "2026-04-30T21:35:00Z",
       "temperature_f": 68.0,
