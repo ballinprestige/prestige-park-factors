@@ -1,6 +1,6 @@
 {
   "date": "2026-05-01",
-  "generated_at": "2026-05-01T19:57:56.652975+00:00",
+  "generated_at": "2026-05-01T20:12:59.527126+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -150,7 +150,7 @@
       "away_team": "BAL",
       "venue": "Yankee Stadium",
       "home_pitcher": "Will Warren",
-      "away_pitcher": "",
+      "away_pitcher": "Cade Povich",
       "game_time": "2026-05-01T23:05:00Z",
       "temperature_f": 68.0,
       "humidity_pct": 50.0,
