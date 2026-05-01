@@ -1,6 +1,6 @@
 {
   "date": "2026-05-02",
-  "generated_at": "2026-05-01T22:01:13.193513+00:00",
+  "generated_at": "2026-05-01T22:31:32.075905+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -10,7 +10,7 @@
       "away_team": "BAL",
       "venue": "Yankee Stadium",
       "home_pitcher": "Ryan Weathers",
-      "away_pitcher": "",
+      "away_pitcher": "Kyle Bradish",
       "game_time": "2026-05-02T17:35:00Z",
       "temperature_f": 68.0,
       "humidity_pct": 50.0,
