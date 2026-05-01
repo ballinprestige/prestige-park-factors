@@ -1,6 +1,6 @@
 {
   "date": "2026-05-02",
-  "generated_at": "2026-05-01T20:30:07.349278+00:00",
+  "generated_at": "2026-05-01T20:45:13.237491+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -289,7 +289,7 @@
       "home_team": "TB",
       "away_team": "SF",
       "venue": "Tropicana Field",
-      "home_pitcher": "",
+      "home_pitcher": "Griffin Jax",
       "away_pitcher": "Landen Roupp",
       "game_time": "2026-05-02T22:10:00Z",
       "temperature_f": 72.0,
