@@ -1,6 +1,6 @@
 {
   "date": "2026-05-03",
-  "generated_at": "2026-05-03T17:07:37.634942+00:00",
+  "generated_at": "2026-05-03T17:22:41.582218+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -149,8 +149,8 @@
       "home_team": "WSH",
       "away_team": "MIL",
       "venue": "Nationals Park",
-      "home_pitcher": "Zack Littell",
-      "away_pitcher": "",
+      "home_pitcher": "PJ Poulin",
+      "away_pitcher": "Logan Henderson",
       "game_time": "2026-05-03T17:35:00Z",
       "temperature_f": 68.0,
       "humidity_pct": 50.0,
@@ -462,7 +462,7 @@
     {
       "game_pk": 823307,
       "home_team": "SD",
-      "away_team": "CHW",
+      "away_team": "CWS",
       "venue": "Petco Park",
       "home_pitcher": "Griffin Canning",
       "away_pitcher": "Anthony Kay",
