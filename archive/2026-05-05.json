@@ -1,6 +1,6 @@
 {
   "date": "2026-05-05",
-  "generated_at": "2026-05-05T04:59:06.655371+00:00",
+  "generated_at": "2026-05-05T05:29:23.827495+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -394,7 +394,7 @@
       "home_team": "LAA",
       "away_team": "CHW",
       "venue": "Angel Stadium",
-      "home_pitcher": "",
+      "home_pitcher": "Sam Aldegheri",
       "away_pitcher": "Erick Fedde",
       "game_time": "2026-05-06T01:38:00Z",
       "temperature_f": 68.0,
