@@ -1,6 +1,6 @@
 {
   "date": "2026-05-04",
-  "generated_at": "2026-05-05T22:57:21.646913+00:00",
+  "generated_at": "2026-05-05T23:34:15.608552+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -31,13 +31,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.497,
+      "win_prob_home": null,
       "edge": null,
       "edge_side": null,
-      "recommendation": "PASS",
-      "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.25,
-      "n_specialists_agree": 3
+      "recommendation": null,
+      "cgsi_tier": null,
+      "consensus_ratio": null,
+      "n_specialists_agree": null
     },
     {
       "game_pk": 824283,
@@ -71,8 +71,8 @@
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.92,
-      "n_specialists_agree": 11
+      "consensus_ratio": 1.0,
+      "n_specialists_agree": 12
     },
     {
       "game_pk": 822984,
@@ -106,8 +106,8 @@
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.67,
-      "n_specialists_agree": 8
+      "consensus_ratio": 0.75,
+      "n_specialists_agree": 9
     },
     {
       "game_pk": 823874,
@@ -141,8 +141,8 @@
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.33,
-      "n_specialists_agree": 4
+      "consensus_ratio": 0.58,
+      "n_specialists_agree": 7
     },
     {
       "game_pk": 823552,
@@ -206,8 +206,8 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.603,
-      "edge": 0.0583,
+      "win_prob_home": 0.605,
+      "edge": 0.0568,
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "LOW",
@@ -246,8 +246,8 @@
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.25,
-      "n_specialists_agree": 3
+      "consensus_ratio": 0.17,
+      "n_specialists_agree": 2
     },
     {
       "game_pk": 823064,
@@ -276,9 +276,9 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.497,
-      "edge": 0.0062,
-      "edge_side": "home",
+      "win_prob_home": 0.479,
+      "edge": 0.0113,
+      "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
       "consensus_ratio": 0.58,
@@ -311,13 +311,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.497,
-      "edge": 0.1417,
+      "win_prob_home": 0.463,
+      "edge": 0.1085,
       "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.5,
-      "n_specialists_agree": 6
+      "consensus_ratio": 0.67,
+      "n_specialists_agree": 8
     },
     {
       "game_pk": 824039,
@@ -346,8 +346,8 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.479,
-      "edge": 0.1084,
+      "win_prob_home": 0.497,
+      "edge": 0.0908,
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
@@ -381,13 +381,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.518,
-      "edge": 0.0513,
+      "win_prob_home": 0.497,
+      "edge": 0.0728,
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.83,
-      "n_specialists_agree": 10
+      "consensus_ratio": 0.25,
+      "n_specialists_agree": 3
     },
     {
       "game_pk": 823228,
@@ -421,8 +421,8 @@
       "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "LOW",
-      "consensus_ratio": 0.92,
-      "n_specialists_agree": 11
+      "consensus_ratio": 0.75,
+      "n_specialists_agree": 9
     }
   ]
 }
