@@ -1,6 +1,6 @@
 {
   "date": "2026-05-06",
-  "generated_at": "2026-05-06T00:26:09.549601+00:00",
+  "generated_at": "2026-05-06T00:40:13.964522+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -48,7 +48,7 @@
       "away_pitcher": "",
       "game_time": "2026-05-06T17:15:00Z",
       "temperature_f": 54.9,
-      "humidity_pct": 71.0,
+      "humidity_pct": 72.0,
       "wind_speed_mph": 7.3,
       "wind_carry_mph": -4.0,
       "air_density_index": 98.8,
