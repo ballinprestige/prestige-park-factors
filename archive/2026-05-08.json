@@ -1,6 +1,6 @@
 {
   "date": "2026-05-08",
-  "generated_at": "2026-05-08T19:25:26.778815+00:00",
+  "generated_at": "2026-05-08T19:30:39.723126+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -36,8 +36,8 @@
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.33,
-      "n_specialists_agree": 4
+      "consensus_ratio": 0.25,
+      "n_specialists_agree": 3
     },
     {
       "game_pk": 823466,
@@ -70,7 +70,7 @@
       "edge": 0.0029,
       "edge_side": "away",
       "recommendation": "PASS",
-      "cgsi_tier": "VERY_LOW",
+      "cgsi_tier": "MEDIUM",
       "consensus_ratio": 1.0,
       "n_specialists_agree": 12
     },
@@ -141,8 +141,8 @@
       "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.92,
-      "n_specialists_agree": 11
+      "consensus_ratio": 1.0,
+      "n_specialists_agree": 12
     },
     {
       "game_pk": 824768,
@@ -211,8 +211,8 @@
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.67,
-      "n_specialists_agree": 8
+      "consensus_ratio": 0.58,
+      "n_specialists_agree": 7
     },
     {
       "game_pk": 824443,
@@ -241,13 +241,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": 0.555,
-      "edge": 0.0205,
-      "edge_side": "away",
+      "win_prob_home": 0.605,
+      "edge": 0.03,
+      "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.92,
-      "n_specialists_agree": 11
+      "consensus_ratio": 1.0,
+      "n_specialists_agree": 12
     },
     {
       "game_pk": 824116,
