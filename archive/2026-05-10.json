@@ -1,6 +1,6 @@
 {
   "date": "2026-05-10",
-  "generated_at": "2026-05-11T03:03:19.721579+00:00",
+  "generated_at": "2026-05-11T03:24:04.650567+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -385,7 +385,7 @@
       "edge": 0.0417,
       "edge_side": "away",
       "recommendation": "PASS",
-      "cgsi_tier": "MEDIUM",
+      "cgsi_tier": "LOW",
       "consensus_ratio": 0.5,
       "n_specialists_agree": 6
     },
