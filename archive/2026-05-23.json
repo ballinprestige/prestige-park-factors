@@ -1,6 +1,6 @@
 {
   "date": "2026-05-23",
-  "generated_at": "2026-05-22T19:25:57.086817+00:00",
+  "generated_at": "2026-05-22T19:38:37.801074+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -429,7 +429,7 @@
       "home_team": "ATL",
       "away_team": "WSH",
       "venue": "Truist Park",
-      "home_pitcher": "",
+      "home_pitcher": "Grant Holmes",
       "away_pitcher": "Jake Irvin",
       "game_time": "2026-05-23T20:10:00Z",
       "temperature_f": 77.4,
