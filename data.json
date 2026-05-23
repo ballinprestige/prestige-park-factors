@@ -1,6 +1,6 @@
 {
   "date": "2026-05-23",
-  "generated_at": "2026-05-23T03:55:14.241413+00:00",
+  "generated_at": "2026-05-23T04:16:36.380827+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -322,7 +322,7 @@
     {
       "game_pk": 823222,
       "home_team": "SF",
-      "away_team": "CWS",
+      "away_team": "CHW",
       "venue": "Oracle Park",
       "home_pitcher": "Adrian Houser",
       "away_pitcher": "Erick Fedde",
