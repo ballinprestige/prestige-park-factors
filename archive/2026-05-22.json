@@ -1,6 +1,6 @@
 {
   "date": "2026-05-22",
-  "generated_at": "2026-05-23T00:16:21.545004+00:00",
+  "generated_at": "2026-05-23T00:29:37.702207+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -484,7 +484,7 @@
       "lineup_pf_hr_diff": null,
       "lineup_pf_hr_residual": null,
       "has_lineups": false,
-      "home_lineup_status": "UNKNOWN",
+      "home_lineup_status": "PROJECTED",
       "away_lineup_status": "CONFIRMED",
       "win_prob_home": 0.605,
       "edge": 0.1147,
