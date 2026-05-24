@@ -1,6 +1,6 @@
 {
   "date": "2026-05-24",
-  "generated_at": "2026-05-24T03:45:42.781985+00:00",
+  "generated_at": "2026-05-24T04:02:47.448763+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -462,7 +462,7 @@
     {
       "game_pk": 823220,
       "home_team": "SF",
-      "away_team": "CWS",
+      "away_team": "CHW",
       "venue": "Oracle Park",
       "home_pitcher": "Robbie Ray",
       "away_pitcher": "Noah Schultz",
