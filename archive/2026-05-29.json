@@ -1,6 +1,6 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-27T22:33:09.135985+00:00",
+  "generated_at": "2026-05-27T22:46:50.355155+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -325,7 +325,7 @@
       "away_team": "KC",
       "venue": "Globe Life Field",
       "home_pitcher": "",
-      "away_pitcher": "",
+      "away_pitcher": "Stephen Kolek",
       "game_time": "2026-05-30T00:05:00Z",
       "temperature_f": 76.6,
       "humidity_pct": 84.0,
