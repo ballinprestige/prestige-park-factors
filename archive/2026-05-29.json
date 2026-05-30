@@ -1,6 +1,6 @@
 {
   "date": "2026-05-29",
-  "generated_at": "2026-05-30T01:22:05.804367+00:00",
+  "generated_at": "2026-05-30T01:29:13.870669+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -130,8 +130,8 @@
       "pf_weather_delta_hr": 0.2088,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 3.0,
-      "away_lineup_pf_hr": 2.151,
-      "lineup_pf_hr_diff": 0.8485,
+      "away_lineup_pf_hr": 2.361,
+      "lineup_pf_hr_diff": 0.6393,
       "lineup_pf_hr_residual": 1.7202,
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
