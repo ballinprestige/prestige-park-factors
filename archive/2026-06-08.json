@@ -1,6 +1,6 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T03:47:36.088526+00:00",
+  "generated_at": "2026-06-08T04:08:27.015956+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -44,7 +44,7 @@
       "home_team": "TB",
       "away_team": "BOS",
       "venue": "Tropicana Field",
-      "home_pitcher": "",
+      "home_pitcher": "Ian Seymour",
       "away_pitcher": "Connelly Early",
       "game_time": "2026-06-08T22:40:00Z",
       "temperature_f": 72.0,
@@ -219,7 +219,7 @@
       "home_team": "SF",
       "away_team": "WSH",
       "venue": "Oracle Park",
-      "home_pitcher": "",
+      "home_pitcher": "Logan Webb",
       "away_pitcher": "Miles Mikolas",
       "game_time": "2026-06-09T01:45:00Z",
       "temperature_f": 57.5,
