@@ -1,6 +1,6 @@
 {
   "date": "2026-06-08",
-  "generated_at": "2026-06-08T16:20:24.448073+00:00",
+  "generated_at": "2026-06-08T16:35:16.625225+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -36,8 +36,8 @@
       "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
-      "consensus_ratio": 0.58,
-      "n_specialists_agree": 7
+      "consensus_ratio": 0.5,
+      "n_specialists_agree": 6
     },
     {
       "game_pk": 822972,
@@ -67,10 +67,10 @@
       "home_lineup_status": "UNKNOWN",
       "away_lineup_status": "UNKNOWN",
       "win_prob_home": 0.497,
-      "edge": 0.0206,
+      "edge": 0.0213,
       "edge_side": "away",
       "recommendation": "PASS",
-      "cgsi_tier": "VERY_LOW",
+      "cgsi_tier": "LOW",
       "consensus_ratio": 0.42,
       "n_specialists_agree": 5
     },
@@ -242,7 +242,7 @@
       "home_lineup_status": "UNKNOWN",
       "away_lineup_status": "UNKNOWN",
       "win_prob_home": 0.555,
-      "edge": 0.044,
+      "edge": 0.0445,
       "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "LOW",
