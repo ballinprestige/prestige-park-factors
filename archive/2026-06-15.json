@@ -1,6 +1,6 @@
 {
   "date": "2026-06-15",
-  "generated_at": "2026-06-15T22:12:20.106476+00:00",
+  "generated_at": "2026-06-15T22:20:20.618295+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -220,7 +220,7 @@
       "away_team": "DET",
       "venue": "Daikin Park",
       "home_pitcher": "Kai-Wei Teng",
-      "away_pitcher": "",
+      "away_pitcher": "Drew Anderson",
       "game_time": "2026-06-16T00:10:00Z",
       "temperature_f": 80.7,
       "humidity_pct": 87.0,
