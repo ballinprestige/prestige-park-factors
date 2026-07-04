@@ -1,6 +1,6 @@
 {
   "date": "2026-07-03",
-  "generated_at": "2026-07-04T02:39:08.725725+00:00",
+  "generated_at": "2026-07-04T02:58:10.968908+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -31,13 +31,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": null,
-      "edge": null,
-      "edge_side": null,
-      "recommendation": null,
-      "cgsi_tier": null,
-      "consensus_ratio": null,
-      "n_specialists_agree": null
+      "win_prob_home": 0.605,
+      "edge": 0.1508,
+      "edge_side": "away",
+      "recommendation": "PASS",
+      "cgsi_tier": "LOW",
+      "consensus_ratio": 0.08,
+      "n_specialists_agree": 1
     },
     {
       "game_pk": 822714,
@@ -172,10 +172,10 @@
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
       "win_prob_home": 0.555,
-      "edge": 0.0631,
+      "edge": 0.0158,
       "edge_side": "home",
       "recommendation": "PASS",
-      "cgsi_tier": "LOW",
+      "cgsi_tier": "MEDIUM",
       "consensus_ratio": 0.83,
       "n_specialists_agree": 10
     },
@@ -235,8 +235,8 @@
       "pf_weather_delta_hr": -0.1742,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 2.618,
-      "away_lineup_pf_hr": 2.439,
-      "lineup_pf_hr_diff": 0.179,
+      "away_lineup_pf_hr": 2.248,
+      "lineup_pf_hr_diff": 0.3707,
       "lineup_pf_hr_residual": 1.4683,
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
@@ -346,13 +346,13 @@
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
-      "win_prob_home": null,
-      "edge": null,
-      "edge_side": null,
-      "recommendation": null,
-      "cgsi_tier": null,
-      "consensus_ratio": null,
-      "n_specialists_agree": null
+      "win_prob_home": 0.497,
+      "edge": 0.0685,
+      "edge_side": "away",
+      "recommendation": "PASS",
+      "cgsi_tier": "VERY_LOW",
+      "consensus_ratio": 0.25,
+      "n_specialists_agree": 3
     },
     {
       "game_pk": 825062,
