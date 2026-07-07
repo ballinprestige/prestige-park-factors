@@ -1,6 +1,6 @@
 {
   "date": "2026-07-05",
-  "generated_at": "2026-07-07T17:32:32.533744+00:00",
+  "generated_at": "2026-07-07T17:53:54.444482+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -32,7 +32,7 @@
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
       "win_prob_home": 0.518,
-      "edge": 0.0896,
+      "edge": 0.0883,
       "edge_side": "away",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
