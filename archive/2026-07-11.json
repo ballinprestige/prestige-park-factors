@@ -1,6 +1,6 @@
 {
   "date": "2026-07-11",
-  "generated_at": "2026-07-10T14:34:45.110602+00:00",
+  "generated_at": "2026-07-10T14:51:58.561869+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -137,7 +137,7 @@
       "home_lineup_status": "UNKNOWN",
       "away_lineup_status": "UNKNOWN",
       "win_prob_home": 0.497,
-      "edge": 0.1433,
+      "edge": 0.1425,
       "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
@@ -417,7 +417,7 @@
       "home_lineup_status": "UNKNOWN",
       "away_lineup_status": "UNKNOWN",
       "win_prob_home": 0.497,
-      "edge": 0.0876,
+      "edge": 0.0993,
       "edge_side": "home",
       "recommendation": "PASS",
       "cgsi_tier": "VERY_LOW",
