@@ -1,6 +1,6 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T03:33:58.713257+00:00",
+  "generated_at": "2026-07-16T04:01:40.867909+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -9,7 +9,7 @@
       "home_team": "PHI",
       "away_team": "NYM",
       "venue": "Citizens Bank Park",
-      "home_pitcher": "",
+      "home_pitcher": "Aaron Nola",
       "away_pitcher": "Christian Scott",
       "game_time": "2026-07-16T23:10:00Z",
       "temperature_f": 96.3,
