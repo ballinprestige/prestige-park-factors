@@ -1,6 +1,6 @@
 {
   "date": "2026-07-16",
-  "generated_at": "2026-07-16T07:50:33.820366+00:00",
+  "generated_at": "2026-07-16T08:05:50.341462+00:00",
   "predictions_available": false,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -12,11 +12,11 @@
       "home_pitcher": "Aaron Nola",
       "away_pitcher": "Christian Scott",
       "game_time": "2026-07-16T23:10:00Z",
-      "temperature_f": 97.2,
-      "humidity_pct": 36.0,
-      "wind_speed_mph": 12.9,
+      "temperature_f": 96.9,
+      "humidity_pct": 34.0,
+      "wind_speed_mph": 13.1,
       "wind_carry_mph": 2.5,
-      "air_density_index": 92.3,
+      "air_density_index": 92.4,
       "dome_active": 0,
       "seasonal_pf_runs": 1.06,
       "daily_pf_runs": 1.2834,
