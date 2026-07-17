@@ -1,6 +1,6 @@
 {
   "date": "2026-07-18",
-  "generated_at": "2026-07-17T21:34:59.476622+00:00",
+  "generated_at": "2026-07-17T21:50:20.841836+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -9,7 +9,7 @@
       "home_team": "CLE",
       "away_team": "PIT",
       "venue": "Progressive Field",
-      "home_pitcher": "",
+      "home_pitcher": "Gavin Williams",
       "away_pitcher": "",
       "game_time": "2026-07-18T17:10:00Z",
       "temperature_f": 90.9,
@@ -44,7 +44,7 @@
       "home_team": "CLE",
       "away_team": "PIT",
       "venue": "Progressive Field",
-      "home_pitcher": "",
+      "home_pitcher": "Gavin Williams",
       "away_pitcher": "",
       "game_time": "2026-07-18T17:10:00Z",
       "temperature_f": 90.9,
