@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Prestige Atmospheric station mark">
+  <rect width="512" height="512" rx="96" fill="#faf8f5"/>
+  <circle cx="256" cy="256" r="164" fill="none" stroke="#1a1714" stroke-width="12"/>
+  <path d="M126 181 386 331M126 331 386 181" stroke="#1a1714" stroke-width="8"/>
+  <path d="M95 256h322M256 95v322" stroke="#cfc4b8" stroke-width="4" stroke-dasharray="12 16"/>
+  <circle cx="174" cy="282" r="18" fill="#b44a1c"/>
+  <circle cx="276" cy="176" r="18" fill="#b44a1c"/>
+  <circle cx="344" cy="308" r="18" fill="#b44a1c"/>
+  <path d="M160 238c55-48 119-15 186-76" fill="none" stroke="#3d7a8c" stroke-width="14" stroke-linecap="square"/>
+  <path d="m326 154 27 2-10 25" fill="none" stroke="#3d7a8c" stroke-width="14"/>
+</svg>

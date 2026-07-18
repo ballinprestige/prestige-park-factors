@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" data-theme="day">
+  <head>
+    <meta charset="UTF-8" />
+    <meta id="theme-color" name="theme-color" content="#faf8f5" />
+    <script>
+      try {
+        var theme = localStorage.getItem('prestige-theme');
+        if (theme !== 'day' && theme !== 'night') {
+          theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'night' : 'day';
+        }
+        document.documentElement.dataset.theme = theme;
+        document.getElementById('theme-color').setAttribute('content', theme === 'night' ? '#0e1215' : '#faf8f5');
+      } catch { /* day is the no-JS/private-mode fallback */ }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="A field instrument for the weather physics shaping today's baseball slate." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Prestige Atmospheric · Ballpark Weather Physics" />
+    <meta property="og:description" content="See today's park-factor movement, the air behind it, and exactly how certain the instrument is." />
+    <meta property="og:image" content="https://ballinprestige.github.io/prestige-park-factors/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Prestige Atmospheric — The ball flies through real air. A field instrument for ballpark weather physics." />
+    <meta property="og:site_name" content="Prestige Atmospheric" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://ballinprestige.github.io/prestige-park-factors/og-image.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <title>Prestige Atmospheric</title>
+    <script type="module" crossorigin src="./assets/index-BS3LVAu0.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-25h2vDn4.css">
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+</html>
