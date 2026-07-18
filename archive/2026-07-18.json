@@ -1,6 +1,6 @@
 {
   "date": "2026-07-18",
-  "generated_at": "2026-07-18T04:10:49.301948+00:00",
+  "generated_at": "2026-07-18T04:28:09.625941+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -182,7 +182,7 @@
     {
       "game_pk": 822790,
       "home_team": "TOR",
-      "away_team": "CWS",
+      "away_team": "CHW",
       "venue": "Rogers Centre",
       "home_pitcher": "Shane Bieber",
       "away_pitcher": "Davis Martin",
