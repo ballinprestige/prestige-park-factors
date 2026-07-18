@@ -1,6 +1,6 @@
 {
   "date": "2026-07-18",
-  "generated_at": "2026-07-18T20:25:00.367376+00:00",
+  "generated_at": "2026-07-18T20:28:24.208731+00:00",
   "predictions_available": true,
   "model_version": "v2.0-approach-c",
   "games": [
@@ -520,7 +520,7 @@
       "lineup_pf_hr_residual": 1.5081,
       "has_lineups": false,
       "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "UNKNOWN",
+      "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
