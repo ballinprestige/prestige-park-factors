@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-07-29",
-  "generated_at": "2026-07-29T16:58:05.154258+00:00",
+  "generated_at": "2026-07-29T17:13:02.513904+00:00",
   "builder_id": "ballpark-release-35dbdd4",
-  "build_seq": 188,
+  "build_seq": 189,
   "freshness": {
-    "generated_at": "2026-07-29T16:58:05.154258+00:00",
+    "generated_at": "2026-07-29T17:13:02.513904+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -1442,10 +1442,10 @@
       "pf_weather_delta_hr": -0.1659,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 2.748,
-      "away_lineup_pf_hr": null,
-      "lineup_pf_hr_diff": null,
+      "away_lineup_pf_hr": 2.498,
+      "lineup_pf_hr_diff": 0.251,
       "lineup_pf_hr_residual": 1.9379,
-      "has_lineups": false,
+      "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
@@ -1465,13 +1465,13 @@
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
       "home_lineup_war_expected": 12.6,
-      "away_lineup_war_expected": null,
+      "away_lineup_war_expected": 18.24,
       "home_lineup_war_actual": 12.5,
-      "away_lineup_war_actual": null,
+      "away_lineup_war_actual": 11.15,
       "home_lineup_war_delta": 0.1,
-      "away_lineup_war_delta": null,
+      "away_lineup_war_delta": 7.09,
       "home_lineup_slots_downgraded": 0,
-      "away_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": 9,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
@@ -1493,11 +1493,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "weather": {
           "source": "forecast_cache_stale",
@@ -1898,7 +1898,7 @@
       "weather_degraded_reason": null,
       "weather_basis": "indoor",
       "weather_valid_at": null,
-      "weather_fetched_at": "2026-07-29T16:57:36.762267+00:00",
+      "weather_fetched_at": "2026-07-29T17:12:34.368781+00:00",
       "weather_observed_at": null,
       "roof_status": "DOME",
       "seasonal_pf_runs": 0.91,
@@ -1968,7 +1968,7 @@
           "degraded": false,
           "basis": "indoor",
           "valid_at": null,
-          "fetched_at": "2026-07-29T16:57:36.762267+00:00",
+          "fetched_at": "2026-07-29T17:12:34.368781+00:00",
           "observed_at": null
         }
       },
