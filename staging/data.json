@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-07-29",
-  "generated_at": "2026-07-29T17:57:58.717687+00:00",
+  "generated_at": "2026-07-29T18:05:35.432238+00:00",
   "builder_id": "ballpark-release-cf9516f",
-  "build_seq": 4,
+  "build_seq": 5,
   "freshness": {
-    "generated_at": "2026-07-29T17:57:58.717687+00:00",
+    "generated_at": "2026-07-29T18:05:35.432238+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -1900,7 +1900,7 @@
       "weather_degraded_reason": null,
       "weather_basis": "indoor",
       "weather_valid_at": null,
-      "weather_fetched_at": "2026-07-29T17:57:31.888155+00:00",
+      "weather_fetched_at": "2026-07-29T18:05:08.379319+00:00",
       "weather_observed_at": null,
       "roof_status": "DOME",
       "seasonal_pf_runs": 0.91,
@@ -1972,7 +1972,7 @@
           "degraded": false,
           "basis": "indoor",
           "valid_at": null,
-          "fetched_at": "2026-07-29T17:57:31.888155+00:00",
+          "fetched_at": "2026-07-29T18:05:08.379319+00:00",
           "observed_at": null
         }
       },
