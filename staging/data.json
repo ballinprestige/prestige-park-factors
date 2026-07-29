@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-07-29",
-  "generated_at": "2026-07-29T22:43:12.395549+00:00",
+  "generated_at": "2026-07-29T22:58:13.161674+00:00",
   "builder_id": "ballpark-release-79840be",
-  "build_seq": 24,
+  "build_seq": 25,
   "freshness": {
-    "generated_at": "2026-07-29T22:43:12.395549+00:00",
+    "generated_at": "2026-07-29T22:58:13.161674+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -1898,7 +1898,7 @@
       "weather_degraded_reason": null,
       "weather_basis": "indoor",
       "weather_valid_at": null,
-      "weather_fetched_at": "2026-07-29T22:42:43.519700+00:00",
+      "weather_fetched_at": "2026-07-29T22:57:43.458186+00:00",
       "weather_observed_at": null,
       "roof_status": "DOME",
       "seasonal_pf_runs": 0.91,
@@ -1968,7 +1968,7 @@
           "degraded": false,
           "basis": "indoor",
           "valid_at": null,
-          "fetched_at": "2026-07-29T22:42:43.519700+00:00",
+          "fetched_at": "2026-07-29T22:57:43.458186+00:00",
           "observed_at": null
         }
       },
@@ -3071,12 +3071,12 @@
       "pf_weather_delta_hr": -0.0548,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 2.495,
-      "away_lineup_pf_hr": null,
-      "lineup_pf_hr_diff": null,
+      "away_lineup_pf_hr": 2.618,
+      "lineup_pf_hr_diff": -0.1224,
       "lineup_pf_hr_residual": 1.5209,
-      "has_lineups": false,
+      "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "UNKNOWN",
+      "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -3094,19 +3094,18 @@
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
       "home_lineup_war_expected": 10.35,
-      "away_lineup_war_expected": null,
+      "away_lineup_war_expected": 21.58,
       "home_lineup_war_actual": 8.12,
-      "away_lineup_war_actual": null,
+      "away_lineup_war_actual": 19.15,
       "home_lineup_war_delta": 2.23,
-      "away_lineup_war_delta": null,
+      "away_lineup_war_delta": 2.43,
       "home_lineup_slots_downgraded": 5,
-      "away_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": 3,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
       "confidence_reasons": [
-        "degraded weather",
-        "lineups not fully confirmed"
+        "degraded weather"
       ],
       "provenance": {
         "seasonal_pf_runs": {
@@ -3123,11 +3122,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "weather": {
           "source": "neutral_fallback",
