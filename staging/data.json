@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-07-30",
-  "generated_at": "2026-07-30T07:57:30.636658+00:00",
+  "generated_at": "2026-07-30T08:12:30.489528+00:00",
   "builder_id": "ballpark-release-96a487c",
-  "build_seq": 65,
+  "build_seq": 66,
   "freshness": {
-    "generated_at": "2026-07-30T07:57:30.636658+00:00",
+    "generated_at": "2026-07-30T08:12:30.489528+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -34,7 +34,7 @@
       "weather_degraded_reason": null,
       "weather_basis": "indoor",
       "weather_valid_at": null,
-      "weather_fetched_at": "2026-07-30T07:57:30.617899+00:00",
+      "weather_fetched_at": "2026-07-30T08:12:28.692497+00:00",
       "weather_observed_at": null,
       "roof_status": "DOME",
       "seasonal_pf_runs": 0.91,
@@ -106,7 +106,7 @@
           "degraded": false,
           "basis": "indoor",
           "valid_at": null,
-          "fetched_at": "2026-07-30T07:57:30.617899+00:00",
+          "fetched_at": "2026-07-30T08:12:28.692497+00:00",
           "observed_at": null
         }
       },
@@ -255,26 +255,26 @@
       "home_pitcher_id": null,
       "away_pitcher_id": null,
       "game_time": "2026-07-30T17:40:00Z",
-      "temperature_f": 85.4,
-      "humidity_pct": 55.0,
-      "wind_speed_mph": 9.2,
-      "wind_carry_mph": 8.8,
-      "wind_cross_mph": 2.8,
+      "temperature_f": 85.0,
+      "humidity_pct": 57.0,
+      "wind_speed_mph": 9.8,
+      "wind_carry_mph": 9.4,
+      "wind_cross_mph": 2.5,
       "air_density_index": 91.5,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-07-30T17:00:00+00:00",
-      "weather_fetched_at": "2026-07-30T07:42:31.017625+00:00",
+      "weather_fetched_at": "2026-07-30T08:12:28.692497+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 1.01,
-      "daily_pf_runs": 1.1087,
-      "daily_pf_hr": 1.2218,
-      "pf_weather_delta_runs": 0.0987,
-      "pf_weather_delta_hr": 0.1613,
+      "daily_pf_runs": 1.0902,
+      "daily_pf_hr": 1.2288,
+      "pf_weather_delta_runs": 0.0802,
+      "pf_weather_delta_hr": 0.1683,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": null,
       "away_lineup_pf_hr": null,
@@ -335,11 +335,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-07-30T17:00:00+00:00",
-          "fetched_at": "2026-07-30T07:42:31.017625+00:00",
+          "fetched_at": "2026-07-30T08:12:28.692497+00:00",
           "observed_at": null
         }
       },
@@ -355,35 +355,35 @@
               3.0
             ],
             [
-              57.4,
+              57.6,
               33.9
             ],
             [
-              114.8,
-              55.9
+              115.3,
+              55.8
             ],
             [
-              172.2,
-              68.9
+              172.9,
+              68.8
             ],
             [
-              229.7,
-              73.0
+              230.6,
+              72.9
             ],
             [
-              287.1,
-              68.2
+              288.2,
+              68.1
             ],
             [
-              344.5,
-              54.4
+              345.8,
+              54.3
             ],
             [
-              401.9,
-              31.7
+              403.5,
+              31.6
             ],
             [
-              459.3,
+              461.1,
               0.0
             ]
           ]
@@ -399,35 +399,35 @@
               3.0
             ],
             [
-              55.7,
+              55.9,
               35.0
             ],
             [
-              111.3,
+              111.8,
               57.8
             ],
             [
-              167.0,
+              167.7,
               71.3
             ],
             [
-              222.7,
+              223.6,
               75.6
             ],
             [
-              278.3,
+              279.5,
               70.6
             ],
             [
-              334.0,
+              335.4,
               56.3
             ],
             [
-              389.6,
+              391.3,
               32.8
             ],
             [
-              445.3,
+              447.2,
               0.0
             ]
           ]
@@ -443,35 +443,35 @@
               3.0
             ],
             [
-              47.8,
+              48.0,
               24.4
             ],
             [
-              95.7,
+              96.0,
               39.5
             ],
             [
-              143.5,
+              144.0,
               48.5
             ],
             [
-              191.3,
+              191.9,
               51.2
             ],
             [
-              239.1,
+              239.9,
               47.7
             ],
             [
-              287.0,
+              287.9,
               38.0
             ],
             [
-              334.8,
+              335.9,
               22.1
             ],
             [
-              382.6,
+              383.9,
               0.0
             ]
           ]
@@ -488,26 +488,26 @@
       "home_pitcher_id": null,
       "away_pitcher_id": null,
       "game_time": "2026-07-30T18:10:00Z",
-      "temperature_f": 77.8,
-      "humidity_pct": 73.0,
+      "temperature_f": 78.1,
+      "humidity_pct": 71.0,
       "wind_speed_mph": 7.0,
       "wind_carry_mph": 4.7,
       "wind_cross_mph": -5.2,
-      "air_density_index": 93.6,
+      "air_density_index": 93.5,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-07-30T18:00:00+00:00",
-      "weather_fetched_at": "2026-07-30T07:42:31.017625+00:00",
+      "weather_fetched_at": "2026-07-30T08:12:28.692497+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 1.01,
       "daily_pf_runs": 1.0306,
-      "daily_pf_hr": 1.0864,
+      "daily_pf_hr": 1.0649,
       "pf_weather_delta_runs": 0.0206,
-      "pf_weather_delta_hr": 0.0259,
+      "pf_weather_delta_hr": 0.0044,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": null,
       "away_lineup_pf_hr": null,
@@ -568,11 +568,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-07-30T18:00:00+00:00",
-          "fetched_at": "2026-07-30T07:42:31.017625+00:00",
+          "fetched_at": "2026-07-30T08:12:28.692497+00:00",
           "observed_at": null
         }
       },
@@ -648,7 +648,7 @@
               76.0
             ],
             [
-              270.8,
+              270.9,
               71.0
             ],
             [
@@ -656,11 +656,11 @@
               56.6
             ],
             [
-              379.1,
+              379.2,
               33.0
             ],
             [
-              433.3,
+              433.4,
               0.0
             ]
           ]
@@ -680,7 +680,7 @@
               24.5
             ],
             [
-              93.8,
+              93.9,
               39.8
             ],
             [
@@ -688,23 +688,23 @@
               48.8
             ],
             [
-              187.7,
+              187.8,
               51.6
             ],
             [
-              234.6,
+              234.7,
               48.1
             ],
             [
-              281.5,
+              281.6,
               38.3
             ],
             [
-              328.5,
+              328.6,
               22.3
             ],
             [
-              375.4,
+              375.5,
               0.0
             ]
           ]
@@ -722,25 +722,25 @@
       "away_pitcher_id": null,
       "game_time": "2026-07-30T18:15:00Z",
       "temperature_f": 87.6,
-      "humidity_pct": 42.0,
-      "wind_speed_mph": 2.6,
-      "wind_carry_mph": -0.6,
-      "wind_cross_mph": -2.5,
-      "air_density_index": 92.6,
+      "humidity_pct": 44.0,
+      "wind_speed_mph": 3.0,
+      "wind_carry_mph": 0.5,
+      "wind_cross_mph": -3.0,
+      "air_density_index": 92.5,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-07-30T18:00:00+00:00",
-      "weather_fetched_at": "2026-07-30T07:42:31.017625+00:00",
+      "weather_fetched_at": "2026-07-30T08:12:28.692497+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 0.97,
-      "daily_pf_runs": 0.9477,
-      "daily_pf_hr": 1.0028,
-      "pf_weather_delta_runs": -0.0223,
-      "pf_weather_delta_hr": -0.0157,
+      "daily_pf_runs": 0.961,
+      "daily_pf_hr": 1.0038,
+      "pf_weather_delta_runs": -0.009,
+      "pf_weather_delta_hr": -0.0147,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": null,
       "away_lineup_pf_hr": null,
@@ -801,11 +801,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-07-30T18:00:00+00:00",
-          "fetched_at": "2026-07-30T07:42:31.017625+00:00",
+          "fetched_at": "2026-07-30T08:12:28.692497+00:00",
           "observed_at": null
         }
       },
@@ -821,35 +821,35 @@
               3.0
             ],
             [
-              54.6,
+              54.8,
               34.3
             ],
             [
-              109.2,
+              109.7,
               56.6
             ],
             [
-              163.7,
+              164.5,
               69.8
             ],
             [
-              218.3,
-              74.0
+              219.3,
+              73.9
             ],
             [
-              272.9,
-              69.1
+              274.1,
+              69.0
             ],
             [
-              327.5,
-              55.1
+              329.0,
+              55.0
             ],
             [
-              382.0,
+              383.8,
               32.1
             ],
             [
-              436.6,
+              438.6,
               0.0
             ]
           ]
@@ -865,35 +865,35 @@
               3.0
             ],
             [
-              52.5,
+              53.0,
               35.5
             ],
             [
-              105.1,
+              106.0,
               58.6
             ],
             [
-              157.6,
-              72.4
+              159.0,
+              72.3
             ],
             [
-              210.2,
-              76.7
+              211.9,
+              76.6
             ],
             [
-              262.7,
-              71.6
+              264.9,
+              71.5
             ],
             [
-              315.2,
-              57.2
+              317.9,
+              57.1
             ],
             [
-              367.8,
-              33.3
+              370.9,
+              33.2
             ],
             [
-              420.3,
+              423.9,
               0.0
             ]
           ]
@@ -909,35 +909,35 @@
               3.0
             ],
             [
-              46.0,
-              24.8
+              46.1,
+              24.7
             ],
             [
-              92.0,
-              40.3
+              92.2,
+              40.1
             ],
             [
-              137.9,
-              49.4
+              138.3,
+              49.2
             ],
             [
-              183.9,
-              52.2
+              184.4,
+              52.0
             ],
             [
-              229.9,
-              48.7
+              230.5,
+              48.5
             ],
             [
-              275.9,
-              38.8
+              276.6,
+              38.6
             ],
             [
-              321.8,
-              22.6
+              322.7,
+              22.5
             ],
             [
-              367.8,
+              368.8,
               0.0
             ]
           ]
@@ -954,26 +954,26 @@
       "home_pitcher_id": null,
       "away_pitcher_id": null,
       "game_time": "2026-07-30T23:10:00Z",
-      "temperature_f": 85.8,
+      "temperature_f": 85.5,
       "humidity_pct": 33.0,
-      "wind_speed_mph": 5.8,
-      "wind_carry_mph": -3.8,
-      "wind_cross_mph": -4.4,
+      "wind_speed_mph": 5.5,
+      "wind_carry_mph": -3.0,
+      "wind_cross_mph": -4.6,
       "air_density_index": 92.9,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-07-30T23:00:00+00:00",
-      "weather_fetched_at": "2026-07-30T07:42:31.017625+00:00",
+      "weather_fetched_at": "2026-07-30T08:12:28.692497+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 1.08,
-      "daily_pf_runs": 1.1192,
-      "daily_pf_hr": 1.1826,
-      "pf_weather_delta_runs": 0.0392,
-      "pf_weather_delta_hr": 0.0486,
+      "daily_pf_runs": 1.1523,
+      "daily_pf_hr": 1.1844,
+      "pf_weather_delta_runs": 0.0723,
+      "pf_weather_delta_hr": 0.0504,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": null,
       "away_lineup_pf_hr": null,
@@ -1034,11 +1034,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-07-30T23:00:00+00:00",
-          "fetched_at": "2026-07-30T07:42:31.017625+00:00",
+          "fetched_at": "2026-07-30T08:12:28.692497+00:00",
           "observed_at": null
         }
       },
@@ -1054,35 +1054,35 @@
               3.0
             ],
             [
-              53.5,
-              34.6
+              53.8,
+              34.5
             ],
             [
-              107.0,
-              57.0
+              107.6,
+              56.8
             ],
             [
-              160.5,
-              70.3
+              161.4,
+              70.1
             ],
             [
-              213.9,
-              74.5
+              215.2,
+              74.3
             ],
             [
-              267.4,
-              69.6
+              269.0,
+              69.4
             ],
             [
-              320.9,
-              55.5
+              322.8,
+              55.4
             ],
             [
-              374.4,
-              32.3
+              376.6,
+              32.2
             ],
             [
-              427.9,
+              430.4,
               0.0
             ]
           ]
@@ -1098,35 +1098,35 @@
               3.0
             ],
             [
-              51.5,
+              51.7,
               35.7
             ],
             [
-              103.0,
-              59.0
+              103.4,
+              58.9
             ],
             [
-              154.5,
-              72.8
+              155.1,
+              72.7
             ],
             [
-              205.9,
-              77.1
+              206.8,
+              77.0
             ],
             [
-              257.4,
-              72.0
+              258.4,
+              71.9
             ],
             [
-              308.9,
+              310.1,
               57.4
             ],
             [
-              360.4,
+              361.8,
               33.4
             ],
             [
-              411.9,
+              413.5,
               0.0
             ]
           ]
@@ -1142,35 +1142,35 @@
               3.0
             ],
             [
-              45.2,
+              45.5,
               24.9
             ],
             [
-              90.4,
-              40.5
+              90.9,
+              40.4
             ],
             [
-              135.6,
-              49.7
+              136.4,
+              49.6
             ],
             [
-              180.8,
-              52.5
+              181.8,
+              52.4
             ],
             [
-              226.1,
-              48.9
+              227.2,
+              48.8
             ],
             [
-              271.3,
-              39.0
+              272.7,
+              38.9
             ],
             [
-              316.5,
-              22.7
+              318.2,
+              22.6
             ],
             [
-              361.7,
+              363.6,
               0.0
             ]
           ]
@@ -1187,26 +1187,26 @@
       "home_pitcher_id": null,
       "away_pitcher_id": null,
       "game_time": "2026-07-30T23:10:00Z",
-      "temperature_f": 72.1,
-      "humidity_pct": 85.0,
-      "wind_speed_mph": 5.1,
-      "wind_carry_mph": -5.0,
-      "wind_cross_mph": -1.1,
-      "air_density_index": 96.6,
+      "temperature_f": 75.2,
+      "humidity_pct": 76.0,
+      "wind_speed_mph": 5.9,
+      "wind_carry_mph": -2.5,
+      "wind_cross_mph": 5.3,
+      "air_density_index": 96.1,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-07-30T23:00:00+00:00",
-      "weather_fetched_at": "2026-07-30T07:42:31.017625+00:00",
+      "weather_fetched_at": "2026-07-30T08:12:28.692497+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 0.94,
-      "daily_pf_runs": 0.8975,
-      "daily_pf_hr": 0.9678,
-      "pf_weather_delta_runs": -0.0425,
-      "pf_weather_delta_hr": -0.0192,
+      "daily_pf_runs": 0.926,
+      "daily_pf_hr": 1.0292,
+      "pf_weather_delta_runs": -0.014,
+      "pf_weather_delta_hr": 0.0422,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": null,
       "away_lineup_pf_hr": null,
@@ -1267,11 +1267,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-07-30T23:00:00+00:00",
-          "fetched_at": "2026-07-30T07:42:31.017625+00:00",
+          "fetched_at": "2026-07-30T08:12:28.692497+00:00",
           "observed_at": null
         }
       },
@@ -1287,35 +1287,35 @@
               3.0
             ],
             [
-              52.5,
-              34.5
+              53.2,
+              34.4
             ],
             [
-              104.9,
-              56.9
+              106.5,
+              56.7
             ],
             [
-              157.4,
-              70.2
+              159.7,
+              69.9
             ],
             [
-              209.8,
-              74.4
+              212.9,
+              74.1
             ],
             [
-              262.3,
-              69.5
+              266.2,
+              69.2
             ],
             [
-              314.8,
-              55.4
+              319.4,
+              55.2
             ],
             [
-              367.2,
-              32.3
+              372.7,
+              32.1
             ],
             [
-              419.7,
+              425.9,
               0.0
             ]
           ]
@@ -1331,35 +1331,35 @@
               3.0
             ],
             [
-              50.3,
-              35.7
+              51.3,
+              35.6
             ],
             [
-              100.6,
-              59.0
+              102.7,
+              58.7
             ],
             [
-              150.9,
-              72.8
+              154.0,
+              72.5
             ],
             [
-              201.2,
-              77.1
+              205.3,
+              76.8
             ],
             [
-              251.6,
-              72.0
+              256.6,
+              71.7
             ],
             [
-              301.9,
-              57.4
+              308.0,
+              57.2
             ],
             [
-              352.2,
-              33.4
+              359.3,
+              33.3
             ],
             [
-              402.5,
+              410.6,
               0.0
             ]
           ]
@@ -1375,35 +1375,35 @@
               3.0
             ],
             [
-              44.5,
-              25.0
+              45.2,
+              24.8
             ],
             [
-              89.0,
-              40.6
+              90.3,
+              40.3
             ],
             [
-              133.5,
-              49.8
+              135.5,
+              49.5
             ],
             [
-              178.1,
-              52.6
+              180.7,
+              52.3
             ],
             [
-              222.6,
-              49.0
+              225.8,
+              48.8
             ],
             [
-              267.1,
-              39.1
+              271.0,
+              38.8
             ],
             [
-              311.6,
-              22.7
+              316.1,
+              22.6
             ],
             [
-              356.1,
+              361.3,
               0.0
             ]
           ]
@@ -1420,26 +1420,26 @@
       "home_pitcher_id": null,
       "away_pitcher_id": null,
       "game_time": "2026-07-30T23:15:00Z",
-      "temperature_f": 88.0,
-      "humidity_pct": 32.0,
-      "wind_speed_mph": 7.8,
-      "wind_carry_mph": 0.5,
-      "wind_cross_mph": 7.8,
+      "temperature_f": 87.8,
+      "humidity_pct": 33.0,
+      "wind_speed_mph": 7.9,
+      "wind_carry_mph": 0.4,
+      "wind_cross_mph": 7.9,
       "air_density_index": 90.7,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-07-30T23:00:00+00:00",
-      "weather_fetched_at": "2026-07-30T07:42:31.017625+00:00",
+      "weather_fetched_at": "2026-07-30T08:12:28.692497+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 1.014,
-      "daily_pf_runs": 1.1033,
-      "daily_pf_hr": 1.2671,
-      "pf_weather_delta_runs": 0.0893,
-      "pf_weather_delta_hr": 0.2024,
+      "daily_pf_runs": 1.1148,
+      "daily_pf_hr": 1.2721,
+      "pf_weather_delta_runs": 0.1008,
+      "pf_weather_delta_hr": 0.2074,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": null,
       "away_lineup_pf_hr": null,
@@ -1500,11 +1500,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-07-30T23:00:00+00:00",
-          "fetched_at": "2026-07-30T07:42:31.017625+00:00",
+          "fetched_at": "2026-07-30T08:12:28.692497+00:00",
           "observed_at": null
         }
       },
@@ -1520,35 +1520,35 @@
               3.0
             ],
             [
-              55.2,
+              55.1,
               34.3
             ],
             [
-              110.4,
+              110.3,
               56.6
             ],
             [
-              165.6,
+              165.4,
               69.8
             ],
             [
-              220.8,
+              220.6,
               74.0
             ],
             [
-              276.0,
+              275.7,
               69.1
             ],
             [
-              331.2,
+              330.8,
               55.1
             ],
             [
-              386.4,
+              386.0,
               32.1
             ],
             [
-              441.6,
+              441.1,
               0.0
             ]
           ]
@@ -1564,35 +1564,35 @@
               3.0
             ],
             [
-              53.4,
+              53.3,
               35.5
             ],
             [
-              106.7,
+              106.6,
               58.6
             ],
             [
-              160.1,
+              159.9,
               72.4
             ],
             [
-              213.4,
+              213.2,
               76.7
             ],
             [
-              266.8,
+              266.4,
               71.6
             ],
             [
-              320.1,
+              319.7,
               57.2
             ],
             [
-              373.4,
+              373.0,
               33.3
             ],
             [
-              426.8,
+              426.3,
               0.0
             ]
           ]
@@ -1608,35 +1608,35 @@
               3.0
             ],
             [
-              46.4,
-              24.7
+              46.3,
+              24.8
             ],
             [
               92.7,
-              40.1
+              40.2
             ],
             [
-              139.1,
-              49.2
+              139.0,
+              49.3
             ],
             [
-              185.4,
-              52.0
+              185.3,
+              52.1
             ],
             [
-              231.8,
-              48.5
+              231.6,
+              48.6
             ],
             [
-              278.2,
-              38.6
+              278.0,
+              38.7
             ],
             [
-              324.5,
+              324.3,
               22.5
             ],
             [
-              370.9,
+              370.6,
               0.0
             ]
           ]
@@ -1653,26 +1653,26 @@
       "home_pitcher_id": null,
       "away_pitcher_id": null,
       "game_time": "2026-07-31T01:40:00Z",
-      "temperature_f": 96.3,
+      "temperature_f": 96.6,
       "humidity_pct": 17.0,
       "wind_speed_mph": 9.9,
-      "wind_carry_mph": 6.5,
-      "wind_cross_mph": 7.5,
+      "wind_carry_mph": 6.3,
+      "wind_cross_mph": 7.7,
       "air_density_index": 92.8,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-07-31T01:00:00+00:00",
-      "weather_fetched_at": "2026-07-30T07:42:31.017625+00:00",
+      "weather_fetched_at": "2026-07-30T08:12:28.692497+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 0.98,
-      "daily_pf_runs": 1.0758,
-      "daily_pf_hr": 1.2239,
-      "pf_weather_delta_runs": 0.0958,
-      "pf_weather_delta_hr": 0.1949,
+      "daily_pf_runs": 1.0892,
+      "daily_pf_hr": 1.2176,
+      "pf_weather_delta_runs": 0.1092,
+      "pf_weather_delta_hr": 0.1886,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": null,
       "away_lineup_pf_hr": null,
@@ -1733,11 +1733,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-07-31T01:00:00+00:00",
-          "fetched_at": "2026-07-30T07:42:31.017625+00:00",
+          "fetched_at": "2026-07-30T08:12:28.692497+00:00",
           "observed_at": null
         }
       },
@@ -1753,35 +1753,35 @@
               3.0
             ],
             [
-              56.7,
+              56.6,
               34.0
             ],
             [
-              113.3,
+              113.2,
               56.0
             ],
             [
-              170.0,
+              169.8,
               69.1
             ],
             [
-              226.7,
+              226.4,
               73.2
             ],
             [
-              283.4,
+              283.0,
               68.3
             ],
             [
-              340.0,
+              339.6,
               54.5
             ],
             [
-              396.7,
+              396.2,
               31.7
             ],
             [
-              453.4,
+              452.8,
               0.0
             ]
           ]
@@ -1797,35 +1797,35 @@
               3.0
             ],
             [
-              54.9,
-              35.1
+              54.8,
+              35.2
             ],
             [
-              109.8,
+              109.6,
               58.0
             ],
             [
-              164.6,
-              71.5
+              164.4,
+              71.6
             ],
             [
-              219.5,
-              75.8
+              219.2,
+              75.9
             ],
             [
-              274.4,
-              70.8
+              273.9,
+              70.9
             ],
             [
-              329.2,
-              56.5
+              328.7,
+              56.6
             ],
             [
-              384.1,
+              383.5,
               32.9
             ],
             [
-              439.0,
+              438.3,
               0.0
             ]
           ]
@@ -1841,35 +1841,35 @@
               3.0
             ],
             [
-              47.4,
+              47.3,
               24.5
             ],
             [
-              94.7,
+              94.6,
               39.7
             ],
             [
-              142.1,
+              141.9,
               48.7
             ],
             [
-              189.4,
+              189.2,
               51.4
             ],
             [
-              236.8,
+              236.4,
               47.9
             ],
             [
-              284.1,
+              283.7,
               38.2
             ],
             [
-              331.4,
+              331.0,
               22.2
             ],
             [
-              378.8,
+              378.3,
               0.0
             ]
           ]
@@ -1886,26 +1886,26 @@
       "home_pitcher_id": null,
       "away_pitcher_id": null,
       "game_time": "2026-07-31T01:40:00Z",
-      "temperature_f": 74.9,
+      "temperature_f": 75.0,
       "humidity_pct": 73.0,
       "wind_speed_mph": 6.2,
-      "wind_carry_mph": -4.6,
-      "wind_cross_mph": 4.0,
+      "wind_carry_mph": -5.4,
+      "wind_cross_mph": 3.1,
       "air_density_index": 96.2,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-07-31T01:00:00+00:00",
-      "weather_fetched_at": "2026-07-30T07:42:31.017625+00:00",
+      "weather_fetched_at": "2026-07-30T08:12:28.692497+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 0.92,
-      "daily_pf_runs": 0.8863,
-      "daily_pf_hr": 1.0188,
-      "pf_weather_delta_runs": -0.0337,
-      "pf_weather_delta_hr": 0.0528,
+      "daily_pf_runs": 0.8867,
+      "daily_pf_hr": 1.0151,
+      "pf_weather_delta_runs": -0.0333,
+      "pf_weather_delta_hr": 0.0491,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": null,
       "away_lineup_pf_hr": null,
@@ -1966,11 +1966,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-07-31T01:00:00+00:00",
-          "fetched_at": "2026-07-30T07:42:31.017625+00:00",
+          "fetched_at": "2026-07-30T08:12:28.692497+00:00",
           "observed_at": null
         }
       },
@@ -1986,35 +1986,35 @@
               3.0
             ],
             [
-              52.5,
-              34.5
+              52.4,
+              34.6
             ],
             [
-              105.1,
-              56.9
+              104.8,
+              57.0
             ],
             [
-              157.6,
-              70.2
+              157.2,
+              70.3
             ],
             [
-              210.2,
-              74.4
+              209.6,
+              74.5
             ],
             [
-              262.7,
-              69.5
+              262.0,
+              69.6
             ],
             [
-              315.2,
-              55.4
+              314.4,
+              55.5
             ],
             [
-              367.8,
+              366.8,
               32.3
             ],
             [
-              420.3,
+              419.2,
               0.0
             ]
           ]
@@ -2030,35 +2030,35 @@
               3.0
             ],
             [
-              50.5,
+              50.2,
               35.7
             ],
             [
-              101.1,
+              100.5,
               59.0
             ],
             [
-              151.6,
+              150.7,
               72.8
             ],
             [
-              202.2,
-              77.1
+              200.9,
+              77.2
             ],
             [
-              252.7,
-              72.0
+              251.1,
+              72.1
             ],
             [
-              303.2,
-              57.4
+              301.4,
+              57.5
             ],
             [
-              353.8,
-              33.4
+              351.6,
+              33.5
             ],
             [
-              404.3,
+              401.8,
               0.0
             ]
           ]
@@ -2074,35 +2074,35 @@
               3.0
             ],
             [
-              44.7,
+              44.5,
               25.0
             ],
             [
-              89.4,
-              40.6
+              88.9,
+              40.7
             ],
             [
-              134.1,
-              49.8
+              133.4,
+              49.9
             ],
             [
-              178.8,
-              52.6
+              177.8,
+              52.7
             ],
             [
-              223.4,
-              49.0
+              222.3,
+              49.1
             ],
             [
-              268.1,
-              39.1
+              266.8,
+              39.2
             ],
             [
-              312.8,
-              22.7
+              311.2,
+              22.8
             ],
             [
-              357.5,
+              355.7,
               0.0
             ]
           ]
@@ -2119,26 +2119,26 @@
       "home_pitcher_id": null,
       "away_pitcher_id": null,
       "game_time": "2026-07-31T02:10:00Z",
-      "temperature_f": 74.7,
-      "humidity_pct": 65.0,
-      "wind_speed_mph": 6.6,
-      "wind_carry_mph": -1.3,
-      "wind_cross_mph": 6.5,
-      "air_density_index": 94.6,
+      "temperature_f": 74.0,
+      "humidity_pct": 68.0,
+      "wind_speed_mph": 7.2,
+      "wind_carry_mph": -1.6,
+      "wind_cross_mph": 7.0,
+      "air_density_index": 94.7,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-07-31T02:00:00+00:00",
-      "weather_fetched_at": "2026-07-30T07:42:31.017625+00:00",
+      "weather_fetched_at": "2026-07-30T08:12:28.692497+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 0.97,
-      "daily_pf_runs": 0.9561,
-      "daily_pf_hr": 1.0131,
-      "pf_weather_delta_runs": -0.0139,
-      "pf_weather_delta_hr": -0.0054,
+      "daily_pf_runs": 0.9619,
+      "daily_pf_hr": 1.0076,
+      "pf_weather_delta_runs": -0.0081,
+      "pf_weather_delta_hr": -0.0109,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": null,
       "away_lineup_pf_hr": null,
@@ -2199,11 +2199,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-07-31T02:00:00+00:00",
-          "fetched_at": "2026-07-30T07:42:31.017625+00:00",
+          "fetched_at": "2026-07-30T08:12:28.692497+00:00",
           "observed_at": null
         }
       },
@@ -2219,35 +2219,35 @@
               3.0
             ],
             [
-              54.0,
-              34.3
+              53.8,
+              34.4
             ],
             [
-              108.0,
-              56.6
+              107.7,
+              56.7
             ],
             [
-              162.0,
-              69.8
+              161.5,
+              69.9
             ],
             [
-              215.9,
-              74.0
+              215.3,
+              74.1
             ],
             [
-              269.9,
-              69.1
+              269.1,
+              69.2
             ],
             [
-              323.9,
-              55.1
+              323.0,
+              55.2
             ],
             [
-              377.9,
+              376.8,
               32.1
             ],
             [
-              431.9,
+              430.6,
               0.0
             ]
           ]
@@ -2263,7 +2263,7 @@
               3.0
             ],
             [
-              52.0,
+              51.9,
               35.5
             ],
             [
@@ -2271,7 +2271,7 @@
               58.6
             ],
             [
-              155.9,
+              155.8,
               72.4
             ],
             [
@@ -2279,19 +2279,19 @@
               76.7
             ],
             [
-              259.8,
+              259.7,
               71.6
             ],
             [
-              311.7,
+              311.6,
               57.2
             ],
             [
-              363.7,
+              363.6,
               33.3
             ],
             [
-              415.6,
+              415.5,
               0.0
             ]
           ]
@@ -2307,35 +2307,35 @@
               3.0
             ],
             [
-              45.5,
+              45.4,
               24.8
             ],
             [
-              91.1,
+              90.8,
               40.3
             ],
             [
-              136.6,
+              136.3,
               49.4
             ],
             [
-              182.2,
+              181.7,
               52.2
             ],
             [
-              227.7,
+              227.1,
               48.7
             ],
             [
-              273.2,
+              272.5,
               38.8
             ],
             [
-              318.8,
+              318.0,
               22.6
             ],
             [
-              364.3,
+              363.4,
               0.0
             ]
           ]
