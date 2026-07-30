@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-07-30",
-  "captured_at": "2026-07-30T10:29:24.506873+00:00",
-  "generated_at": "2026-07-30T10:57:26.627134+00:00",
+  "captured_at": "2026-07-30T11:01:11.785015+00:00",
+  "generated_at": "2026-07-30T11:12:26.981917+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -10,7 +10,7 @@
     {
       "game_pk": 822946,
       "posted_total": 7.5,
-      "over_implied_prob": 0.5023,
+      "over_implied_prob": 0.4977,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -19,7 +19,7 @@
     {
       "game_pk": 823674,
       "posted_total": 9.5,
-      "over_implied_prob": 0.5,
+      "over_implied_prob": 0.4966,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -28,7 +28,7 @@
     {
       "game_pk": 824568,
       "posted_total": 8.0,
-      "over_implied_prob": 0.5123,
+      "over_implied_prob": 0.509,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -46,7 +46,7 @@
     {
       "game_pk": 824488,
       "posted_total": 9.5,
-      "over_implied_prob": 0.4887,
+      "over_implied_prob": 0.4864,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -64,7 +64,7 @@
     {
       "game_pk": 824894,
       "posted_total": 9.5,
-      "over_implied_prob": 0.5146,
+      "over_implied_prob": 0.5158,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -73,7 +73,7 @@
     {
       "game_pk": 824974,
       "posted_total": 10.5,
-      "over_implied_prob": 0.4922,
+      "over_implied_prob": 0.5158,
       "total_open": null,
       "book_count": 16,
       "park_adjusted_total": null,
@@ -82,7 +82,7 @@
     {
       "game_pk": 823271,
       "posted_total": 8.5,
-      "over_implied_prob": 0.4899,
+      "over_implied_prob": 0.4864,
       "total_open": null,
       "book_count": 16,
       "park_adjusted_total": null,
