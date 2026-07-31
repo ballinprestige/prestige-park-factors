@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-07-31",
-  "captured_at": "2026-07-31T10:18:42.178158+00:00",
-  "generated_at": "2026-07-31T10:27:32.276551+00:00",
+  "captured_at": "2026-07-31T10:36:11.175429+00:00",
+  "generated_at": "2026-07-31T10:42:42.218008+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -19,7 +19,7 @@
     {
       "game_pk": 824486,
       "posted_total": 7.5,
-      "over_implied_prob": 0.4864,
+      "over_implied_prob": 0.491,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -28,7 +28,7 @@
     {
       "game_pk": 824809,
       "posted_total": 9.0,
-      "over_implied_prob": 0.4948,
+      "over_implied_prob": 0.4915,
       "total_open": null,
       "book_count": 15,
       "park_adjusted_total": null,
@@ -91,7 +91,7 @@
     {
       "game_pk": 824325,
       "posted_total": 11.0,
-      "over_implied_prob": 0.5169,
+      "over_implied_prob": 0.5181,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -109,7 +109,7 @@
     {
       "game_pk": 824975,
       "posted_total": 10.5,
-      "over_implied_prob": 0.4765,
+      "over_implied_prob": 0.5181,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -118,7 +118,7 @@
     {
       "game_pk": 823272,
       "posted_total": 8.5,
-      "over_implied_prob": 0.5136,
+      "over_implied_prob": 0.509,
       "total_open": null,
       "book_count": 16,
       "park_adjusted_total": null,
@@ -127,9 +127,9 @@
     {
       "game_pk": 823922,
       "posted_total": 8.5,
-      "over_implied_prob": 0.5239,
+      "over_implied_prob": 0.5236,
       "total_open": null,
-      "book_count": 14,
+      "book_count": 16,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -143,5 +143,5 @@
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-07-31T10:17:57.305609+00:00"
+  "oldest_input_captured_at": "2026-07-31T10:18:42.178158+00:00"
 }
