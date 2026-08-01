@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-08-01",
-  "captured_at": "2026-08-01T19:56:53.450900+00:00",
-  "generated_at": "2026-08-01T20:12:40.466723+00:00",
+  "captured_at": "2026-08-01T20:26:56.703396+00:00",
+  "generated_at": "2026-08-01T20:27:37.379796+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -10,34 +10,34 @@
     {
       "game_pk": 823109,
       "posted_total": 7.0,
-      "over_implied_prob": 0.5148,
+      "over_implied_prob": 0.5108,
       "total_open": null,
-      "book_count": 23,
+      "book_count": 1,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
       "game_pk": 822944,
       "posted_total": 7.5,
-      "over_implied_prob": 0.4807,
+      "over_implied_prob": 0.5,
       "total_open": null,
-      "book_count": 23,
+      "book_count": 1,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
       "game_pk": 823594,
       "posted_total": 9.0,
-      "over_implied_prob": 0.4784,
+      "over_implied_prob": 0.4675,
       "total_open": null,
-      "book_count": 23,
+      "book_count": 1,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
       "game_pk": 824485,
       "posted_total": 8.0,
-      "over_implied_prob": 0.5046,
+      "over_implied_prob": 0.5069,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -46,7 +46,7 @@
     {
       "game_pk": 824808,
       "posted_total": 8.0,
-      "over_implied_prob": 0.5138,
+      "over_implied_prob": 0.5193,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -55,7 +55,7 @@
     {
       "game_pk": 824162,
       "posted_total": 8.5,
-      "over_implied_prob": 0.5171,
+      "over_implied_prob": 0.5161,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -73,7 +73,7 @@
     {
       "game_pk": 824890,
       "posted_total": 9.5,
-      "over_implied_prob": 0.4817,
+      "over_implied_prob": 0.4784,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -91,7 +91,7 @@
     {
       "game_pk": 824326,
       "posted_total": 12.0,
-      "over_implied_prob": 0.492,
+      "over_implied_prob": 0.4908,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
