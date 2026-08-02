@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-02",
-  "generated_at": "2026-08-02T19:42:38.690769+00:00",
+  "generated_at": "2026-08-02T19:57:35.406643+00:00",
   "builder_id": "ballpark-release-6af623a",
-  "build_seq": 398,
+  "build_seq": 399,
   "freshness": {
-    "generated_at": "2026-08-02T19:42:38.690769+00:00",
+    "generated_at": "2026-08-02T19:57:35.406643+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -277,8 +277,8 @@
       "pf_weather_delta_hr": 0.091,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 2.78,
-      "away_lineup_pf_hr": 2.862,
-      "lineup_pf_hr_diff": -0.0812,
+      "away_lineup_pf_hr": 2.639,
+      "lineup_pf_hr_diff": 0.1415,
       "lineup_pf_hr_residual": 1.6247,
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
@@ -1199,7 +1199,7 @@
       "weather_degraded_reason": null,
       "weather_basis": "indoor",
       "weather_valid_at": null,
-      "weather_fetched_at": "2026-08-02T19:42:38.613883+00:00",
+      "weather_fetched_at": "2026-08-02T19:57:35.353423+00:00",
       "weather_observed_at": null,
       "roof_status": "DOME",
       "seasonal_pf_runs": 0.91,
@@ -1269,7 +1269,7 @@
           "degraded": false,
           "basis": "indoor",
           "valid_at": null,
-          "fetched_at": "2026-08-02T19:42:38.613883+00:00",
+          "fetched_at": "2026-08-02T19:57:35.353423+00:00",
           "observed_at": null
         }
       },
