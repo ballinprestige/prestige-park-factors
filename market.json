@@ -2,29 +2,11 @@
   "schema_version": 1,
   "date": "2026-08-02",
   "captured_at": "2026-08-02T19:11:35.185870+00:00",
-  "generated_at": "2026-08-02T19:12:45.173129+00:00",
+  "generated_at": "2026-08-02T19:27:52.909170+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
   "totals": [
-    {
-      "game_pk": 824163,
-      "posted_total": 8.5,
-      "over_implied_prob": null,
-      "total_open": null,
-      "book_count": 0,
-      "park_adjusted_total": null,
-      "runs_edge": null
-    },
-    {
-      "game_pk": 824648,
-      "posted_total": 6.5,
-      "over_implied_prob": null,
-      "total_open": null,
-      "book_count": 0,
-      "park_adjusted_total": null,
-      "runs_edge": null
-    },
     {
       "game_pk": 824323,
       "posted_total": 11.5,
@@ -80,5 +62,5 @@
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-08-02T18:02:41.850287+00:00"
+  "oldest_input_captured_at": "2026-08-02T19:03:30.038456+00:00"
 }
