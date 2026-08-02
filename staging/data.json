@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-02",
-  "generated_at": "2026-08-02T21:42:35.610062+00:00",
+  "generated_at": "2026-08-02T21:57:39.020688+00:00",
   "builder_id": "ballpark-release-6af623a",
-  "build_seq": 406,
+  "build_seq": 407,
   "freshness": {
-    "generated_at": "2026-08-02T21:42:35.610062+00:00",
+    "generated_at": "2026-08-02T21:57:39.020688+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -768,9 +768,9 @@
       "home_lineup_war_expected": 17.79,
       "away_lineup_war_expected": 21.65,
       "home_lineup_war_actual": 14.52,
-      "away_lineup_war_actual": 20.93,
+      "away_lineup_war_actual": 21.24,
       "home_lineup_war_delta": 3.27,
-      "away_lineup_war_delta": 0.72,
+      "away_lineup_war_delta": 0.41,
       "home_lineup_slots_downgraded": 6,
       "away_lineup_slots_downgraded": 3,
       "home_lineup_top3_intact": null,
@@ -1199,7 +1199,7 @@
       "weather_degraded_reason": null,
       "weather_basis": "indoor",
       "weather_valid_at": null,
-      "weather_fetched_at": "2026-08-02T21:42:35.547290+00:00",
+      "weather_fetched_at": "2026-08-02T21:57:38.961927+00:00",
       "weather_observed_at": null,
       "roof_status": "DOME",
       "seasonal_pf_runs": 0.91,
@@ -1269,7 +1269,7 @@
           "degraded": false,
           "basis": "indoor",
           "valid_at": null,
-          "fetched_at": "2026-08-02T21:42:35.547290+00:00",
+          "fetched_at": "2026-08-02T21:57:38.961927+00:00",
           "observed_at": null
         }
       },
