@@ -1,30 +1,147 @@
 {
   "schema_version": 1,
-  "date": "2026-08-01",
-  "captured_at": "2026-08-02T01:21:47.479192+00:00",
-  "generated_at": "2026-08-02T02:27:47.666132+00:00",
+  "date": "2026-08-02",
+  "captured_at": "2026-08-02T04:10:24.628257+00:00",
+  "generated_at": "2026-08-02T04:12:36.396095+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
   "totals": [
     {
-      "game_pk": 824000,
-      "posted_total": 9.0,
-      "over_implied_prob": 0.5,
+      "game_pk": 824807,
+      "posted_total": 8.0,
+      "over_implied_prob": 0.5181,
       "total_open": null,
-      "book_count": 1,
+      "book_count": 21,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
-      "game_pk": 824972,
-      "posted_total": 10.5,
-      "over_implied_prob": 0.4892,
+      "game_pk": 824891,
+      "posted_total": 8.5,
+      "over_implied_prob": 0.5108,
       "total_open": null,
-      "book_count": 1,
+      "book_count": 15,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 822783,
+      "posted_total": 9.0,
+      "over_implied_prob": 0.4968,
+      "total_open": null,
+      "book_count": 20,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 824404,
+      "posted_total": 8.0,
+      "over_implied_prob": 0.4955,
+      "total_open": null,
+      "book_count": 21,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 824483,
+      "posted_total": 8.5,
+      "over_implied_prob": 0.4831,
+      "total_open": null,
+      "book_count": 21,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 822943,
+      "posted_total": 7.5,
+      "over_implied_prob": 0.509,
+      "total_open": null,
+      "book_count": 20,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 823592,
+      "posted_total": 8.5,
+      "over_implied_prob": 0.5257,
+      "total_open": null,
+      "book_count": 21,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 824163,
+      "posted_total": 8.5,
+      "over_implied_prob": 0.4787,
+      "total_open": null,
+      "book_count": 20,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 824648,
+      "posted_total": 6.5,
+      "over_implied_prob": 0.5123,
+      "total_open": null,
+      "book_count": 20,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 824323,
+      "posted_total": 12.5,
+      "over_implied_prob": 0.5113,
+      "total_open": null,
+      "book_count": 21,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 823996,
+      "posted_total": 7.5,
+      "over_implied_prob": 0.5191,
+      "total_open": null,
+      "book_count": 20,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 824971,
+      "posted_total": 11.0,
+      "over_implied_prob": 0.4935,
+      "total_open": null,
+      "book_count": 19,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 823270,
+      "posted_total": 8.0,
+      "over_implied_prob": 0.509,
+      "total_open": null,
+      "book_count": 21,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 823107,
+      "posted_total": 7.5,
+      "over_implied_prob": 0.531,
+      "total_open": null,
+      "book_count": 21,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
+      "game_pk": 823919,
+      "posted_total": 9.0,
+      "over_implied_prob": 0.5029,
+      "total_open": null,
+      "book_count": 16,
       "park_adjusted_total": null,
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-08-02T01:21:47.479192+00:00"
+  "oldest_input_captured_at": "2026-08-02T04:10:24.628257+00:00"
 }
