@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-08-02",
-  "captured_at": "2026-08-02T06:57:00.743172+00:00",
-  "generated_at": "2026-08-02T07:27:31.453704+00:00",
+  "captured_at": "2026-08-02T07:31:01.918461+00:00",
+  "generated_at": "2026-08-02T07:42:30.772807+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -12,16 +12,16 @@
       "posted_total": 8.0,
       "over_implied_prob": 0.5169,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
       "game_pk": 824891,
       "posted_total": 8.5,
-      "over_implied_prob": 0.5108,
+      "over_implied_prob": 0.5117,
       "total_open": null,
-      "book_count": 15,
+      "book_count": 16,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -30,7 +30,7 @@
       "posted_total": 9.0,
       "over_implied_prob": 0.5,
       "total_open": null,
-      "book_count": 21,
+      "book_count": 22,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -39,7 +39,7 @@
       "posted_total": 8.0,
       "over_implied_prob": 0.4955,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -48,7 +48,7 @@
       "posted_total": 8.5,
       "over_implied_prob": 0.4842,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -57,7 +57,7 @@
       "posted_total": 7.5,
       "over_implied_prob": 0.5068,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -66,16 +66,16 @@
       "posted_total": 8.5,
       "over_implied_prob": 0.5235,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
       "game_pk": 824163,
       "posted_total": 8.5,
-      "over_implied_prob": 0.5235,
+      "over_implied_prob": 0.5169,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -84,7 +84,7 @@
       "posted_total": 6.5,
       "over_implied_prob": 0.5123,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -93,7 +93,7 @@
       "posted_total": 12.5,
       "over_implied_prob": 0.5136,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -102,7 +102,7 @@
       "posted_total": 7.5,
       "over_implied_prob": 0.5169,
       "total_open": null,
-      "book_count": 21,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -111,7 +111,7 @@
       "posted_total": 11.0,
       "over_implied_prob": 0.4892,
       "total_open": null,
-      "book_count": 21,
+      "book_count": 22,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -120,7 +120,7 @@
       "posted_total": 8.0,
       "over_implied_prob": 0.5023,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -129,19 +129,19 @@
       "posted_total": 7.5,
       "over_implied_prob": 0.5279,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 23,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
       "game_pk": 823919,
       "posted_total": 9.0,
-      "over_implied_prob": 0.5026,
+      "over_implied_prob": 0.4991,
       "total_open": null,
-      "book_count": 19,
+      "book_count": 20,
       "park_adjusted_total": null,
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-08-02T06:56:42.018114+00:00"
+  "oldest_input_captured_at": "2026-08-02T06:57:00.743172+00:00"
 }
