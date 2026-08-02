@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-08-02",
-  "captured_at": "2026-08-02T12:29:35.822407+00:00",
-  "generated_at": "2026-08-02T12:57:32.288885+00:00",
+  "captured_at": "2026-08-02T13:01:42.213940+00:00",
+  "generated_at": "2026-08-02T13:12:36.468470+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -18,8 +18,8 @@
     },
     {
       "game_pk": 824891,
-      "posted_total": 8.5,
-      "over_implied_prob": 0.526,
+      "posted_total": 9.0,
+      "over_implied_prob": 0.474,
       "total_open": null,
       "book_count": 18,
       "park_adjusted_total": null,
@@ -28,7 +28,7 @@
     {
       "game_pk": 822783,
       "posted_total": 9.0,
-      "over_implied_prob": 0.5023,
+      "over_implied_prob": 0.5,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -46,7 +46,7 @@
     {
       "game_pk": 824483,
       "posted_total": 8.5,
-      "over_implied_prob": 0.4852,
+      "over_implied_prob": 0.4839,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -55,7 +55,7 @@
     {
       "game_pk": 822943,
       "posted_total": 7.5,
-      "over_implied_prob": 0.5092,
+      "over_implied_prob": 0.4817,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -90,8 +90,8 @@
     },
     {
       "game_pk": 824323,
-      "posted_total": 12.5,
-      "over_implied_prob": 0.4839,
+      "posted_total": 12.0,
+      "over_implied_prob": 0.5161,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -100,7 +100,7 @@
     {
       "game_pk": 823996,
       "posted_total": 7.5,
-      "over_implied_prob": 0.5115,
+      "over_implied_prob": 0.5092,
       "total_open": null,
       "book_count": 23,
       "park_adjusted_total": null,
@@ -135,13 +135,13 @@
     },
     {
       "game_pk": 823919,
-      "posted_total": 9.0,
-      "over_implied_prob": 0.4794,
+      "posted_total": 8.5,
+      "over_implied_prob": 0.4977,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-08-02T12:29:17.014301+00:00"
+  "oldest_input_captured_at": "2026-08-02T12:29:35.822407+00:00"
 }
