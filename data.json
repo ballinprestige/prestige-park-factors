@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-03",
-  "generated_at": "2026-08-03T19:27:18.613165+00:00",
+  "generated_at": "2026-08-03T19:42:21.849392+00:00",
   "builder_id": "ballpark-release-6af623a",
-  "build_seq": 444,
+  "build_seq": 445,
   "freshness": {
-    "generated_at": "2026-08-03T19:27:18.613165+00:00",
+    "generated_at": "2026-08-03T19:42:21.849392+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -29,12 +29,12 @@
       "wind_cross_mph": 6.2,
       "air_density_index": 94.8,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-08-03T22:00:00+00:00",
-      "weather_fetched_at": "2026-08-03T19:12:17.857143+00:00",
+      "weather_fetched_at": "2026-08-03T19:42:20.259027+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 1.06,
@@ -102,11 +102,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-08-03T22:00:00+00:00",
-          "fetched_at": "2026-08-03T19:12:17.857143+00:00",
+          "fetched_at": "2026-08-03T19:42:20.259027+00:00",
           "observed_at": null
         }
       },
@@ -262,12 +262,12 @@
       "wind_cross_mph": 7.7,
       "air_density_index": 95.8,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-08-03T23:00:00+00:00",
-      "weather_fetched_at": "2026-08-03T19:12:17.857143+00:00",
+      "weather_fetched_at": "2026-08-03T19:42:20.259027+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 1.05,
@@ -335,11 +335,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-08-03T23:00:00+00:00",
-          "fetched_at": "2026-08-03T19:12:17.857143+00:00",
+          "fetched_at": "2026-08-03T19:42:20.259027+00:00",
           "observed_at": null
         }
       },
@@ -495,12 +495,12 @@
       "wind_cross_mph": -7.2,
       "air_density_index": 93.9,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-08-03T23:00:00+00:00",
-      "weather_fetched_at": "2026-08-03T19:12:17.857143+00:00",
+      "weather_fetched_at": "2026-08-03T19:42:20.259027+00:00",
       "weather_observed_at": null,
       "roof_status": "OPEN",
       "seasonal_pf_runs": 1.02,
@@ -568,11 +568,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-08-03T23:00:00+00:00",
-          "fetched_at": "2026-08-03T19:12:17.857143+00:00",
+          "fetched_at": "2026-08-03T19:42:20.259027+00:00",
           "observed_at": null
         }
       },
@@ -728,12 +728,12 @@
       "wind_cross_mph": -3.3,
       "air_density_index": 94.9,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-08-04T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-03T19:12:17.857143+00:00",
+      "weather_fetched_at": "2026-08-03T19:42:20.259027+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 1.05,
@@ -801,11 +801,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-08-04T00:00:00+00:00",
-          "fetched_at": "2026-08-03T19:12:17.857143+00:00",
+          "fetched_at": "2026-08-03T19:42:20.259027+00:00",
           "observed_at": null
         }
       },
@@ -949,7 +949,7 @@
       "home_team": "TEX",
       "away_team": "SF",
       "venue": "Globe Life Field",
-      "home_pitcher": "",
+      "home_pitcher": "Cal Quantrill",
       "away_pitcher": "Logan Webb",
       "home_pitcher_id": null,
       "away_pitcher_id": null,
@@ -961,12 +961,12 @@
       "wind_cross_mph": 1.4,
       "air_density_index": 90.5,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-08-04T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-03T19:12:17.857143+00:00",
+      "weather_fetched_at": "2026-08-03T19:42:20.259027+00:00",
       "weather_observed_at": null,
       "roof_status": "OPEN",
       "seasonal_pf_runs": 1.01,
@@ -1034,11 +1034,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-08-04T00:00:00+00:00",
-          "fetched_at": "2026-08-03T19:12:17.857143+00:00",
+          "fetched_at": "2026-08-03T19:42:20.259027+00:00",
           "observed_at": null
         }
       },
@@ -1194,12 +1194,12 @@
       "wind_cross_mph": -10.1,
       "air_density_index": 93.6,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-08-04T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-03T19:12:17.857143+00:00",
+      "weather_fetched_at": "2026-08-03T19:42:20.259027+00:00",
       "weather_observed_at": null,
       "roof_status": "OPEN",
       "seasonal_pf_runs": 1.04,
@@ -1267,11 +1267,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-08-04T00:00:00+00:00",
-          "fetched_at": "2026-08-03T19:12:17.857143+00:00",
+          "fetched_at": "2026-08-03T19:42:20.259027+00:00",
           "observed_at": null
         }
       },
@@ -1427,12 +1427,12 @@
       "wind_cross_mph": -6.0,
       "air_density_index": 76.9,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-08-04T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-03T19:12:17.857143+00:00",
+      "weather_fetched_at": "2026-08-03T19:42:20.259027+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 1.261,
@@ -1500,11 +1500,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-08-04T00:00:00+00:00",
-          "fetched_at": "2026-08-03T19:12:17.857143+00:00",
+          "fetched_at": "2026-08-03T19:42:20.259027+00:00",
           "observed_at": null
         }
       },
@@ -1660,12 +1660,12 @@
       "wind_cross_mph": 3.1,
       "air_density_index": 86.6,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
+      "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
       "weather_valid_at": "2026-08-04T01:00:00+00:00",
-      "weather_fetched_at": "2026-08-03T19:12:17.857143+00:00",
+      "weather_fetched_at": "2026-08-03T19:42:20.259027+00:00",
       "weather_observed_at": null,
       "roof_status": "OPEN",
       "seasonal_pf_runs": 1.049,
@@ -1733,11 +1733,11 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
+          "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
           "valid_at": "2026-08-04T01:00:00+00:00",
-          "fetched_at": "2026-08-03T19:12:17.857143+00:00",
+          "fetched_at": "2026-08-03T19:42:20.259027+00:00",
           "observed_at": null
         }
       },
