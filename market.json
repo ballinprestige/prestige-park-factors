@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-08-03",
-  "captured_at": "2026-08-03T21:06:02.701674+00:00",
-  "generated_at": "2026-08-03T21:12:29.764353+00:00",
+  "captured_at": "2026-08-03T21:17:41.403467+00:00",
+  "generated_at": "2026-08-03T21:27:26.778536+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -80,5 +80,5 @@
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-08-03T20:11:56.695326+00:00"
+  "oldest_input_captured_at": "2026-08-03T21:06:02.701674+00:00"
 }
