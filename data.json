@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-04",
-  "generated_at": "2026-08-04T22:42:36.744142+00:00",
+  "generated_at": "2026-08-04T22:57:33.460479+00:00",
   "builder_id": "ballpark-release-6af623a",
-  "build_seq": 527,
+  "build_seq": 528,
   "freshness": {
-    "generated_at": "2026-08-04T22:42:36.744142+00:00",
+    "generated_at": "2026-08-04T22:57:33.460479+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -2140,12 +2140,12 @@
       "pf_weather_delta_runs": -0.0151,
       "pf_weather_delta_hr": -0.0122,
       "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": null,
+      "home_lineup_pf_hr": 2.113,
       "away_lineup_pf_hr": 2.625,
-      "lineup_pf_hr_diff": null,
-      "lineup_pf_hr_residual": null,
-      "has_lineups": false,
-      "home_lineup_status": "UNKNOWN",
+      "lineup_pf_hr_diff": -0.5121,
+      "lineup_pf_hr_residual": 1.0227,
+      "has_lineups": true,
+      "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
       "edge": null,
@@ -2163,20 +2163,19 @@
       "away_injury_runs_loss": 0.376,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": null,
+      "home_lineup_war_expected": 26.28,
       "away_lineup_war_expected": 32.35,
-      "home_lineup_war_actual": null,
+      "home_lineup_war_actual": 22.13,
       "away_lineup_war_actual": 30.83,
-      "home_lineup_war_delta": null,
+      "home_lineup_war_delta": 4.15,
       "away_lineup_war_delta": 1.52,
-      "home_lineup_slots_downgraded": null,
+      "home_lineup_slots_downgraded": 5,
       "away_lineup_slots_downgraded": 2,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
       "confidence_reasons": [
-        "degraded weather",
-        "lineups not fully confirmed"
+        "degraded weather"
       ],
       "provenance": {
         "seasonal_pf_runs": {
@@ -2193,11 +2192,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "weather": {
           "source": "forecast_cache_stale",
