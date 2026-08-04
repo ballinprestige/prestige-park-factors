@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-08-04",
-  "captured_at": "2026-08-04T18:16:59.088224+00:00",
-  "generated_at": "2026-08-04T18:27:31.586109+00:00",
+  "captured_at": "2026-08-04T18:32:24.982138+00:00",
+  "generated_at": "2026-08-04T18:43:21.738491+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
