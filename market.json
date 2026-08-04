@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-08-04",
-  "captured_at": "2026-08-04T10:16:33.498774+00:00",
-  "generated_at": "2026-08-04T10:42:26.227505+00:00",
+  "captured_at": "2026-08-04T10:46:23.040593+00:00",
+  "generated_at": "2026-08-04T10:57:31.864340+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -12,7 +12,7 @@
       "posted_total": 8.5,
       "over_implied_prob": 0.4765,
       "total_open": null,
-      "book_count": 20,
+      "book_count": 21,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -37,7 +37,7 @@
     {
       "game_pk": 823432,
       "posted_total": 9.0,
-      "over_implied_prob": 0.4755,
+      "over_implied_prob": 0.4743,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -57,7 +57,7 @@
       "posted_total": 9.0,
       "over_implied_prob": 0.4899,
       "total_open": null,
-      "book_count": 20,
+      "book_count": 21,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -91,7 +91,7 @@
     {
       "game_pk": 824645,
       "posted_total": 9.0,
-      "over_implied_prob": 0.4877,
+      "over_implied_prob": 0.4829,
       "total_open": null,
       "book_count": 20,
       "park_adjusted_total": null,
@@ -109,7 +109,7 @@
     {
       "game_pk": 824161,
       "posted_total": 8.5,
-      "over_implied_prob": 0.4887,
+      "over_implied_prob": 0.4899,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -143,5 +143,5 @@
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-08-04T10:16:21.890996+00:00"
+  "oldest_input_captured_at": "2026-08-04T10:16:33.498774+00:00"
 }
