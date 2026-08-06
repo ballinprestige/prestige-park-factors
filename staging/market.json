@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-08-06",
-  "captured_at": "2026-08-06T04:52:45.864216+00:00",
-  "generated_at": "2026-08-06T05:22:38.283265+00:00",
+  "captured_at": "2026-08-06T05:24:50.708337+00:00",
+  "generated_at": "2026-08-06T05:27:26.789293+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -10,9 +10,9 @@
     {
       "game_pk": 824804,
       "posted_total": 9.5,
-      "over_implied_prob": 0.5181,
+      "over_implied_prob": 0.5169,
       "total_open": null,
-      "book_count": 20,
+      "book_count": 21,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -30,16 +30,16 @@
       "posted_total": 7.5,
       "over_implied_prob": 0.491,
       "total_open": null,
-      "book_count": 20,
+      "book_count": 21,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
       "game_pk": 823754,
       "posted_total": 7.5,
-      "over_implied_prob": 0.509,
+      "over_implied_prob": 0.5068,
       "total_open": null,
-      "book_count": 20,
+      "book_count": 21,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -57,7 +57,7 @@
       "posted_total": 7.5,
       "over_implied_prob": 0.5158,
       "total_open": null,
-      "book_count": 20,
+      "book_count": 21,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -66,14 +66,14 @@
       "posted_total": 8.5,
       "over_implied_prob": 0.4765,
       "total_open": null,
-      "book_count": 20,
+      "book_count": 21,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
       "game_pk": 824729,
       "posted_total": 9.0,
-      "over_implied_prob": 0.491,
+      "over_implied_prob": 0.4887,
       "total_open": null,
       "book_count": 21,
       "park_adjusted_total": null,
@@ -107,5 +107,5 @@
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-08-06T04:19:35.878224+00:00"
+  "oldest_input_captured_at": "2026-08-06T05:24:33.680217+00:00"
 }
