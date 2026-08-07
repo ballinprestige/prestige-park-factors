@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-07",
-  "generated_at": "2026-08-07T23:12:52.048388+00:00",
+  "generated_at": "2026-08-07T23:27:34.305733+00:00",
   "builder_id": "ballpark-release-fc01dbe",
-  "build_seq": 699,
+  "build_seq": 700,
   "freshness": {
-    "generated_at": "2026-08-07T23:12:52.048388+00:00",
+    "generated_at": "2026-08-07T23:27:34.305733+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
