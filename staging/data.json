@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-07",
-  "generated_at": "2026-08-07T22:57:33.625125+00:00",
+  "generated_at": "2026-08-07T23:12:52.048388+00:00",
   "builder_id": "ballpark-release-fc01dbe",
-  "build_seq": 698,
+  "build_seq": 699,
   "freshness": {
-    "generated_at": "2026-08-07T22:57:33.625125+00:00",
+    "generated_at": "2026-08-07T23:12:52.048388+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -3306,12 +3306,12 @@
       "pf_weather_delta_hr": -0.1262,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 2.656,
-      "away_lineup_pf_hr": null,
-      "lineup_pf_hr_diff": null,
+      "away_lineup_pf_hr": 2.409,
+      "lineup_pf_hr_diff": 0.2471,
       "lineup_pf_hr_residual": 1.8061,
-      "has_lineups": false,
+      "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "UNKNOWN",
+      "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -3329,19 +3329,18 @@
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
       "home_lineup_war_expected": 9.82,
-      "away_lineup_war_expected": null,
+      "away_lineup_war_expected": 14.02,
       "home_lineup_war_actual": 9.82,
-      "away_lineup_war_actual": null,
+      "away_lineup_war_actual": 13.37,
       "home_lineup_war_delta": 0.0,
-      "away_lineup_war_delta": null,
+      "away_lineup_war_delta": 0.65,
       "home_lineup_slots_downgraded": 0,
-      "away_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": 2,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
       "confidence_reasons": [
-        "degraded weather",
-        "lineups not fully confirmed"
+        "degraded weather"
       ],
       "provenance": {
         "seasonal_pf_runs": {
@@ -3358,11 +3357,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "weather": {
           "source": "neutral_fallback",
