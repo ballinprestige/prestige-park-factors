@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-07",
-  "generated_at": "2026-08-07T19:42:33.278709+00:00",
+  "generated_at": "2026-08-07T19:57:33.094876+00:00",
   "builder_id": "ballpark-release-fc01dbe",
-  "build_seq": 687,
+  "build_seq": 688,
   "freshness": {
-    "generated_at": "2026-08-07T19:42:33.278709+00:00",
+    "generated_at": "2026-08-07T19:57:33.094876+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -44,12 +44,12 @@
       "pf_weather_delta_hr": -0.1827,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 2.568,
-      "away_lineup_pf_hr": null,
-      "lineup_pf_hr_diff": null,
+      "away_lineup_pf_hr": 2.527,
+      "lineup_pf_hr_diff": 0.0411,
       "lineup_pf_hr_residual": 1.7534,
-      "has_lineups": false,
+      "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "UNKNOWN",
+      "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -67,19 +67,18 @@
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
       "home_lineup_war_expected": 9.17,
-      "away_lineup_war_expected": null,
+      "away_lineup_war_expected": 21.18,
       "home_lineup_war_actual": 9.04,
-      "away_lineup_war_actual": null,
+      "away_lineup_war_actual": 16.59,
       "home_lineup_war_delta": 0.13,
-      "away_lineup_war_delta": null,
+      "away_lineup_war_delta": 4.59,
       "home_lineup_slots_downgraded": 1,
-      "away_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": 6,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
       "confidence_reasons": [
-        "degraded weather",
-        "lineups not fully confirmed"
+        "degraded weather"
       ],
       "provenance": {
         "seasonal_pf_runs": {
@@ -96,11 +95,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "weather": {
           "source": "neutral_fallback",
@@ -978,12 +977,12 @@
       "pf_weather_delta_runs": -0.034,
       "pf_weather_delta_hr": -0.0254,
       "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": null,
+      "home_lineup_pf_hr": 2.936,
       "away_lineup_pf_hr": 2.324,
-      "lineup_pf_hr_diff": null,
-      "lineup_pf_hr_residual": null,
-      "has_lineups": false,
-      "home_lineup_status": "UNKNOWN",
+      "lineup_pf_hr_diff": 0.6119,
+      "lineup_pf_hr_residual": 1.8798,
+      "has_lineups": true,
+      "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
       "edge": null,
@@ -1001,20 +1000,19 @@
       "away_injury_runs_loss": 0.278,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": null,
+      "home_lineup_war_expected": 19.38,
       "away_lineup_war_expected": 8.47,
-      "home_lineup_war_actual": null,
+      "home_lineup_war_actual": 13.68,
       "away_lineup_war_actual": 5.82,
-      "home_lineup_war_delta": null,
+      "home_lineup_war_delta": 5.7,
       "away_lineup_war_delta": 2.65,
-      "home_lineup_slots_downgraded": null,
+      "home_lineup_slots_downgraded": 8,
       "away_lineup_slots_downgraded": 4,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
       "confidence_reasons": [
-        "degraded weather",
-        "lineups not fully confirmed"
+        "degraded weather"
       ],
       "provenance": {
         "seasonal_pf_runs": {
@@ -1031,11 +1029,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "weather": {
           "source": "neutral_fallback",
@@ -1212,12 +1210,12 @@
       "pf_weather_delta_runs": -0.0218,
       "pf_weather_delta_hr": -0.0481,
       "wind_venue_sensitivity": 0.5,
-      "home_lineup_pf_hr": null,
+      "home_lineup_pf_hr": 2.525,
       "away_lineup_pf_hr": 2.202,
-      "lineup_pf_hr_diff": null,
-      "lineup_pf_hr_residual": null,
-      "has_lineups": false,
-      "home_lineup_status": "UNKNOWN",
+      "lineup_pf_hr_diff": 0.3234,
+      "lineup_pf_hr_residual": 1.5968,
+      "has_lineups": true,
+      "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
       "edge": null,
@@ -1235,20 +1233,19 @@
       "away_injury_runs_loss": 0.017,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": null,
+      "home_lineup_war_expected": 9.53,
       "away_lineup_war_expected": 9.79,
-      "home_lineup_war_actual": null,
+      "home_lineup_war_actual": 7.67,
       "away_lineup_war_actual": 7.81,
-      "home_lineup_war_delta": null,
+      "home_lineup_war_delta": 1.85,
       "away_lineup_war_delta": 1.98,
-      "home_lineup_slots_downgraded": null,
+      "home_lineup_slots_downgraded": 5,
       "away_lineup_slots_downgraded": 5,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
       "confidence_reasons": [
-        "degraded weather",
-        "lineups not fully confirmed"
+        "degraded weather"
       ],
       "provenance": {
         "seasonal_pf_runs": {
@@ -1265,11 +1262,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "weather": {
           "source": "neutral_fallback",
@@ -1446,12 +1443,12 @@
       "pf_weather_delta_runs": -0.0327,
       "pf_weather_delta_hr": -0.0571,
       "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": null,
+      "home_lineup_pf_hr": 2.413,
       "away_lineup_pf_hr": null,
       "lineup_pf_hr_diff": null,
-      "lineup_pf_hr_residual": null,
+      "lineup_pf_hr_residual": 1.4096,
       "has_lineups": false,
-      "home_lineup_status": "UNKNOWN",
+      "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "UNKNOWN",
       "win_prob_home": null,
       "edge": null,
@@ -1469,13 +1466,13 @@
       "away_injury_runs_loss": 0.031,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": null,
+      "home_lineup_war_expected": 7.74,
       "away_lineup_war_expected": null,
-      "home_lineup_war_actual": null,
+      "home_lineup_war_actual": 6.75,
       "away_lineup_war_actual": null,
-      "home_lineup_war_delta": null,
+      "home_lineup_war_delta": 0.98,
       "away_lineup_war_delta": null,
-      "home_lineup_slots_downgraded": null,
+      "home_lineup_slots_downgraded": 3,
       "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
@@ -2148,12 +2145,12 @@
       "pf_weather_delta_runs": -0.0236,
       "pf_weather_delta_hr": -0.0552,
       "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": null,
+      "home_lineup_pf_hr": 2.075,
       "away_lineup_pf_hr": 2.158,
-      "lineup_pf_hr_diff": null,
-      "lineup_pf_hr_residual": null,
-      "has_lineups": false,
-      "home_lineup_status": "UNKNOWN",
+      "lineup_pf_hr_diff": -0.0826,
+      "lineup_pf_hr_residual": 1.1121,
+      "has_lineups": true,
+      "home_lineup_status": "CONFIRMED",
       "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
       "edge": null,
@@ -2171,20 +2168,19 @@
       "away_injury_runs_loss": 0.0,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": null,
+      "home_lineup_war_expected": 8.31,
       "away_lineup_war_expected": 7.41,
-      "home_lineup_war_actual": null,
+      "home_lineup_war_actual": 5.46,
       "away_lineup_war_actual": 6.95,
-      "home_lineup_war_delta": null,
+      "home_lineup_war_delta": 2.85,
       "away_lineup_war_delta": 0.46,
-      "home_lineup_slots_downgraded": null,
+      "home_lineup_slots_downgraded": 7,
       "away_lineup_slots_downgraded": 3,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
       "confidence_reasons": [
-        "degraded weather",
-        "lineups not fully confirmed"
+        "degraded weather"
       ],
       "provenance": {
         "seasonal_pf_runs": {
@@ -2201,11 +2197,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "weather": {
           "source": "neutral_fallback",
