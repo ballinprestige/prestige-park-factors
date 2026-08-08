@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "date": "2026-08-07",
-  "generated_at": "2026-08-08T03:57:33.715556+00:00",
+  "date": "2026-08-08",
+  "generated_at": "2026-08-08T04:12:32.271783+00:00",
   "builder_id": "ballpark-release-fc01dbe",
-  "build_seq": 718,
+  "build_seq": 719,
   "freshness": {
-    "generated_at": "2026-08-08T03:57:33.715556+00:00",
+    "generated_at": "2026-08-08T04:12:32.271783+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -13,736 +13,43 @@
   "model_version": "v2.0-approach-c",
   "games": [
     {
-      "game_pk": 823349,
-      "home_team": "PIT",
-      "away_team": "NYM",
-      "venue": "PNC Park",
-      "home_pitcher": "Carmen Mlodzinski",
-      "away_pitcher": "Zac Thornton",
-      "home_pitcher_id": null,
-      "away_pitcher_id": null,
-      "game_time": "2026-08-07T22:40:00Z",
-      "temperature_f": 76.4,
-      "humidity_pct": 91.0,
-      "wind_speed_mph": 4.5,
-      "wind_carry_mph": -1.5,
-      "wind_cross_mph": -4.2,
-      "air_density_index": 93.2,
-      "dome_active": 0,
-      "weather_source": "open_meteo_batch",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
-      "weather_observed_at": null,
-      "roof_status": "OUTDOOR",
-      "seasonal_pf_runs": 0.95,
-      "daily_pf_runs": 0.964,
-      "daily_pf_hr": 0.929,
-      "pf_weather_delta_runs": 0.014,
-      "pf_weather_delta_hr": -0.0685,
-      "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 2.445,
-      "away_lineup_pf_hr": 2.755,
-      "lineup_pf_hr_diff": -0.3104,
-      "lineup_pf_hr_residual": 1.5157,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
-      "win_prob_home": null,
-      "edge": null,
-      "edge_side": null,
-      "recommendation": null,
-      "cgsi_tier": null,
-      "consensus_ratio": null,
-      "n_specialists_agree": null,
-      "model_run_at": null,
-      "home_sp_tunnel_score": null,
-      "away_sp_tunnel_score": null,
-      "home_sp_tunnel_tightness": null,
-      "away_sp_tunnel_tightness": null,
-      "home_injury_runs_loss": 0.07,
-      "away_injury_runs_loss": 0.506,
-      "home_injury_runs_allowed_increase": 0.0,
-      "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 9.17,
-      "away_lineup_war_expected": 21.18,
-      "home_lineup_war_actual": 7.9,
-      "away_lineup_war_actual": 16.59,
-      "home_lineup_war_delta": 1.28,
-      "away_lineup_war_delta": 4.59,
-      "home_lineup_slots_downgraded": 3,
-      "away_lineup_slots_downgraded": 6,
-      "home_lineup_top3_intact": null,
-      "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
-      "provenance": {
-        "seasonal_pf_runs": {
-          "source": "venue_registry",
-          "version": 1
-        },
-        "daily_pf_runs": {
-          "source": "approach_b",
-          "model": "runs_weather_model"
-        },
-        "daily_pf_hr": {
-          "source": "approach_b",
-          "model": "hr_weather_model"
-        },
-        "home_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "away_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "weather": {
-          "source": "open_meteo_batch",
-          "degraded": false,
-          "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
-          "observed_at": null
-        }
-      },
-      "trajectories": [
-        {
-          "archetype": "pull_power",
-          "exit_velocity_mph": 105.0,
-          "launch_angle_deg": 27.0,
-          "spray_angle_deg": -25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              54.1,
-              34.4
-            ],
-            [
-              108.2,
-              56.7
-            ],
-            [
-              162.3,
-              69.9
-            ],
-            [
-              216.3,
-              74.1
-            ],
-            [
-              270.4,
-              69.2
-            ],
-            [
-              324.5,
-              55.2
-            ],
-            [
-              378.6,
-              32.1
-            ],
-            [
-              432.7,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "center_carry",
-          "exit_velocity_mph": 101.0,
-          "launch_angle_deg": 29.0,
-          "spray_angle_deg": 0.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              52.2,
-              35.6
-            ],
-            [
-              104.4,
-              58.7
-            ],
-            [
-              156.6,
-              72.5
-            ],
-            [
-              208.8,
-              76.8
-            ],
-            [
-              260.9,
-              71.7
-            ],
-            [
-              313.1,
-              57.2
-            ],
-            [
-              365.3,
-              33.3
-            ],
-            [
-              417.5,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "opposite_gap",
-          "exit_velocity_mph": 96.0,
-          "launch_angle_deg": 24.0,
-          "spray_angle_deg": 25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              45.6,
-              24.8
-            ],
-            [
-              91.2,
-              40.3
-            ],
-            [
-              136.8,
-              49.4
-            ],
-            [
-              182.4,
-              52.2
-            ],
-            [
-              228.1,
-              48.7
-            ],
-            [
-              273.7,
-              38.8
-            ],
-            [
-              319.3,
-              22.6
-            ],
-            [
-              364.9,
-              0.0
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "game_pk": 823428,
-      "home_team": "PHI",
-      "away_team": "TOR",
-      "venue": "Citizens Bank Park",
-      "home_pitcher": "Zack Wheeler",
-      "away_pitcher": "Jos\u00e9 Soriano",
-      "home_pitcher_id": null,
-      "away_pitcher_id": null,
-      "game_time": "2026-08-07T22:40:00Z",
-      "temperature_f": 77.2,
-      "humidity_pct": 86.0,
-      "wind_speed_mph": 4.1,
-      "wind_carry_mph": -3.2,
-      "wind_cross_mph": 2.5,
-      "air_density_index": 95.5,
-      "dome_active": 0,
-      "weather_source": "open_meteo_batch",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
-      "weather_observed_at": null,
-      "roof_status": "OUTDOOR",
-      "seasonal_pf_runs": 1.06,
-      "daily_pf_runs": 1.0423,
-      "daily_pf_hr": 1.2102,
-      "pf_weather_delta_runs": -0.0177,
-      "pf_weather_delta_hr": 0.0972,
-      "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 2.345,
-      "away_lineup_pf_hr": 1.678,
-      "lineup_pf_hr_diff": 0.6669,
-      "lineup_pf_hr_residual": 1.1351,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
-      "win_prob_home": null,
-      "edge": null,
-      "edge_side": null,
-      "recommendation": null,
-      "cgsi_tier": null,
-      "consensus_ratio": null,
-      "n_specialists_agree": null,
-      "model_run_at": null,
-      "home_sp_tunnel_score": null,
-      "away_sp_tunnel_score": null,
-      "home_sp_tunnel_tightness": null,
-      "away_sp_tunnel_tightness": null,
-      "home_injury_runs_loss": 0.0,
-      "away_injury_runs_loss": 0.539,
-      "home_injury_runs_allowed_increase": 0.0,
-      "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 25.44,
-      "away_lineup_war_expected": 19.77,
-      "home_lineup_war_actual": 20.8,
-      "away_lineup_war_actual": 14.41,
-      "home_lineup_war_delta": 4.64,
-      "away_lineup_war_delta": 5.36,
-      "home_lineup_slots_downgraded": 7,
-      "away_lineup_slots_downgraded": 9,
-      "home_lineup_top3_intact": null,
-      "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
-      "provenance": {
-        "seasonal_pf_runs": {
-          "source": "venue_registry",
-          "version": 1
-        },
-        "daily_pf_runs": {
-          "source": "approach_b",
-          "model": "runs_weather_model"
-        },
-        "daily_pf_hr": {
-          "source": "approach_b",
-          "model": "hr_weather_model"
-        },
-        "home_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "away_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "weather": {
-          "source": "open_meteo_batch",
-          "degraded": false,
-          "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
-          "observed_at": null
-        }
-      },
-      "trajectories": [
-        {
-          "archetype": "pull_power",
-          "exit_velocity_mph": 105.0,
-          "launch_angle_deg": 27.0,
-          "spray_angle_deg": -25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              53.2,
-              34.4
-            ],
-            [
-              106.3,
-              56.8
-            ],
-            [
-              159.5,
-              70.0
-            ],
-            [
-              212.7,
-              74.2
-            ],
-            [
-              265.9,
-              69.3
-            ],
-            [
-              319.0,
-              55.3
-            ],
-            [
-              372.2,
-              32.2
-            ],
-            [
-              425.4,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "center_carry",
-          "exit_velocity_mph": 101.0,
-          "launch_angle_deg": 29.0,
-          "spray_angle_deg": 0.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              51.1,
-              35.6
-            ],
-            [
-              102.2,
-              58.8
-            ],
-            [
-              153.2,
-              72.6
-            ],
-            [
-              204.3,
-              76.9
-            ],
-            [
-              255.4,
-              71.8
-            ],
-            [
-              306.5,
-              57.3
-            ],
-            [
-              357.5,
-              33.4
-            ],
-            [
-              408.6,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "opposite_gap",
-          "exit_velocity_mph": 96.0,
-          "launch_angle_deg": 24.0,
-          "spray_angle_deg": 25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              45.0,
-              24.9
-            ],
-            [
-              90.0,
-              40.4
-            ],
-            [
-              135.0,
-              49.6
-            ],
-            [
-              179.9,
-              52.4
-            ],
-            [
-              224.9,
-              48.8
-            ],
-            [
-              269.9,
-              38.9
-            ],
-            [
-              314.9,
-              22.6
-            ],
-            [
-              359.9,
-              0.0
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "game_pk": 822699,
-      "home_team": "WSH",
-      "away_team": "CIN",
-      "venue": "Nationals Park",
-      "home_pitcher": "Cade Cavalli",
-      "away_pitcher": "Chase Petty",
-      "home_pitcher_id": null,
-      "away_pitcher_id": null,
-      "game_time": "2026-08-07T22:45:00Z",
-      "temperature_f": 83.8,
-      "humidity_pct": 71.0,
-      "wind_speed_mph": 2.2,
-      "wind_carry_mph": 1.8,
-      "wind_cross_mph": 1.3,
-      "air_density_index": 94.3,
-      "dome_active": 0,
-      "weather_source": "open_meteo_batch",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
-      "weather_observed_at": null,
-      "roof_status": "OUTDOOR",
-      "seasonal_pf_runs": 0.99,
-      "daily_pf_runs": 1.0117,
-      "daily_pf_hr": 1.1657,
-      "pf_weather_delta_runs": 0.0217,
-      "pf_weather_delta_hr": 0.1262,
-      "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 1.873,
-      "away_lineup_pf_hr": 2.454,
-      "lineup_pf_hr_diff": -0.5811,
-      "lineup_pf_hr_residual": 0.7069,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
-      "win_prob_home": null,
-      "edge": null,
-      "edge_side": null,
-      "recommendation": null,
-      "cgsi_tier": null,
-      "consensus_ratio": null,
-      "n_specialists_agree": null,
-      "model_run_at": null,
-      "home_sp_tunnel_score": null,
-      "away_sp_tunnel_score": null,
-      "home_sp_tunnel_tightness": null,
-      "away_sp_tunnel_tightness": null,
-      "home_injury_runs_loss": 0.0,
-      "away_injury_runs_loss": 0.053,
-      "home_injury_runs_allowed_increase": 0.0,
-      "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 6.33,
-      "away_lineup_war_expected": 17.88,
-      "home_lineup_war_actual": 6.33,
-      "away_lineup_war_actual": 13.39,
-      "home_lineup_war_delta": 0.0,
-      "away_lineup_war_delta": 4.49,
-      "home_lineup_slots_downgraded": 0,
-      "away_lineup_slots_downgraded": 7,
-      "home_lineup_top3_intact": null,
-      "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
-      "provenance": {
-        "seasonal_pf_runs": {
-          "source": "venue_registry",
-          "version": 1
-        },
-        "daily_pf_runs": {
-          "source": "approach_b",
-          "model": "runs_weather_model"
-        },
-        "daily_pf_hr": {
-          "source": "approach_b",
-          "model": "hr_weather_model"
-        },
-        "home_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "away_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "weather": {
-          "source": "open_meteo_batch",
-          "degraded": false,
-          "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
-          "observed_at": null
-        }
-      },
-      "trajectories": [
-        {
-          "archetype": "pull_power",
-          "exit_velocity_mph": 105.0,
-          "launch_angle_deg": 27.0,
-          "spray_angle_deg": -25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              55.0,
-              34.2
-            ],
-            [
-              109.9,
-              56.3
-            ],
-            [
-              164.9,
-              69.5
-            ],
-            [
-              219.8,
-              73.6
-            ],
-            [
-              274.8,
-              68.7
-            ],
-            [
-              329.7,
-              54.8
-            ],
-            [
-              384.7,
-              31.9
-            ],
-            [
-              439.6,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "center_carry",
-          "exit_velocity_mph": 101.0,
-          "launch_angle_deg": 29.0,
-          "spray_angle_deg": 0.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              53.0,
-              35.4
-            ],
-            [
-              106.0,
-              58.4
-            ],
-            [
-              159.1,
-              72.0
-            ],
-            [
-              212.1,
-              76.3
-            ],
-            [
-              265.1,
-              71.2
-            ],
-            [
-              318.1,
-              56.8
-            ],
-            [
-              371.2,
-              33.1
-            ],
-            [
-              424.2,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "opposite_gap",
-          "exit_velocity_mph": 96.0,
-          "launch_angle_deg": 24.0,
-          "spray_angle_deg": 25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              46.2,
-              24.7
-            ],
-            [
-              92.4,
-              40.0
-            ],
-            [
-              138.6,
-              49.1
-            ],
-            [
-              184.8,
-              51.9
-            ],
-            [
-              231.0,
-              48.4
-            ],
-            [
-              277.2,
-              38.6
-            ],
-            [
-              323.4,
-              22.4
-            ],
-            [
-              369.6,
-              0.0
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "game_pk": 823515,
+      "game_pk": 823514,
       "home_team": "NYY",
       "away_team": "ATL",
       "venue": "Yankee Stadium",
-      "home_pitcher": "Max Fried",
-      "away_pitcher": "Tyler Mahle",
+      "home_pitcher": "Gerrit Cole",
+      "away_pitcher": "Chris Sale",
       "home_pitcher_id": null,
       "away_pitcher_id": null,
-      "game_time": "2026-08-07T23:05:00Z",
-      "temperature_f": 74.5,
-      "humidity_pct": 94.0,
-      "wind_speed_mph": 1.7,
-      "wind_carry_mph": -0.1,
-      "wind_cross_mph": 1.7,
-      "air_density_index": 96.0,
+      "game_time": "2026-08-08T19:05:00Z",
+      "temperature_f": 88.6,
+      "humidity_pct": 59.0,
+      "wind_speed_mph": 10.1,
+      "wind_carry_mph": 10.1,
+      "wind_cross_mph": 0.3,
+      "air_density_index": 93.6,
       "dome_active": 0,
       "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
+      "weather_valid_at": "2026-08-08T19:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 1.05,
-      "daily_pf_runs": 1.0156,
-      "daily_pf_hr": 1.1524,
-      "pf_weather_delta_runs": -0.0344,
-      "pf_weather_delta_hr": 0.0499,
+      "daily_pf_runs": 1.1291,
+      "daily_pf_hr": 1.3123,
+      "pf_weather_delta_runs": 0.0791,
+      "pf_weather_delta_hr": 0.2098,
       "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 2.415,
-      "away_lineup_pf_hr": 2.63,
-      "lineup_pf_hr_diff": -0.2152,
-      "lineup_pf_hr_residual": 1.2628,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -759,18 +66,20 @@
       "away_injury_runs_loss": 0.27,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 18.58,
-      "away_lineup_war_expected": 25.08,
-      "home_lineup_war_actual": 10.93,
-      "away_lineup_war_actual": 22.78,
-      "home_lineup_war_delta": 7.65,
-      "away_lineup_war_delta": 2.29,
-      "home_lineup_slots_downgraded": 9,
-      "away_lineup_slots_downgraded": 2,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -786,18 +95,18 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "weather": {
           "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
+          "valid_at": "2026-08-08T19:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
           "observed_at": null
         }
       },
@@ -813,35 +122,35 @@
               3.0
             ],
             [
-              54.0,
-              34.3
+              57.4,
+              33.8
             ],
             [
-              107.9,
-              56.5
+              114.7,
+              55.6
             ],
             [
-              161.9,
-              69.7
+              172.1,
+              68.6
             ],
             [
-              215.8,
-              73.8
+              229.4,
+              72.7
             ],
             [
-              269.8,
-              68.9
+              286.8,
+              67.9
             ],
             [
-              323.8,
-              55.0
+              344.1,
+              54.2
             ],
             [
-              377.7,
-              32.0
+              401.4,
+              31.5
             ],
             [
-              431.7,
+              458.8,
               0.0
             ]
           ]
@@ -857,35 +166,35 @@
               3.0
             ],
             [
-              52.1,
-              35.4
+              55.9,
+              35.0
             ],
             [
-              104.3,
-              58.4
+              111.7,
+              57.7
             ],
             [
-              156.4,
-              72.1
+              167.6,
+              71.2
             ],
             [
-              208.6,
-              76.4
+              223.4,
+              75.4
             ],
             [
-              260.7,
-              71.3
+              279.2,
+              70.4
             ],
             [
-              312.8,
-              56.9
+              335.1,
+              56.2
             ],
             [
-              365.0,
-              33.1
+              390.9,
+              32.7
             ],
             [
-              417.1,
+              446.8,
               0.0
             ]
           ]
@@ -901,35 +210,35 @@
               3.0
             ],
             [
-              45.6,
-              24.8
+              47.9,
+              24.3
             ],
             [
-              91.3,
-              40.2
+              95.8,
+              39.4
             ],
             [
-              136.9,
-              49.3
+              143.8,
+              48.4
             ],
             [
-              182.6,
-              52.1
+              191.7,
+              51.1
             ],
             [
-              228.2,
-              48.6
+              239.6,
+              47.6
             ],
             [
-              273.9,
-              38.7
+              287.5,
+              38.0
             ],
             [
-              319.6,
-              22.5
+              335.5,
+              22.1
             ],
             [
-              365.2,
+              383.4,
               0.0
             ]
           ]
@@ -937,43 +246,43 @@
       ]
     },
     {
-      "game_pk": 824727,
+      "game_pk": 824726,
       "home_team": "BOS",
       "away_team": "OAK",
       "venue": "Fenway Park",
-      "home_pitcher": "Payton Tolle",
-      "away_pitcher": "Jack Perkins",
+      "home_pitcher": "Jake Bennett",
+      "away_pitcher": "Gage Jump",
       "home_pitcher_id": null,
       "away_pitcher_id": null,
-      "game_time": "2026-08-07T23:10:00Z",
-      "temperature_f": 83.8,
-      "humidity_pct": 54.0,
-      "wind_speed_mph": 4.2,
-      "wind_carry_mph": 1.4,
-      "wind_cross_mph": 3.9,
-      "air_density_index": 94.6,
+      "game_time": "2026-08-08T20:10:00Z",
+      "temperature_f": 90.0,
+      "humidity_pct": 49.0,
+      "wind_speed_mph": 10.6,
+      "wind_carry_mph": 9.5,
+      "wind_cross_mph": 4.8,
+      "air_density_index": 93.5,
       "dome_active": 0,
       "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
+      "weather_valid_at": "2026-08-08T20:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 1.03,
-      "daily_pf_runs": 1.0646,
-      "daily_pf_hr": 1.2485,
-      "pf_weather_delta_runs": 0.0346,
-      "pf_weather_delta_hr": 0.167,
+      "daily_pf_runs": 1.1855,
+      "daily_pf_hr": 1.3296,
+      "pf_weather_delta_runs": 0.1555,
+      "pf_weather_delta_hr": 0.2481,
       "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 2.943,
-      "away_lineup_pf_hr": 2.329,
-      "lineup_pf_hr_diff": 0.6137,
-      "lineup_pf_hr_residual": 1.6946,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -990,18 +299,20 @@
       "away_injury_runs_loss": 0.278,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 19.38,
-      "away_lineup_war_expected": 8.47,
-      "home_lineup_war_actual": 11.83,
-      "away_lineup_war_actual": 3.37,
-      "home_lineup_war_delta": 7.54,
-      "away_lineup_war_delta": 5.1,
-      "home_lineup_slots_downgraded": 8,
-      "away_lineup_slots_downgraded": 6,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -1017,18 +328,18 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "weather": {
           "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
+          "valid_at": "2026-08-08T20:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
           "observed_at": null
         }
       },
@@ -1044,35 +355,35 @@
               3.0
             ],
             [
-              54.8,
-              34.2
+              57.2,
+              33.8
             ],
             [
-              109.6,
-              56.4
+              114.3,
+              55.7
             ],
             [
-              164.4,
-              69.6
+              171.5,
+              68.7
             ],
             [
-              219.2,
-              73.7
+              228.7,
+              72.8
             ],
             [
-              274.0,
-              68.8
+              285.9,
+              68.0
             ],
             [
-              328.8,
-              54.9
+              343.0,
+              54.2
             ],
             [
-              383.6,
-              32.0
+              400.2,
+              31.6
             ],
             [
-              438.4,
+              457.4,
               0.0
             ]
           ]
@@ -1088,35 +399,35 @@
               3.0
             ],
             [
-              52.9,
-              35.4
+              55.7,
+              35.0
             ],
             [
-              105.7,
-              58.4
+              111.3,
+              57.7
             ],
             [
-              158.6,
-              72.0
-            ],
-            [
-              211.4,
-              76.3
-            ],
-            [
-              264.2,
+              167.0,
               71.2
             ],
             [
-              317.1,
-              56.8
+              222.7,
+              75.4
             ],
             [
-              369.9,
-              33.1
+              278.3,
+              70.4
             ],
             [
-              422.8,
+              334.0,
+              56.2
+            ],
+            [
+              389.6,
+              32.7
+            ],
+            [
+              445.3,
               0.0
             ]
           ]
@@ -1132,35 +443,35 @@
               3.0
             ],
             [
-              46.1,
-              24.7
+              47.8,
+              24.3
             ],
             [
-              92.2,
-              40.0
+              95.6,
+              39.4
             ],
             [
-              138.3,
-              49.1
-            ],
-            [
-              184.3,
-              51.9
-            ],
-            [
-              230.4,
+              143.4,
               48.4
             ],
             [
-              276.5,
-              38.6
+              191.2,
+              51.1
             ],
             [
-              322.6,
-              22.4
+              239.0,
+              47.6
             ],
             [
-              368.7,
+              286.8,
+              38.0
+            ],
+            [
+              334.6,
+              22.1
+            ],
+            [
+              382.4,
               0.0
             ]
           ]
@@ -1168,43 +479,43 @@
       ]
     },
     {
-      "game_pk": 823836,
+      "game_pk": 823834,
       "home_team": "MIA",
       "away_team": "LAA",
       "venue": "loanDepot park",
-      "home_pitcher": "Tyler Phillips",
-      "away_pitcher": "George Klassen",
+      "home_pitcher": "Sandy Alcantara",
+      "away_pitcher": "Walbert Ure\u00f1a",
       "home_pitcher_id": null,
       "away_pitcher_id": null,
-      "game_time": "2026-08-07T23:10:00Z",
-      "temperature_f": 83.1,
-      "humidity_pct": 86.0,
-      "wind_speed_mph": 4.8,
-      "wind_carry_mph": 4.1,
-      "wind_cross_mph": -2.5,
-      "air_density_index": 94.3,
+      "game_time": "2026-08-08T20:10:00Z",
+      "temperature_f": 87.3,
+      "humidity_pct": 68.0,
+      "wind_speed_mph": 9.3,
+      "wind_carry_mph": 4.2,
+      "wind_cross_mph": -8.3,
+      "air_density_index": 93.7,
       "dome_active": 0,
       "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
+      "weather_valid_at": "2026-08-08T20:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
       "weather_observed_at": null,
       "roof_status": "OPEN",
       "seasonal_pf_runs": 0.93,
-      "daily_pf_runs": 0.9126,
-      "daily_pf_hr": 0.9348,
-      "pf_weather_delta_runs": -0.0174,
-      "pf_weather_delta_hr": -0.0417,
+      "daily_pf_runs": 0.9492,
+      "daily_pf_hr": 0.7695,
+      "pf_weather_delta_runs": 0.0192,
+      "pf_weather_delta_hr": -0.207,
       "wind_venue_sensitivity": 0.5,
-      "home_lineup_pf_hr": 2.586,
-      "away_lineup_pf_hr": 2.76,
-      "lineup_pf_hr_diff": -0.1744,
-      "lineup_pf_hr_residual": 1.6511,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -1221,18 +532,20 @@
       "away_injury_runs_loss": 0.017,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 9.53,
-      "away_lineup_war_expected": 9.79,
-      "home_lineup_war_actual": 6.88,
-      "away_lineup_war_actual": 7.77,
-      "home_lineup_war_delta": 2.65,
-      "away_lineup_war_delta": 2.02,
-      "home_lineup_slots_downgraded": 7,
-      "away_lineup_slots_downgraded": 5,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -1248,18 +561,717 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "weather": {
           "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
+          "valid_at": "2026-08-08T20:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
+          "observed_at": null
+        }
+      },
+      "trajectories": [
+        {
+          "archetype": "pull_power",
+          "exit_velocity_mph": 105.0,
+          "launch_angle_deg": 27.0,
+          "spray_angle_deg": -25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              55.8,
+              34.1
+            ],
+            [
+              111.6,
+              56.2
+            ],
+            [
+              167.4,
+              69.3
+            ],
+            [
+              223.2,
+              73.4
+            ],
+            [
+              278.9,
+              68.5
+            ],
+            [
+              334.7,
+              54.7
+            ],
+            [
+              390.5,
+              31.8
+            ],
+            [
+              446.3,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "center_carry",
+          "exit_velocity_mph": 101.0,
+          "launch_angle_deg": 29.0,
+          "spray_angle_deg": 0.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              53.9,
+              35.2
+            ],
+            [
+              107.8,
+              58.1
+            ],
+            [
+              161.8,
+              71.7
+            ],
+            [
+              215.7,
+              76.0
+            ],
+            [
+              269.6,
+              71.0
+            ],
+            [
+              323.5,
+              56.6
+            ],
+            [
+              377.5,
+              33.0
+            ],
+            [
+              431.4,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "opposite_gap",
+          "exit_velocity_mph": 96.0,
+          "launch_angle_deg": 24.0,
+          "spray_angle_deg": 25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              46.8,
+              24.5
+            ],
+            [
+              93.5,
+              39.8
+            ],
+            [
+              140.3,
+              48.8
+            ],
+            [
+              187.1,
+              51.6
+            ],
+            [
+              233.8,
+              48.1
+            ],
+            [
+              280.6,
+              38.3
+            ],
+            [
+              327.3,
+              22.3
+            ],
+            [
+              374.1,
+              0.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "game_pk": 823426,
+      "home_team": "PHI",
+      "away_team": "TOR",
+      "venue": "Citizens Bank Park",
+      "home_pitcher": "Aaron Nola",
+      "away_pitcher": "Max Scherzer",
+      "home_pitcher_id": null,
+      "away_pitcher_id": null,
+      "game_time": "2026-08-08T22:05:00Z",
+      "temperature_f": 82.3,
+      "humidity_pct": 71.0,
+      "wind_speed_mph": 6.8,
+      "wind_carry_mph": 6.6,
+      "wind_cross_mph": 1.9,
+      "air_density_index": 94.7,
+      "dome_active": 0,
+      "weather_source": "open_meteo_batch",
+      "weather_degraded": false,
+      "weather_degraded_reason": null,
+      "weather_basis": "forecast",
+      "weather_valid_at": "2026-08-08T22:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
+      "weather_observed_at": null,
+      "roof_status": "OUTDOOR",
+      "seasonal_pf_runs": 1.06,
+      "daily_pf_runs": 1.1266,
+      "daily_pf_hr": 1.2958,
+      "pf_weather_delta_runs": 0.0666,
+      "pf_weather_delta_hr": 0.1828,
+      "wind_venue_sensitivity": 1.0,
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
+      "win_prob_home": null,
+      "edge": null,
+      "edge_side": null,
+      "recommendation": null,
+      "cgsi_tier": null,
+      "consensus_ratio": null,
+      "n_specialists_agree": null,
+      "model_run_at": null,
+      "home_sp_tunnel_score": null,
+      "away_sp_tunnel_score": null,
+      "home_sp_tunnel_tightness": null,
+      "away_sp_tunnel_tightness": null,
+      "home_injury_runs_loss": 0.0,
+      "away_injury_runs_loss": 0.539,
+      "home_injury_runs_allowed_increase": 0.0,
+      "away_injury_runs_allowed_increase": 0.0,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
+      "home_lineup_top3_intact": null,
+      "away_lineup_top3_intact": null,
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
+      "provenance": {
+        "seasonal_pf_runs": {
+          "source": "venue_registry",
+          "version": 1
+        },
+        "daily_pf_runs": {
+          "source": "approach_b",
+          "model": "runs_weather_model"
+        },
+        "daily_pf_hr": {
+          "source": "approach_b",
+          "model": "hr_weather_model"
+        },
+        "home_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "away_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "weather": {
+          "source": "open_meteo_batch",
+          "degraded": false,
+          "basis": "forecast",
+          "valid_at": "2026-08-08T22:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
+          "observed_at": null
+        }
+      },
+      "trajectories": [
+        {
+          "archetype": "pull_power",
+          "exit_velocity_mph": 105.0,
+          "launch_angle_deg": 27.0,
+          "spray_angle_deg": -25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              56.3,
+              33.9
+            ],
+            [
+              112.7,
+              55.9
+            ],
+            [
+              169.0,
+              68.9
+            ],
+            [
+              225.3,
+              73.0
+            ],
+            [
+              281.6,
+              68.2
+            ],
+            [
+              338.0,
+              54.4
+            ],
+            [
+              394.3,
+              31.7
+            ],
+            [
+              450.6,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "center_carry",
+          "exit_velocity_mph": 101.0,
+          "launch_angle_deg": 29.0,
+          "spray_angle_deg": 0.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              54.5,
+              35.1
+            ],
+            [
+              109.1,
+              57.9
+            ],
+            [
+              163.6,
+              71.4
+            ],
+            [
+              218.2,
+              75.7
+            ],
+            [
+              272.8,
+              70.7
+            ],
+            [
+              327.3,
+              56.4
+            ],
+            [
+              381.8,
+              32.8
+            ],
+            [
+              436.4,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "opposite_gap",
+          "exit_velocity_mph": 96.0,
+          "launch_angle_deg": 24.0,
+          "spray_angle_deg": 25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              47.1,
+              24.5
+            ],
+            [
+              94.2,
+              39.7
+            ],
+            [
+              141.3,
+              48.7
+            ],
+            [
+              188.4,
+              51.4
+            ],
+            [
+              235.6,
+              47.9
+            ],
+            [
+              282.7,
+              38.2
+            ],
+            [
+              329.8,
+              22.2
+            ],
+            [
+              376.9,
+              0.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "game_pk": 823348,
+      "home_team": "PIT",
+      "away_team": "NYM",
+      "venue": "PNC Park",
+      "home_pitcher": "Bubba Chandler",
+      "away_pitcher": "Robert Stock",
+      "home_pitcher_id": null,
+      "away_pitcher_id": null,
+      "game_time": "2026-08-08T22:40:00Z",
+      "temperature_f": 87.8,
+      "humidity_pct": 54.0,
+      "wind_speed_mph": 10.3,
+      "wind_carry_mph": 9.4,
+      "wind_cross_mph": 4.2,
+      "air_density_index": 91.4,
+      "dome_active": 0,
+      "weather_source": "open_meteo_batch",
+      "weather_degraded": false,
+      "weather_degraded_reason": null,
+      "weather_basis": "forecast",
+      "weather_valid_at": "2026-08-08T22:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
+      "weather_observed_at": null,
+      "roof_status": "OUTDOOR",
+      "seasonal_pf_runs": 0.95,
+      "daily_pf_runs": 1.0618,
+      "daily_pf_hr": 1.0973,
+      "pf_weather_delta_runs": 0.1118,
+      "pf_weather_delta_hr": 0.0998,
+      "wind_venue_sensitivity": 1.0,
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
+      "win_prob_home": null,
+      "edge": null,
+      "edge_side": null,
+      "recommendation": null,
+      "cgsi_tier": null,
+      "consensus_ratio": null,
+      "n_specialists_agree": null,
+      "model_run_at": null,
+      "home_sp_tunnel_score": null,
+      "away_sp_tunnel_score": null,
+      "home_sp_tunnel_tightness": null,
+      "away_sp_tunnel_tightness": null,
+      "home_injury_runs_loss": 0.07,
+      "away_injury_runs_loss": 0.506,
+      "home_injury_runs_allowed_increase": 0.0,
+      "away_injury_runs_allowed_increase": 0.0,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
+      "home_lineup_top3_intact": null,
+      "away_lineup_top3_intact": null,
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
+      "provenance": {
+        "seasonal_pf_runs": {
+          "source": "venue_registry",
+          "version": 1
+        },
+        "daily_pf_runs": {
+          "source": "approach_b",
+          "model": "runs_weather_model"
+        },
+        "daily_pf_hr": {
+          "source": "approach_b",
+          "model": "hr_weather_model"
+        },
+        "home_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "away_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "weather": {
+          "source": "open_meteo_batch",
+          "degraded": false,
+          "basis": "forecast",
+          "valid_at": "2026-08-08T22:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
+          "observed_at": null
+        }
+      },
+      "trajectories": [
+        {
+          "archetype": "pull_power",
+          "exit_velocity_mph": 105.0,
+          "launch_angle_deg": 27.0,
+          "spray_angle_deg": -25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              57.6,
+              33.9
+            ],
+            [
+              115.3,
+              55.8
+            ],
+            [
+              172.9,
+              68.8
+            ],
+            [
+              230.6,
+              72.9
+            ],
+            [
+              288.2,
+              68.1
+            ],
+            [
+              345.9,
+              54.3
+            ],
+            [
+              403.6,
+              31.6
+            ],
+            [
+              461.2,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "center_carry",
+          "exit_velocity_mph": 101.0,
+          "launch_angle_deg": 29.0,
+          "spray_angle_deg": 0.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              55.9,
+              35.0
+            ],
+            [
+              111.8,
+              57.8
+            ],
+            [
+              167.7,
+              71.3
+            ],
+            [
+              223.7,
+              75.6
+            ],
+            [
+              279.6,
+              70.6
+            ],
+            [
+              335.5,
+              56.3
+            ],
+            [
+              391.4,
+              32.8
+            ],
+            [
+              447.3,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "opposite_gap",
+          "exit_velocity_mph": 96.0,
+          "launch_angle_deg": 24.0,
+          "spray_angle_deg": 25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              48.0,
+              24.4
+            ],
+            [
+              96.0,
+              39.5
+            ],
+            [
+              144.0,
+              48.5
+            ],
+            [
+              192.0,
+              51.2
+            ],
+            [
+              240.0,
+              47.7
+            ],
+            [
+              288.0,
+              38.0
+            ],
+            [
+              336.0,
+              22.1
+            ],
+            [
+              384.0,
+              0.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "game_pk": 822701,
+      "home_team": "WSH",
+      "away_team": "CIN",
+      "venue": "Nationals Park",
+      "home_pitcher": "Andrew Alvarez",
+      "away_pitcher": "Chase Burns",
+      "home_pitcher_id": null,
+      "away_pitcher_id": null,
+      "game_time": "2026-08-08T22:45:00Z",
+      "temperature_f": 79.4,
+      "humidity_pct": 82.0,
+      "wind_speed_mph": 8.5,
+      "wind_carry_mph": 4.3,
+      "wind_cross_mph": -7.4,
+      "air_density_index": 95.1,
+      "dome_active": 0,
+      "weather_source": "open_meteo_batch",
+      "weather_degraded": false,
+      "weather_degraded_reason": null,
+      "weather_basis": "forecast",
+      "weather_valid_at": "2026-08-08T22:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
+      "weather_observed_at": null,
+      "roof_status": "OUTDOOR",
+      "seasonal_pf_runs": 0.99,
+      "daily_pf_runs": 1.0202,
+      "daily_pf_hr": 1.1594,
+      "pf_weather_delta_runs": 0.0302,
+      "pf_weather_delta_hr": 0.1199,
+      "wind_venue_sensitivity": 1.0,
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
+      "win_prob_home": null,
+      "edge": null,
+      "edge_side": null,
+      "recommendation": null,
+      "cgsi_tier": null,
+      "consensus_ratio": null,
+      "n_specialists_agree": null,
+      "model_run_at": null,
+      "home_sp_tunnel_score": null,
+      "away_sp_tunnel_score": null,
+      "home_sp_tunnel_tightness": null,
+      "away_sp_tunnel_tightness": null,
+      "home_injury_runs_loss": 0.0,
+      "away_injury_runs_loss": 0.053,
+      "home_injury_runs_allowed_increase": 0.0,
+      "away_injury_runs_allowed_increase": 0.0,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
+      "home_lineup_top3_intact": null,
+      "away_lineup_top3_intact": null,
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
+      "provenance": {
+        "seasonal_pf_runs": {
+          "source": "venue_registry",
+          "version": 1
+        },
+        "daily_pf_runs": {
+          "source": "approach_b",
+          "model": "runs_weather_model"
+        },
+        "daily_pf_hr": {
+          "source": "approach_b",
+          "model": "hr_weather_model"
+        },
+        "home_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "away_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "weather": {
+          "source": "open_meteo_batch",
+          "degraded": false,
+          "basis": "forecast",
+          "valid_at": "2026-08-08T22:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
           "observed_at": null
         }
       },
@@ -1283,27 +1295,27 @@
               56.1
             ],
             [
-              166.9,
+              166.8,
               69.2
             ],
             [
-              222.5,
+              222.3,
               73.3
             ],
             [
-              278.1,
+              277.9,
               68.4
             ],
             [
-              333.8,
+              333.5,
               54.6
             ],
             [
-              389.4,
+              389.1,
               31.8
             ],
             [
-              445.0,
+              444.7,
               0.0
             ]
           ]
@@ -1324,30 +1336,30 @@
             ],
             [
               107.5,
-              58.1
+              58.0
             ],
             [
-              161.3,
-              71.7
+              161.2,
+              71.6
             ],
             [
-              215.1,
-              76.0
+              215.0,
+              75.9
             ],
             [
               268.8,
-              71.0
+              70.9
             ],
             [
-              322.6,
+              322.5,
               56.6
             ],
             [
-              376.3,
-              33.0
+              376.2,
+              32.9
             ],
             [
-              430.1,
+              430.0,
               0.0
             ]
           ]
@@ -1367,7 +1379,7 @@
               24.5
             ],
             [
-              93.3,
+              93.2,
               39.8
             ],
             [
@@ -1375,11 +1387,11 @@
               48.8
             ],
             [
-              186.6,
+              186.5,
               51.6
             ],
             [
-              233.2,
+              233.1,
               48.1
             ],
             [
@@ -1387,11 +1399,11 @@
               38.3
             ],
             [
-              326.5,
+              326.4,
               22.3
             ],
             [
-              373.1,
+              373.0,
               0.0
             ]
           ]
@@ -1399,505 +1411,43 @@
       ]
     },
     {
-      "game_pk": 824566,
-      "home_team": "CWS",
-      "away_team": "CLE",
-      "venue": "Rate Field",
-      "home_pitcher": "Noah Schultz",
-      "away_pitcher": "Parker Messick",
-      "home_pitcher_id": null,
-      "away_pitcher_id": null,
-      "game_time": "2026-08-07T23:40:00Z",
-      "temperature_f": 78.7,
-      "humidity_pct": 90.0,
-      "wind_speed_mph": 5.8,
-      "wind_carry_mph": 5.6,
-      "wind_cross_mph": -1.8,
-      "air_density_index": 93.2,
-      "dome_active": 0,
-      "weather_source": "open_meteo_batch",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
-      "weather_observed_at": null,
-      "roof_status": "OUTDOOR",
-      "seasonal_pf_runs": 1.01,
-      "daily_pf_runs": 1.0333,
-      "daily_pf_hr": 1.1157,
-      "pf_weather_delta_runs": 0.0233,
-      "pf_weather_delta_hr": 0.0552,
-      "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 2.321,
-      "away_lineup_pf_hr": 2.268,
-      "lineup_pf_hr_diff": 0.0533,
-      "lineup_pf_hr_residual": 1.2056,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
-      "win_prob_home": null,
-      "edge": null,
-      "edge_side": null,
-      "recommendation": null,
-      "cgsi_tier": null,
-      "consensus_ratio": null,
-      "n_specialists_agree": null,
-      "model_run_at": null,
-      "home_sp_tunnel_score": null,
-      "away_sp_tunnel_score": null,
-      "home_sp_tunnel_tightness": null,
-      "away_sp_tunnel_tightness": null,
-      "home_injury_runs_loss": 0.191,
-      "away_injury_runs_loss": 0.031,
-      "home_injury_runs_allowed_increase": 0.0,
-      "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 7.74,
-      "away_lineup_war_expected": 18.81,
-      "home_lineup_war_actual": 6.24,
-      "away_lineup_war_actual": 11.82,
-      "home_lineup_war_delta": 1.5,
-      "away_lineup_war_delta": 6.99,
-      "home_lineup_slots_downgraded": 4,
-      "away_lineup_slots_downgraded": 7,
-      "home_lineup_top3_intact": null,
-      "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
-      "provenance": {
-        "seasonal_pf_runs": {
-          "source": "venue_registry",
-          "version": 1
-        },
-        "daily_pf_runs": {
-          "source": "approach_b",
-          "model": "runs_weather_model"
-        },
-        "daily_pf_hr": {
-          "source": "approach_b",
-          "model": "hr_weather_model"
-        },
-        "home_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "away_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "weather": {
-          "source": "open_meteo_batch",
-          "degraded": false,
-          "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
-          "observed_at": null
-        }
-      },
-      "trajectories": [
-        {
-          "archetype": "pull_power",
-          "exit_velocity_mph": 105.0,
-          "launch_angle_deg": 27.0,
-          "spray_angle_deg": -25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              56.2,
-              34.0
-            ],
-            [
-              112.3,
-              56.0
-            ],
-            [
-              168.5,
-              69.1
-            ],
-            [
-              224.7,
-              73.2
-            ],
-            [
-              280.8,
-              68.3
-            ],
-            [
-              337.0,
-              54.5
-            ],
-            [
-              393.1,
-              31.7
-            ],
-            [
-              449.3,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "center_carry",
-          "exit_velocity_mph": 101.0,
-          "launch_angle_deg": 29.0,
-          "spray_angle_deg": 0.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              54.5,
-              35.2
-            ],
-            [
-              109.0,
-              58.0
-            ],
-            [
-              163.6,
-              71.6
-            ],
-            [
-              218.1,
-              75.9
-            ],
-            [
-              272.6,
-              70.9
-            ],
-            [
-              327.1,
-              56.6
-            ],
-            [
-              381.7,
-              32.9
-            ],
-            [
-              436.2,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "opposite_gap",
-          "exit_velocity_mph": 96.0,
-          "launch_angle_deg": 24.0,
-          "spray_angle_deg": 25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              47.0,
-              24.5
-            ],
-            [
-              94.0,
-              39.8
-            ],
-            [
-              141.0,
-              48.8
-            ],
-            [
-              187.9,
-              51.5
-            ],
-            [
-              234.9,
-              48.0
-            ],
-            [
-              281.9,
-              38.2
-            ],
-            [
-              328.9,
-              22.2
-            ],
-            [
-              375.9,
-              0.0
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "game_pk": 823750,
-      "home_team": "MIL",
-      "away_team": "MIN",
-      "venue": "American Family Field",
-      "home_pitcher": "Shane Drohan",
-      "away_pitcher": "Zebby Matthews",
-      "home_pitcher_id": null,
-      "away_pitcher_id": null,
-      "game_time": "2026-08-07T23:40:00Z",
-      "temperature_f": 84.7,
-      "humidity_pct": 61.0,
-      "wind_speed_mph": 15.2,
-      "wind_carry_mph": 8.1,
-      "wind_cross_mph": 12.9,
-      "air_density_index": 92.2,
-      "dome_active": 0,
-      "weather_source": "open_meteo_batch",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
-      "weather_observed_at": null,
-      "roof_status": "OPEN",
-      "seasonal_pf_runs": 1.02,
-      "daily_pf_runs": 1.2223,
-      "daily_pf_hr": 1.4287,
-      "pf_weather_delta_runs": 0.2023,
-      "pf_weather_delta_hr": 0.3577,
-      "wind_venue_sensitivity": 0.5,
-      "home_lineup_pf_hr": 2.584,
-      "away_lineup_pf_hr": 2.778,
-      "lineup_pf_hr_diff": -0.1946,
-      "lineup_pf_hr_residual": 1.155,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
-      "win_prob_home": null,
-      "edge": null,
-      "edge_side": null,
-      "recommendation": null,
-      "cgsi_tier": null,
-      "consensus_ratio": null,
-      "n_specialists_agree": null,
-      "model_run_at": null,
-      "home_sp_tunnel_score": null,
-      "away_sp_tunnel_score": null,
-      "home_sp_tunnel_tightness": null,
-      "away_sp_tunnel_tightness": null,
-      "home_injury_runs_loss": 0.412,
-      "away_injury_runs_loss": 0.0,
-      "home_injury_runs_allowed_increase": 0.0,
-      "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 18.93,
-      "away_lineup_war_expected": 9.84,
-      "home_lineup_war_actual": 15.48,
-      "away_lineup_war_actual": 7.3,
-      "home_lineup_war_delta": 3.45,
-      "away_lineup_war_delta": 2.54,
-      "home_lineup_slots_downgraded": 5,
-      "away_lineup_slots_downgraded": 6,
-      "home_lineup_top3_intact": null,
-      "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
-      "provenance": {
-        "seasonal_pf_runs": {
-          "source": "venue_registry",
-          "version": 1
-        },
-        "daily_pf_runs": {
-          "source": "approach_b",
-          "model": "runs_weather_model"
-        },
-        "daily_pf_hr": {
-          "source": "approach_b",
-          "model": "hr_weather_model"
-        },
-        "home_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "away_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "weather": {
-          "source": "open_meteo_batch",
-          "degraded": false,
-          "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
-          "observed_at": null
-        }
-      },
-      "trajectories": [
-        {
-          "archetype": "pull_power",
-          "exit_velocity_mph": 105.0,
-          "launch_angle_deg": 27.0,
-          "spray_angle_deg": -25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              57.0,
-              33.9
-            ],
-            [
-              114.1,
-              55.9
-            ],
-            [
-              171.1,
-              68.9
-            ],
-            [
-              228.2,
-              73.0
-            ],
-            [
-              285.2,
-              68.2
-            ],
-            [
-              342.3,
-              54.4
-            ],
-            [
-              399.3,
-              31.7
-            ],
-            [
-              456.4,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "center_carry",
-          "exit_velocity_mph": 101.0,
-          "launch_angle_deg": 29.0,
-          "spray_angle_deg": 0.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              55.5,
-              35.1
-            ],
-            [
-              111.0,
-              57.9
-            ],
-            [
-              166.5,
-              71.4
-            ],
-            [
-              221.9,
-              75.7
-            ],
-            [
-              277.4,
-              70.7
-            ],
-            [
-              332.9,
-              56.4
-            ],
-            [
-              388.4,
-              32.8
-            ],
-            [
-              443.9,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "opposite_gap",
-          "exit_velocity_mph": 96.0,
-          "launch_angle_deg": 24.0,
-          "spray_angle_deg": 25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              47.6,
-              24.4
-            ],
-            [
-              95.1,
-              39.6
-            ],
-            [
-              142.7,
-              48.6
-            ],
-            [
-              190.2,
-              51.3
-            ],
-            [
-              237.8,
-              47.8
-            ],
-            [
-              285.4,
-              38.1
-            ],
-            [
-              332.9,
-              22.2
-            ],
-            [
-              380.5,
-              0.0
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "game_pk": 824081,
+      "game_pk": 824079,
       "home_team": "KC",
       "away_team": "CHC",
       "venue": "Kauffman Stadium",
-      "home_pitcher": "Daniel Lynch IV",
-      "away_pitcher": "Kevin Gausman",
+      "home_pitcher": "Seth Lugo",
+      "away_pitcher": "Clay Holmes",
       "home_pitcher_id": null,
       "away_pitcher_id": null,
-      "game_time": "2026-08-08T00:10:00Z",
-      "temperature_f": 83.5,
-      "humidity_pct": 64.0,
-      "wind_speed_mph": 7.6,
-      "wind_carry_mph": 6.0,
-      "wind_cross_mph": -4.7,
-      "air_density_index": 91.8,
+      "game_time": "2026-08-08T23:10:00Z",
+      "temperature_f": 90.3,
+      "humidity_pct": 45.0,
+      "wind_speed_mph": 5.8,
+      "wind_carry_mph": -4.9,
+      "wind_cross_mph": -3.1,
+      "air_density_index": 90.8,
       "dome_active": 0,
       "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
+      "weather_valid_at": "2026-08-08T23:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
       "weather_observed_at": null,
       "roof_status": "OUTDOOR",
       "seasonal_pf_runs": 0.99,
-      "daily_pf_runs": 1.0862,
-      "daily_pf_hr": 1.0189,
-      "pf_weather_delta_runs": 0.0962,
-      "pf_weather_delta_hr": -0.0206,
+      "daily_pf_runs": 1.0879,
+      "daily_pf_hr": 1.0682,
+      "pf_weather_delta_runs": 0.0979,
+      "pf_weather_delta_hr": 0.0287,
       "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 3.0,
-      "away_lineup_pf_hr": 2.795,
-      "lineup_pf_hr_diff": 0.2052,
-      "lineup_pf_hr_residual": 1.9811,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -1914,18 +1464,20 @@
       "away_injury_runs_loss": 0.01,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 14.42,
-      "away_lineup_war_expected": 26.28,
-      "home_lineup_war_actual": 13.49,
-      "away_lineup_war_actual": 25.36,
-      "home_lineup_war_delta": 0.92,
-      "away_lineup_war_delta": 0.92,
-      "home_lineup_slots_downgraded": 3,
-      "away_lineup_slots_downgraded": 1,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -1941,18 +1493,950 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "weather": {
           "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
+          "valid_at": "2026-08-08T23:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
+          "observed_at": null
+        }
+      },
+      "trajectories": [
+        {
+          "archetype": "pull_power",
+          "exit_velocity_mph": 105.0,
+          "launch_angle_deg": 27.0,
+          "spray_angle_deg": -25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              53.4,
+              34.6
+            ],
+            [
+              106.8,
+              57.2
+            ],
+            [
+              160.2,
+              70.5
+            ],
+            [
+              213.6,
+              74.7
+            ],
+            [
+              267.0,
+              69.8
+            ],
+            [
+              320.4,
+              55.6
+            ],
+            [
+              373.8,
+              32.4
+            ],
+            [
+              427.2,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "center_carry",
+          "exit_velocity_mph": 101.0,
+          "launch_angle_deg": 29.0,
+          "spray_angle_deg": 0.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              51.4,
+              35.8
+            ],
+            [
+              102.7,
+              59.2
+            ],
+            [
+              154.1,
+              73.0
+            ],
+            [
+              205.4,
+              77.4
+            ],
+            [
+              256.8,
+              72.3
+            ],
+            [
+              308.1,
+              57.7
+            ],
+            [
+              359.4,
+              33.6
+            ],
+            [
+              410.8,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "opposite_gap",
+          "exit_velocity_mph": 96.0,
+          "launch_angle_deg": 24.0,
+          "spray_angle_deg": 25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              45.3,
+              25.0
+            ],
+            [
+              90.6,
+              40.7
+            ],
+            [
+              135.9,
+              49.9
+            ],
+            [
+              181.2,
+              52.7
+            ],
+            [
+              226.6,
+              49.1
+            ],
+            [
+              271.9,
+              39.2
+            ],
+            [
+              317.2,
+              22.8
+            ],
+            [
+              362.5,
+              0.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "game_pk": 823752,
+      "home_team": "MIL",
+      "away_team": "MIN",
+      "venue": "American Family Field",
+      "home_pitcher": "Robert Gasser",
+      "away_pitcher": "Taj Bradley",
+      "home_pitcher_id": null,
+      "away_pitcher_id": null,
+      "game_time": "2026-08-08T23:10:00Z",
+      "temperature_f": 83.4,
+      "humidity_pct": 34.0,
+      "wind_speed_mph": 6.5,
+      "wind_carry_mph": -0.6,
+      "wind_cross_mph": 6.4,
+      "air_density_index": 92.8,
+      "dome_active": 0,
+      "weather_source": "open_meteo_batch",
+      "weather_degraded": false,
+      "weather_degraded_reason": null,
+      "weather_basis": "forecast",
+      "weather_valid_at": "2026-08-08T23:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
+      "weather_observed_at": null,
+      "roof_status": "OPEN",
+      "seasonal_pf_runs": 1.02,
+      "daily_pf_runs": 1.0823,
+      "daily_pf_hr": 1.2061,
+      "pf_weather_delta_runs": 0.0623,
+      "pf_weather_delta_hr": 0.1351,
+      "wind_venue_sensitivity": 0.5,
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
+      "win_prob_home": null,
+      "edge": null,
+      "edge_side": null,
+      "recommendation": null,
+      "cgsi_tier": null,
+      "consensus_ratio": null,
+      "n_specialists_agree": null,
+      "model_run_at": null,
+      "home_sp_tunnel_score": null,
+      "away_sp_tunnel_score": null,
+      "home_sp_tunnel_tightness": null,
+      "away_sp_tunnel_tightness": null,
+      "home_injury_runs_loss": 0.412,
+      "away_injury_runs_loss": 0.0,
+      "home_injury_runs_allowed_increase": 0.0,
+      "away_injury_runs_allowed_increase": 0.0,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
+      "home_lineup_top3_intact": null,
+      "away_lineup_top3_intact": null,
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
+      "provenance": {
+        "seasonal_pf_runs": {
+          "source": "venue_registry",
+          "version": 1
+        },
+        "daily_pf_runs": {
+          "source": "approach_b",
+          "model": "runs_weather_model"
+        },
+        "daily_pf_hr": {
+          "source": "approach_b",
+          "model": "hr_weather_model"
+        },
+        "home_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "away_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "weather": {
+          "source": "open_meteo_batch",
+          "degraded": false,
+          "basis": "forecast",
+          "valid_at": "2026-08-08T23:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
+          "observed_at": null
+        }
+      },
+      "trajectories": [
+        {
+          "archetype": "pull_power",
+          "exit_velocity_mph": 105.0,
+          "launch_angle_deg": 27.0,
+          "spray_angle_deg": -25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              54.6,
+              34.3
+            ],
+            [
+              109.2,
+              56.6
+            ],
+            [
+              163.8,
+              69.8
+            ],
+            [
+              218.3,
+              74.0
+            ],
+            [
+              272.9,
+              69.1
+            ],
+            [
+              327.5,
+              55.1
+            ],
+            [
+              382.1,
+              32.1
+            ],
+            [
+              436.7,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "center_carry",
+          "exit_velocity_mph": 101.0,
+          "launch_angle_deg": 29.0,
+          "spray_angle_deg": 0.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              52.5,
+              35.5
+            ],
+            [
+              105.1,
+              58.6
+            ],
+            [
+              157.6,
+              72.4
+            ],
+            [
+              210.2,
+              76.7
+            ],
+            [
+              262.8,
+              71.6
+            ],
+            [
+              315.3,
+              57.2
+            ],
+            [
+              367.8,
+              33.3
+            ],
+            [
+              420.4,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "opposite_gap",
+          "exit_velocity_mph": 96.0,
+          "launch_angle_deg": 24.0,
+          "spray_angle_deg": 25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              46.0,
+              24.8
+            ],
+            [
+              92.0,
+              40.2
+            ],
+            [
+              137.9,
+              49.3
+            ],
+            [
+              183.9,
+              52.1
+            ],
+            [
+              229.9,
+              48.6
+            ],
+            [
+              275.9,
+              38.7
+            ],
+            [
+              321.8,
+              22.5
+            ],
+            [
+              367.8,
+              0.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "game_pk": 823267,
+      "home_team": "SD",
+      "away_team": "HOU",
+      "venue": "Petco Park",
+      "home_pitcher": "Michael King",
+      "away_pitcher": "Peter Lambert",
+      "home_pitcher_id": null,
+      "away_pitcher_id": null,
+      "game_time": "2026-08-08T23:15:00Z",
+      "temperature_f": 80.6,
+      "humidity_pct": 65.0,
+      "wind_speed_mph": 10.0,
+      "wind_carry_mph": -9.5,
+      "wind_cross_mph": 3.1,
+      "air_density_index": 95.1,
+      "dome_active": 0,
+      "weather_source": "open_meteo_batch",
+      "weather_degraded": false,
+      "weather_degraded_reason": null,
+      "weather_basis": "forecast",
+      "weather_valid_at": "2026-08-08T23:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
+      "weather_observed_at": null,
+      "roof_status": "OUTDOOR",
+      "seasonal_pf_runs": 0.92,
+      "daily_pf_runs": 0.875,
+      "daily_pf_hr": 0.99,
+      "pf_weather_delta_runs": -0.045,
+      "pf_weather_delta_hr": 0.024,
+      "wind_venue_sensitivity": 1.0,
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
+      "win_prob_home": null,
+      "edge": null,
+      "edge_side": null,
+      "recommendation": null,
+      "cgsi_tier": null,
+      "consensus_ratio": null,
+      "n_specialists_agree": null,
+      "model_run_at": null,
+      "home_sp_tunnel_score": null,
+      "away_sp_tunnel_score": null,
+      "home_sp_tunnel_tightness": null,
+      "away_sp_tunnel_tightness": null,
+      "home_injury_runs_loss": 0.008,
+      "away_injury_runs_loss": 0.386,
+      "home_injury_runs_allowed_increase": 0.0,
+      "away_injury_runs_allowed_increase": 0.0,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
+      "home_lineup_top3_intact": null,
+      "away_lineup_top3_intact": null,
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
+      "provenance": {
+        "seasonal_pf_runs": {
+          "source": "venue_registry",
+          "version": 1
+        },
+        "daily_pf_runs": {
+          "source": "approach_b",
+          "model": "runs_weather_model"
+        },
+        "daily_pf_hr": {
+          "source": "approach_b",
+          "model": "hr_weather_model"
+        },
+        "home_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "away_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "weather": {
+          "source": "open_meteo_batch",
+          "degraded": false,
+          "basis": "forecast",
+          "valid_at": "2026-08-08T23:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
+          "observed_at": null
+        }
+      },
+      "trajectories": [
+        {
+          "archetype": "pull_power",
+          "exit_velocity_mph": 105.0,
+          "launch_angle_deg": 27.0,
+          "spray_angle_deg": -25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              51.2,
+              34.9
+            ],
+            [
+              102.4,
+              57.5
+            ],
+            [
+              153.6,
+              71.0
+            ],
+            [
+              204.8,
+              75.2
+            ],
+            [
+              256.0,
+              70.2
+            ],
+            [
+              307.2,
+              56.0
+            ],
+            [
+              358.4,
+              32.6
+            ],
+            [
+              409.6,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "center_carry",
+          "exit_velocity_mph": 101.0,
+          "launch_angle_deg": 29.0,
+          "spray_angle_deg": 0.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              48.9,
+              36.0
+            ],
+            [
+              97.7,
+              59.5
+            ],
+            [
+              146.6,
+              73.4
+            ],
+            [
+              195.4,
+              77.8
+            ],
+            [
+              244.2,
+              72.7
+            ],
+            [
+              293.1,
+              58.0
+            ],
+            [
+              341.9,
+              33.8
+            ],
+            [
+              390.8,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "opposite_gap",
+          "exit_velocity_mph": 96.0,
+          "launch_angle_deg": 24.0,
+          "spray_angle_deg": 25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              43.7,
+              25.2
+            ],
+            [
+              87.3,
+              41.0
+            ],
+            [
+              131.0,
+              50.3
+            ],
+            [
+              174.7,
+              53.2
+            ],
+            [
+              218.3,
+              49.6
+            ],
+            [
+              262.0,
+              39.5
+            ],
+            [
+              305.6,
+              23.0
+            ],
+            [
+              349.3,
+              0.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "game_pk": 823188,
+      "home_team": "SF",
+      "away_team": "DET",
+      "venue": "Oracle Park",
+      "home_pitcher": "Landen Roupp",
+      "away_pitcher": "Jackson Jobe",
+      "home_pitcher_id": null,
+      "away_pitcher_id": null,
+      "game_time": "2026-08-08T23:15:00Z",
+      "temperature_f": 65.8,
+      "humidity_pct": 74.0,
+      "wind_speed_mph": 14.5,
+      "wind_carry_mph": 8.3,
+      "wind_cross_mph": 11.9,
+      "air_density_index": 98.1,
+      "dome_active": 0,
+      "weather_source": "open_meteo_batch",
+      "weather_degraded": false,
+      "weather_degraded_reason": null,
+      "weather_basis": "forecast",
+      "weather_valid_at": "2026-08-08T23:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
+      "weather_observed_at": null,
+      "roof_status": "OUTDOOR",
+      "seasonal_pf_runs": 0.93,
+      "daily_pf_runs": 0.9038,
+      "daily_pf_hr": 0.8456,
+      "pf_weather_delta_runs": -0.0262,
+      "pf_weather_delta_hr": -0.1309,
+      "wind_venue_sensitivity": 1.0,
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
+      "win_prob_home": null,
+      "edge": null,
+      "edge_side": null,
+      "recommendation": null,
+      "cgsi_tier": null,
+      "consensus_ratio": null,
+      "n_specialists_agree": null,
+      "model_run_at": null,
+      "home_sp_tunnel_score": null,
+      "away_sp_tunnel_score": null,
+      "home_sp_tunnel_tightness": null,
+      "away_sp_tunnel_tightness": null,
+      "home_injury_runs_loss": 0.12,
+      "away_injury_runs_loss": 0.182,
+      "home_injury_runs_allowed_increase": 0.0,
+      "away_injury_runs_allowed_increase": 0.0,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
+      "home_lineup_top3_intact": null,
+      "away_lineup_top3_intact": null,
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
+      "provenance": {
+        "seasonal_pf_runs": {
+          "source": "venue_registry",
+          "version": 1
+        },
+        "daily_pf_runs": {
+          "source": "approach_b",
+          "model": "runs_weather_model"
+        },
+        "daily_pf_hr": {
+          "source": "approach_b",
+          "model": "hr_weather_model"
+        },
+        "home_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "away_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "weather": {
+          "source": "open_meteo_batch",
+          "degraded": false,
+          "basis": "forecast",
+          "valid_at": "2026-08-08T23:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
+          "observed_at": null
+        }
+      },
+      "trajectories": [
+        {
+          "archetype": "pull_power",
+          "exit_velocity_mph": 105.0,
+          "launch_angle_deg": 27.0,
+          "spray_angle_deg": -25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              56.3,
+              33.8
+            ],
+            [
+              112.7,
+              55.6
+            ],
+            [
+              169.0,
+              68.6
+            ],
+            [
+              225.3,
+              72.7
+            ],
+            [
+              281.7,
+              67.9
+            ],
+            [
+              338.0,
+              54.2
+            ],
+            [
+              394.4,
+              31.5
+            ],
+            [
+              450.7,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "center_carry",
+          "exit_velocity_mph": 101.0,
+          "launch_angle_deg": 29.0,
+          "spray_angle_deg": 0.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              54.6,
+              34.9
+            ],
+            [
+              109.3,
+              57.6
+            ],
+            [
+              163.9,
+              71.1
+            ],
+            [
+              218.6,
+              75.3
+            ],
+            [
+              273.2,
+              70.3
+            ],
+            [
+              327.9,
+              56.1
+            ],
+            [
+              382.6,
+              32.7
+            ],
+            [
+              437.2,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "opposite_gap",
+          "exit_velocity_mph": 96.0,
+          "launch_angle_deg": 24.0,
+          "spray_angle_deg": 25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              47.1,
+              24.4
+            ],
+            [
+              94.1,
+              39.5
+            ],
+            [
+              141.2,
+              48.5
+            ],
+            [
+              188.2,
+              51.2
+            ],
+            [
+              235.3,
+              47.7
+            ],
+            [
+              282.4,
+              38.0
+            ],
+            [
+              329.4,
+              22.1
+            ],
+            [
+              376.5,
+              0.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "game_pk": 823021,
+      "home_team": "STL",
+      "away_team": "COL",
+      "venue": "Busch Stadium",
+      "home_pitcher": "Matthew Liberatore",
+      "away_pitcher": "Kyle Freeland",
+      "home_pitcher_id": null,
+      "away_pitcher_id": null,
+      "game_time": "2026-08-08T23:15:00Z",
+      "temperature_f": 91.7,
+      "humidity_pct": 47.0,
+      "wind_speed_mph": 7.0,
+      "wind_carry_mph": 6.0,
+      "wind_cross_mph": -3.5,
+      "air_density_index": 91.7,
+      "dome_active": 0,
+      "weather_source": "open_meteo_batch",
+      "weather_degraded": false,
+      "weather_degraded_reason": null,
+      "weather_basis": "forecast",
+      "weather_valid_at": "2026-08-08T23:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
+      "weather_observed_at": null,
+      "roof_status": "OUTDOOR",
+      "seasonal_pf_runs": 0.97,
+      "daily_pf_runs": 1.1037,
+      "daily_pf_hr": 1.1674,
+      "pf_weather_delta_runs": 0.1337,
+      "pf_weather_delta_hr": 0.1489,
+      "wind_venue_sensitivity": 1.0,
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
+      "win_prob_home": null,
+      "edge": null,
+      "edge_side": null,
+      "recommendation": null,
+      "cgsi_tier": null,
+      "consensus_ratio": null,
+      "n_specialists_agree": null,
+      "model_run_at": null,
+      "home_sp_tunnel_score": null,
+      "away_sp_tunnel_score": null,
+      "home_sp_tunnel_tightness": null,
+      "away_sp_tunnel_tightness": null,
+      "home_injury_runs_loss": 0.104,
+      "away_injury_runs_loss": 0.0,
+      "home_injury_runs_allowed_increase": 0.0,
+      "away_injury_runs_allowed_increase": 0.0,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
+      "home_lineup_top3_intact": null,
+      "away_lineup_top3_intact": null,
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
+      "provenance": {
+        "seasonal_pf_runs": {
+          "source": "venue_registry",
+          "version": 1
+        },
+        "daily_pf_runs": {
+          "source": "approach_b",
+          "model": "runs_weather_model"
+        },
+        "daily_pf_hr": {
+          "source": "approach_b",
+          "model": "hr_weather_model"
+        },
+        "home_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "away_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "weather": {
+          "source": "open_meteo_batch",
+          "degraded": false,
+          "basis": "forecast",
+          "valid_at": "2026-08-08T23:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
           "observed_at": null
         }
       },
@@ -1973,30 +2457,30 @@
             ],
             [
               113.2,
-              56.0
+              56.1
             ],
             [
-              169.7,
-              69.1
+              169.8,
+              69.2
             ],
             [
-              226.3,
-              73.2
+              226.4,
+              73.3
             ],
             [
-              282.9,
-              68.3
+              283.1,
+              68.4
             ],
             [
-              339.5,
-              54.5
+              339.7,
+              54.6
             ],
             [
-              396.0,
-              31.7
+              396.3,
+              31.8
             ],
             [
-              452.6,
+              452.9,
               0.0
             ]
           ]
@@ -2016,31 +2500,31 @@
               35.2
             ],
             [
-              109.5,
+              109.6,
               58.0
             ],
             [
-              164.2,
+              164.4,
               71.6
             ],
             [
-              219.0,
+              219.2,
               75.9
             ],
             [
-              273.8,
+              273.9,
               70.9
             ],
             [
-              328.5,
+              328.7,
               56.6
             ],
             [
-              383.2,
+              383.5,
               32.9
             ],
             [
-              438.0,
+              438.3,
               0.0
             ]
           ]
@@ -2060,31 +2544,31 @@
               24.5
             ],
             [
-              94.5,
+              94.6,
               39.8
             ],
             [
-              141.8,
+              141.9,
               48.8
             ],
             [
-              189.1,
+              189.2,
               51.5
             ],
             [
-              236.4,
+              236.5,
               48.0
             ],
             [
-              283.6,
+              283.8,
               38.2
             ],
             [
-              330.9,
+              331.1,
               22.2
             ],
             [
-              378.2,
+              378.4,
               0.0
             ]
           ]
@@ -2092,274 +2576,43 @@
       ]
     },
     {
-      "game_pk": 823024,
-      "home_team": "STL",
-      "away_team": "COL",
-      "venue": "Busch Stadium",
-      "home_pitcher": "Kyle Leahy",
-      "away_pitcher": "Ryan Feltner",
-      "home_pitcher_id": null,
-      "away_pitcher_id": null,
-      "game_time": "2026-08-08T00:15:00Z",
-      "temperature_f": 88.6,
-      "humidity_pct": 59.0,
-      "wind_speed_mph": 5.9,
-      "wind_carry_mph": 5.5,
-      "wind_cross_mph": -2.0,
-      "air_density_index": 92.1,
-      "dome_active": 0,
-      "weather_source": "open_meteo_batch",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
-      "weather_observed_at": null,
-      "roof_status": "OUTDOOR",
-      "seasonal_pf_runs": 0.97,
-      "daily_pf_runs": 0.9997,
-      "daily_pf_hr": 1.0815,
-      "pf_weather_delta_runs": 0.0297,
-      "pf_weather_delta_hr": 0.063,
-      "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 2.438,
-      "away_lineup_pf_hr": 2.562,
-      "lineup_pf_hr_diff": -0.1247,
-      "lineup_pf_hr_residual": 1.3562,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
-      "win_prob_home": null,
-      "edge": null,
-      "edge_side": null,
-      "recommendation": null,
-      "cgsi_tier": null,
-      "consensus_ratio": null,
-      "n_specialists_agree": null,
-      "model_run_at": null,
-      "home_sp_tunnel_score": null,
-      "away_sp_tunnel_score": null,
-      "home_sp_tunnel_tightness": null,
-      "away_sp_tunnel_tightness": null,
-      "home_injury_runs_loss": 0.104,
-      "away_injury_runs_loss": 0.0,
-      "home_injury_runs_allowed_increase": 0.0,
-      "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 8.31,
-      "away_lineup_war_expected": 7.41,
-      "home_lineup_war_actual": 5.48,
-      "away_lineup_war_actual": 5.74,
-      "home_lineup_war_delta": 2.83,
-      "away_lineup_war_delta": 1.67,
-      "home_lineup_slots_downgraded": 7,
-      "away_lineup_slots_downgraded": 5,
-      "home_lineup_top3_intact": null,
-      "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
-      "provenance": {
-        "seasonal_pf_runs": {
-          "source": "venue_registry",
-          "version": 1
-        },
-        "daily_pf_runs": {
-          "source": "approach_b",
-          "model": "runs_weather_model"
-        },
-        "daily_pf_hr": {
-          "source": "approach_b",
-          "model": "hr_weather_model"
-        },
-        "home_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "away_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "weather": {
-          "source": "open_meteo_batch",
-          "degraded": false,
-          "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
-          "observed_at": null
-        }
-      },
-      "trajectories": [
-        {
-          "archetype": "pull_power",
-          "exit_velocity_mph": 105.0,
-          "launch_angle_deg": 27.0,
-          "spray_angle_deg": -25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              56.4,
-              34.0
-            ],
-            [
-              112.7,
-              56.1
-            ],
-            [
-              169.1,
-              69.2
-            ],
-            [
-              225.4,
-              73.3
-            ],
-            [
-              281.8,
-              68.4
-            ],
-            [
-              338.1,
-              54.6
-            ],
-            [
-              394.4,
-              31.8
-            ],
-            [
-              450.8,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "center_carry",
-          "exit_velocity_mph": 101.0,
-          "launch_angle_deg": 29.0,
-          "spray_angle_deg": 0.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              54.7,
-              35.2
-            ],
-            [
-              109.4,
-              58.1
-            ],
-            [
-              164.1,
-              71.7
-            ],
-            [
-              218.8,
-              76.0
-            ],
-            [
-              273.5,
-              71.0
-            ],
-            [
-              328.2,
-              56.6
-            ],
-            [
-              382.9,
-              33.0
-            ],
-            [
-              437.6,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "opposite_gap",
-          "exit_velocity_mph": 96.0,
-          "launch_angle_deg": 24.0,
-          "spray_angle_deg": 25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              47.1,
-              24.5
-            ],
-            [
-              94.2,
-              39.8
-            ],
-            [
-              141.3,
-              48.8
-            ],
-            [
-              188.4,
-              51.5
-            ],
-            [
-              235.6,
-              48.0
-            ],
-            [
-              282.7,
-              38.2
-            ],
-            [
-              329.8,
-              22.2
-            ],
-            [
-              376.9,
-              0.0
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "game_pk": 822863,
+      "game_pk": 822864,
       "home_team": "TEX",
       "away_team": "BAL",
       "venue": "Globe Life Field",
-      "home_pitcher": "Nathan Eovaldi",
-      "away_pitcher": "Shane Baz",
+      "home_pitcher": "Jacob deGrom",
+      "away_pitcher": "Kyle Bradish",
       "home_pitcher_id": null,
       "away_pitcher_id": null,
-      "game_time": "2026-08-08T00:15:00Z",
-      "temperature_f": 98.3,
-      "humidity_pct": 33.0,
-      "wind_speed_mph": 9.5,
-      "wind_carry_mph": 8.5,
-      "wind_cross_mph": -4.3,
-      "air_density_index": 90.4,
+      "game_time": "2026-08-08T23:15:00Z",
+      "temperature_f": 101.0,
+      "humidity_pct": 28.0,
+      "wind_speed_mph": 6.8,
+      "wind_carry_mph": 6.7,
+      "wind_cross_mph": 1.3,
+      "air_density_index": 90.0,
       "dome_active": 0,
       "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T00:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
+      "weather_valid_at": "2026-08-08T23:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
       "weather_observed_at": null,
       "roof_status": "OPEN",
       "seasonal_pf_runs": 1.01,
-      "daily_pf_runs": 1.14,
-      "daily_pf_hr": 1.1468,
-      "pf_weather_delta_runs": 0.13,
-      "pf_weather_delta_hr": 0.0863,
+      "daily_pf_runs": 1.1379,
+      "daily_pf_hr": 1.1438,
+      "pf_weather_delta_runs": 0.1279,
+      "pf_weather_delta_hr": 0.0833,
       "wind_venue_sensitivity": 0.5,
-      "home_lineup_pf_hr": 2.963,
-      "away_lineup_pf_hr": 2.795,
-      "lineup_pf_hr_diff": 0.1682,
-      "lineup_pf_hr_residual": 1.8162,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -2376,18 +2629,20 @@
       "away_injury_runs_loss": 0.258,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 15.97,
-      "away_lineup_war_expected": 15.32,
-      "home_lineup_war_actual": 15.65,
-      "away_lineup_war_actual": 11.71,
-      "home_lineup_war_delta": 0.31,
-      "away_lineup_war_delta": 3.61,
-      "home_lineup_slots_downgraded": 1,
-      "away_lineup_slots_downgraded": 7,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -2403,18 +2658,18 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "weather": {
           "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
-          "valid_at": "2026-08-08T00:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
+          "valid_at": "2026-08-08T23:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
           "observed_at": null
         }
       },
@@ -2430,35 +2685,35 @@
               3.0
             ],
             [
-              57.5,
-              33.9
+              57.1,
+              34.0
             ],
             [
-              115.0,
-              55.9
+              114.2,
+              56.1
             ],
             [
-              172.5,
-              68.9
+              171.3,
+              69.2
             ],
             [
-              229.9,
-              73.0
+              228.4,
+              73.3
             ],
             [
-              287.4,
-              68.2
+              285.6,
+              68.4
             ],
             [
-              344.9,
-              54.4
+              342.7,
+              54.6
             ],
             [
-              402.4,
-              31.7
+              399.8,
+              31.8
             ],
             [
-              459.9,
+              456.9,
               0.0
             ]
           ]
@@ -2474,35 +2729,35 @@
               3.0
             ],
             [
-              55.7,
-              35.1
+              55.3,
+              35.2
             ],
             [
-              111.4,
-              57.9
+              110.6,
+              58.1
             ],
             [
-              167.1,
-              71.4
+              165.9,
+              71.7
             ],
             [
-              222.8,
-              75.7
+              221.2,
+              76.0
             ],
             [
-              278.6,
-              70.7
+              276.4,
+              71.0
             ],
             [
-              334.3,
-              56.4
+              331.7,
+              56.6
             ],
             [
-              390.0,
-              32.8
+              387.0,
+              33.0
             ],
             [
-              445.7,
+              442.3,
               0.0
             ]
           ]
@@ -2518,35 +2773,35 @@
               3.0
             ],
             [
-              47.9,
-              24.4
+              47.7,
+              24.5
             ],
             [
-              95.8,
-              39.6
+              95.3,
+              39.7
             ],
             [
-              143.6,
-              48.6
+              143.0,
+              48.7
             ],
             [
-              191.5,
-              51.3
+              190.7,
+              51.4
             ],
             [
-              239.4,
-              47.8
+              238.3,
+              47.9
             ],
             [
-              287.2,
-              38.1
+              286.0,
+              38.2
             ],
             [
-              335.1,
+              333.6,
               22.2
             ],
             [
-              383.0,
+              381.3,
               0.0
             ]
           ]
@@ -2554,43 +2809,276 @@
       ]
     },
     {
-      "game_pk": 825051,
-      "home_team": "ARI",
-      "away_team": "LAD",
-      "venue": "Chase Field",
-      "home_pitcher": "Merrill Kelly",
-      "away_pitcher": "Roki Sasaki",
+      "game_pk": 824565,
+      "home_team": "CWS",
+      "away_team": "CLE",
+      "venue": "Rate Field",
+      "home_pitcher": "Anthony Kay",
+      "away_pitcher": "Gavin Williams",
       "home_pitcher_id": null,
       "away_pitcher_id": null,
-      "game_time": "2026-08-08T01:40:00Z",
-      "temperature_f": 108.9,
-      "humidity_pct": 19.0,
-      "wind_speed_mph": 7.2,
-      "wind_carry_mph": -7.1,
-      "wind_cross_mph": 0.5,
-      "air_density_index": 87.1,
+      "game_time": "2026-08-08T23:15:00Z",
+      "temperature_f": 77.0,
+      "humidity_pct": 69.0,
+      "wind_speed_mph": 6.5,
+      "wind_carry_mph": 3.4,
+      "wind_cross_mph": -5.6,
+      "air_density_index": 93.8,
       "dome_active": 0,
       "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T01:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
+      "weather_valid_at": "2026-08-08T23:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
+      "weather_observed_at": null,
+      "roof_status": "OUTDOOR",
+      "seasonal_pf_runs": 1.01,
+      "daily_pf_runs": 0.9949,
+      "daily_pf_hr": 1.0317,
+      "pf_weather_delta_runs": -0.0151,
+      "pf_weather_delta_hr": -0.0288,
+      "wind_venue_sensitivity": 1.0,
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
+      "win_prob_home": null,
+      "edge": null,
+      "edge_side": null,
+      "recommendation": null,
+      "cgsi_tier": null,
+      "consensus_ratio": null,
+      "n_specialists_agree": null,
+      "model_run_at": null,
+      "home_sp_tunnel_score": null,
+      "away_sp_tunnel_score": null,
+      "home_sp_tunnel_tightness": null,
+      "away_sp_tunnel_tightness": null,
+      "home_injury_runs_loss": 0.191,
+      "away_injury_runs_loss": 0.031,
+      "home_injury_runs_allowed_increase": 0.0,
+      "away_injury_runs_allowed_increase": 0.0,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
+      "home_lineup_top3_intact": null,
+      "away_lineup_top3_intact": null,
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
+      "provenance": {
+        "seasonal_pf_runs": {
+          "source": "venue_registry",
+          "version": 1
+        },
+        "daily_pf_runs": {
+          "source": "approach_b",
+          "model": "runs_weather_model"
+        },
+        "daily_pf_hr": {
+          "source": "approach_b",
+          "model": "hr_weather_model"
+        },
+        "home_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "away_lineup_pf_hr": {
+          "source": "approach_c",
+          "available": false
+        },
+        "weather": {
+          "source": "open_meteo_batch",
+          "degraded": false,
+          "basis": "forecast",
+          "valid_at": "2026-08-08T23:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
+          "observed_at": null
+        }
+      },
+      "trajectories": [
+        {
+          "archetype": "pull_power",
+          "exit_velocity_mph": 105.0,
+          "launch_angle_deg": 27.0,
+          "spray_angle_deg": -25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              55.5,
+              34.1
+            ],
+            [
+              111.0,
+              56.2
+            ],
+            [
+              166.5,
+              69.4
+            ],
+            [
+              222.0,
+              73.5
+            ],
+            [
+              277.5,
+              68.6
+            ],
+            [
+              333.0,
+              54.8
+            ],
+            [
+              388.5,
+              31.9
+            ],
+            [
+              444.0,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "center_carry",
+          "exit_velocity_mph": 101.0,
+          "launch_angle_deg": 29.0,
+          "spray_angle_deg": 0.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              53.6,
+              35.3
+            ],
+            [
+              107.2,
+              58.2
+            ],
+            [
+              160.8,
+              71.8
+            ],
+            [
+              214.4,
+              76.1
+            ],
+            [
+              268.1,
+              71.1
+            ],
+            [
+              321.7,
+              56.7
+            ],
+            [
+              375.3,
+              33.0
+            ],
+            [
+              428.9,
+              0.0
+            ]
+          ]
+        },
+        {
+          "archetype": "opposite_gap",
+          "exit_velocity_mph": 96.0,
+          "launch_angle_deg": 24.0,
+          "spray_angle_deg": 25.0,
+          "points_ft": [
+            [
+              0.0,
+              3.0
+            ],
+            [
+              46.5,
+              24.6
+            ],
+            [
+              93.1,
+              39.9
+            ],
+            [
+              139.6,
+              48.9
+            ],
+            [
+              186.2,
+              51.7
+            ],
+            [
+              232.8,
+              48.2
+            ],
+            [
+              279.3,
+              38.4
+            ],
+            [
+              325.8,
+              22.3
+            ],
+            [
+              372.4,
+              0.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "game_pk": 825049,
+      "home_team": "ARI",
+      "away_team": "LAD",
+      "venue": "Chase Field",
+      "home_pitcher": "Brandon Pfaadt",
+      "away_pitcher": "Yoshinobu Yamamoto",
+      "home_pitcher_id": null,
+      "away_pitcher_id": null,
+      "game_time": "2026-08-09T00:10:00Z",
+      "temperature_f": 110.8,
+      "humidity_pct": 16.0,
+      "wind_speed_mph": 2.9,
+      "wind_carry_mph": -2.9,
+      "wind_cross_mph": -0.2,
+      "air_density_index": 86.8,
+      "dome_active": 0,
+      "weather_source": "open_meteo_batch",
+      "weather_degraded": false,
+      "weather_degraded_reason": null,
+      "weather_basis": "forecast",
+      "weather_valid_at": "2026-08-09T00:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
       "weather_observed_at": null,
       "roof_status": "OPEN",
       "seasonal_pf_runs": 1.049,
-      "daily_pf_runs": 1.0783,
-      "daily_pf_hr": 1.006,
-      "pf_weather_delta_runs": 0.0293,
-      "pf_weather_delta_hr": -0.0955,
+      "daily_pf_runs": 1.0978,
+      "daily_pf_hr": 1.0401,
+      "pf_weather_delta_runs": 0.0488,
+      "pf_weather_delta_hr": -0.0614,
       "wind_venue_sensitivity": 0.5,
-      "home_lineup_pf_hr": 1.925,
-      "away_lineup_pf_hr": 2.329,
-      "lineup_pf_hr_diff": -0.4039,
-      "lineup_pf_hr_residual": 0.9195,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -2607,18 +3095,20 @@
       "away_injury_runs_loss": 0.376,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 23.14,
-      "away_lineup_war_expected": 32.35,
-      "home_lineup_war_actual": 20.93,
-      "away_lineup_war_actual": 28.21,
-      "home_lineup_war_delta": 2.21,
-      "away_lineup_war_delta": 4.14,
-      "home_lineup_slots_downgraded": 4,
-      "away_lineup_slots_downgraded": 4,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -2634,18 +3124,18 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "weather": {
           "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
-          "valid_at": "2026-08-08T01:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
+          "valid_at": "2026-08-09T00:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
           "observed_at": null
         }
       },
@@ -2661,266 +3151,35 @@
               3.0
             ],
             [
-              53.4,
-              34.9
-            ],
-            [
-              106.9,
-              57.5
-            ],
-            [
-              160.3,
-              71.0
-            ],
-            [
-              213.8,
-              75.2
-            ],
-            [
-              267.2,
-              70.2
-            ],
-            [
-              320.6,
-              56.0
-            ],
-            [
-              374.1,
-              32.6
-            ],
-            [
-              427.5,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "center_carry",
-          "exit_velocity_mph": 101.0,
-          "launch_angle_deg": 29.0,
-          "spray_angle_deg": 0.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              51.3,
-              36.1
-            ],
-            [
-              102.5,
-              59.6
-            ],
-            [
-              153.8,
-              73.5
-            ],
-            [
-              205.1,
-              77.9
-            ],
-            [
-              256.3,
-              72.8
-            ],
-            [
-              307.6,
-              58.0
-            ],
-            [
-              358.8,
-              33.8
-            ],
-            [
-              410.1,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "opposite_gap",
-          "exit_velocity_mph": 96.0,
-          "launch_angle_deg": 24.0,
-          "spray_angle_deg": 25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              45.2,
-              25.1
-            ],
-            [
-              90.4,
-              40.8
-            ],
-            [
-              135.6,
-              50.1
-            ],
-            [
-              180.8,
-              52.9
-            ],
-            [
-              226.1,
-              49.3
-            ],
-            [
-              271.3,
-              39.3
-            ],
-            [
-              316.5,
-              22.9
-            ],
-            [
-              361.7,
-              0.0
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "game_pk": 823266,
-      "home_team": "SD",
-      "away_team": "HOU",
-      "venue": "Petco Park",
-      "home_pitcher": "Robbie Ray",
-      "away_pitcher": "Ronel Blanco",
-      "home_pitcher_id": null,
-      "away_pitcher_id": null,
-      "game_time": "2026-08-08T01:40:00Z",
-      "temperature_f": 78.4,
-      "humidity_pct": 73.0,
-      "wind_speed_mph": 6.9,
-      "wind_carry_mph": -5.9,
-      "wind_cross_mph": 3.5,
-      "air_density_index": 95.5,
-      "dome_active": 0,
-      "weather_source": "open_meteo_batch",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T01:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
-      "weather_observed_at": null,
-      "roof_status": "OUTDOOR",
-      "seasonal_pf_runs": 0.92,
-      "daily_pf_runs": 0.9162,
-      "daily_pf_hr": 1.0303,
-      "pf_weather_delta_runs": -0.0038,
-      "pf_weather_delta_hr": 0.0643,
-      "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 2.058,
-      "away_lineup_pf_hr": 2.47,
-      "lineup_pf_hr_diff": -0.4127,
-      "lineup_pf_hr_residual": 1.0274,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
-      "win_prob_home": null,
-      "edge": null,
-      "edge_side": null,
-      "recommendation": null,
-      "cgsi_tier": null,
-      "consensus_ratio": null,
-      "n_specialists_agree": null,
-      "model_run_at": null,
-      "home_sp_tunnel_score": null,
-      "away_sp_tunnel_score": null,
-      "home_sp_tunnel_tightness": null,
-      "away_sp_tunnel_tightness": null,
-      "home_injury_runs_loss": 0.008,
-      "away_injury_runs_loss": 0.386,
-      "home_injury_runs_allowed_increase": 0.0,
-      "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 20.51,
-      "away_lineup_war_expected": 23.46,
-      "home_lineup_war_actual": 18.87,
-      "away_lineup_war_actual": 23.46,
-      "home_lineup_war_delta": 1.64,
-      "away_lineup_war_delta": 0.0,
-      "home_lineup_slots_downgraded": 4,
-      "away_lineup_slots_downgraded": 0,
-      "home_lineup_top3_intact": null,
-      "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
-      "provenance": {
-        "seasonal_pf_runs": {
-          "source": "venue_registry",
-          "version": 1
-        },
-        "daily_pf_runs": {
-          "source": "approach_b",
-          "model": "runs_weather_model"
-        },
-        "daily_pf_hr": {
-          "source": "approach_b",
-          "model": "hr_weather_model"
-        },
-        "home_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "away_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "weather": {
-          "source": "open_meteo_batch",
-          "degraded": false,
-          "basis": "forecast",
-          "valid_at": "2026-08-08T01:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
-          "observed_at": null
-        }
-      },
-      "trajectories": [
-        {
-          "archetype": "pull_power",
-          "exit_velocity_mph": 105.0,
-          "launch_angle_deg": 27.0,
-          "spray_angle_deg": -25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              52.3,
+              54.9,
               34.6
             ],
             [
-              104.6,
+              109.8,
               57.1
             ],
             [
-              156.9,
+              164.8,
               70.4
             ],
             [
-              209.2,
+              219.7,
               74.6
             ],
             [
-              261.5,
+              274.6,
               69.7
             ],
             [
-              313.8,
+              329.5,
               55.6
             ],
             [
-              366.1,
+              384.5,
               32.4
             ],
             [
-              418.4,
+              439.4,
               0.0
             ]
           ]
@@ -2936,35 +3195,35 @@
               3.0
             ],
             [
-              50.2,
+              52.8,
               35.8
             ],
             [
-              100.5,
+              105.5,
               59.1
             ],
             [
-              150.7,
+              158.2,
               72.9
             ],
             [
-              200.9,
+              211.0,
               77.3
             ],
             [
-              251.2,
+              263.8,
               72.2
             ],
             [
-              301.4,
+              316.5,
               57.6
             ],
             [
-              351.7,
+              369.2,
               33.5
             ],
             [
-              401.9,
+              422.0,
               0.0
             ]
           ]
@@ -2980,35 +3239,35 @@
               3.0
             ],
             [
-              44.4,
-              25.0
+              46.1,
+              24.9
             ],
             [
-              88.8,
-              40.7
+              92.2,
+              40.5
             ],
             [
-              133.2,
-              49.9
+              138.3,
+              49.7
             ],
             [
-              177.6,
-              52.7
+              184.3,
+              52.5
             ],
             [
-              221.9,
-              49.1
+              230.4,
+              48.9
             ],
             [
-              266.3,
-              39.2
+              276.5,
+              39.0
             ],
             [
-              310.7,
-              22.8
+              322.6,
+              22.7
             ],
             [
-              355.1,
+              368.7,
               0.0
             ]
           ]
@@ -3016,43 +3275,43 @@
       ]
     },
     {
-      "game_pk": 823103,
+      "game_pk": 823102,
       "home_team": "SEA",
       "away_team": "TB",
       "venue": "T-Mobile Park",
-      "home_pitcher": "Logan Gilbert",
-      "away_pitcher": "Drew Rasmussen",
+      "home_pitcher": "George Kirby",
+      "away_pitcher": "Griffin Jax",
       "home_pitcher_id": null,
       "away_pitcher_id": null,
-      "game_time": "2026-08-08T01:45:00Z",
-      "temperature_f": 83.0,
-      "humidity_pct": 46.0,
-      "wind_speed_mph": 4.7,
-      "wind_carry_mph": -2.8,
-      "wind_cross_mph": 3.8,
-      "air_density_index": 94.9,
+      "game_time": "2026-08-09T01:50:00Z",
+      "temperature_f": 81.0,
+      "humidity_pct": 40.0,
+      "wind_speed_mph": 6.9,
+      "wind_carry_mph": -6.6,
+      "wind_cross_mph": -2.1,
+      "air_density_index": 95.3,
       "dome_active": 0,
       "weather_source": "open_meteo_batch",
       "weather_degraded": false,
       "weather_degraded_reason": null,
       "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T01:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
+      "weather_valid_at": "2026-08-09T01:00:00+00:00",
+      "weather_fetched_at": "2026-08-08T04:12:30.399927+00:00",
       "weather_observed_at": null,
       "roof_status": "OPEN",
       "seasonal_pf_runs": 0.94,
-      "daily_pf_runs": 0.9778,
-      "daily_pf_hr": 1.1406,
-      "pf_weather_delta_runs": 0.0378,
-      "pf_weather_delta_hr": 0.1536,
+      "daily_pf_runs": 0.9317,
+      "daily_pf_hr": 1.0339,
+      "pf_weather_delta_runs": -0.0083,
+      "pf_weather_delta_hr": 0.0469,
       "wind_venue_sensitivity": 0.5,
-      "home_lineup_pf_hr": 2.421,
-      "away_lineup_pf_hr": 2.335,
-      "lineup_pf_hr_diff": 0.0862,
-      "lineup_pf_hr_residual": 1.2808,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -3069,18 +3328,20 @@
       "away_injury_runs_loss": 0.078,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 24.36,
-      "away_lineup_war_expected": 11.82,
-      "home_lineup_war_actual": 22.88,
-      "away_lineup_war_actual": 9.6,
-      "home_lineup_war_delta": 1.48,
-      "away_lineup_war_delta": 2.22,
-      "home_lineup_slots_downgraded": 3,
-      "away_lineup_slots_downgraded": 7,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "MEDIUM",
+      "confidence_reasons": [
+        "lineups not fully confirmed"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -3096,18 +3357,18 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "weather": {
           "source": "open_meteo_batch",
           "degraded": false,
           "basis": "forecast",
-          "valid_at": "2026-08-08T01:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
+          "valid_at": "2026-08-09T01:00:00+00:00",
+          "fetched_at": "2026-08-08T04:12:30.399927+00:00",
           "observed_at": null
         }
       },
@@ -3123,35 +3384,35 @@
               3.0
             ],
             [
-              53.5,
-              34.4
+              52.1,
+              34.6
             ],
             [
-              107.0,
-              56.8
+              104.2,
+              57.2
             ],
             [
-              160.6,
-              70.0
+              156.4,
+              70.5
             ],
             [
-              214.1,
-              74.2
+              208.5,
+              74.7
             ],
             [
-              267.6,
-              69.3
+              260.6,
+              69.8
             ],
             [
-              321.1,
-              55.3
+              312.8,
+              55.6
             ],
             [
-              374.7,
-              32.2
+              364.9,
+              32.4
             ],
             [
-              428.2,
+              417.0,
               0.0
             ]
           ]
@@ -3167,266 +3428,35 @@
               3.0
             ],
             [
-              51.4,
-              35.6
+              50.0,
+              35.8
             ],
             [
-              102.8,
-              58.8
+              100.1,
+              59.2
             ],
             [
-              154.3,
-              72.6
-            ],
-            [
-              205.7,
-              76.9
-            ],
-            [
-              257.1,
-              71.8
-            ],
-            [
-              308.5,
-              57.3
-            ],
-            [
-              360.0,
-              33.4
-            ],
-            [
-              411.4,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "opposite_gap",
-          "exit_velocity_mph": 96.0,
-          "launch_angle_deg": 24.0,
-          "spray_angle_deg": 25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              45.2,
-              24.9
-            ],
-            [
-              90.5,
-              40.4
-            ],
-            [
-              135.8,
-              49.6
-            ],
-            [
-              181.0,
-              52.4
-            ],
-            [
-              226.2,
-              48.8
-            ],
-            [
-              271.5,
-              38.9
-            ],
-            [
-              316.8,
-              22.6
-            ],
-            [
-              362.0,
-              0.0
-            ]
-          ]
-        }
-      ]
-    },
-    {
-      "game_pk": 823191,
-      "home_team": "SF",
-      "away_team": "DET",
-      "venue": "Oracle Park",
-      "home_pitcher": "JT Brubaker",
-      "away_pitcher": "Keider Montero",
-      "home_pitcher_id": null,
-      "away_pitcher_id": null,
-      "game_time": "2026-08-08T02:15:00Z",
-      "temperature_f": 59.7,
-      "humidity_pct": 95.0,
-      "wind_speed_mph": 13.6,
-      "wind_carry_mph": 4.9,
-      "wind_cross_mph": 12.7,
-      "air_density_index": 99.2,
-      "dome_active": 0,
-      "weather_source": "open_meteo_batch",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
-      "weather_valid_at": "2026-08-08T02:00:00+00:00",
-      "weather_fetched_at": "2026-08-08T03:57:31.923234+00:00",
-      "weather_observed_at": null,
-      "roof_status": "OUTDOOR",
-      "seasonal_pf_runs": 0.93,
-      "daily_pf_runs": 0.909,
-      "daily_pf_hr": 0.9347,
-      "pf_weather_delta_runs": -0.021,
-      "pf_weather_delta_hr": -0.0418,
-      "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 2.728,
-      "away_lineup_pf_hr": 2.522,
-      "lineup_pf_hr_diff": 0.206,
-      "lineup_pf_hr_residual": 1.7929,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
-      "win_prob_home": null,
-      "edge": null,
-      "edge_side": null,
-      "recommendation": null,
-      "cgsi_tier": null,
-      "consensus_ratio": null,
-      "n_specialists_agree": null,
-      "model_run_at": null,
-      "home_sp_tunnel_score": null,
-      "away_sp_tunnel_score": null,
-      "home_sp_tunnel_tightness": null,
-      "away_sp_tunnel_tightness": null,
-      "home_injury_runs_loss": 0.12,
-      "away_injury_runs_loss": 0.182,
-      "home_injury_runs_allowed_increase": 0.0,
-      "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 9.82,
-      "away_lineup_war_expected": 14.02,
-      "home_lineup_war_actual": 9.82,
-      "away_lineup_war_actual": 13.37,
-      "home_lineup_war_delta": 0.0,
-      "away_lineup_war_delta": 0.65,
-      "home_lineup_slots_downgraded": 0,
-      "away_lineup_slots_downgraded": 2,
-      "home_lineup_top3_intact": null,
-      "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
-      "provenance": {
-        "seasonal_pf_runs": {
-          "source": "venue_registry",
-          "version": 1
-        },
-        "daily_pf_runs": {
-          "source": "approach_b",
-          "model": "runs_weather_model"
-        },
-        "daily_pf_hr": {
-          "source": "approach_b",
-          "model": "hr_weather_model"
-        },
-        "home_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "away_lineup_pf_hr": {
-          "source": "approach_c",
-          "available": true
-        },
-        "weather": {
-          "source": "open_meteo_batch",
-          "degraded": false,
-          "basis": "forecast",
-          "valid_at": "2026-08-08T02:00:00+00:00",
-          "fetched_at": "2026-08-08T03:57:31.923234+00:00",
-          "observed_at": null
-        }
-      },
-      "trajectories": [
-        {
-          "archetype": "pull_power",
-          "exit_velocity_mph": 105.0,
-          "launch_angle_deg": 27.0,
-          "spray_angle_deg": -25.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
-            ],
-            [
-              55.1,
-              33.9
-            ],
-            [
-              110.2,
-              55.9
-            ],
-            [
-              165.2,
-              68.9
-            ],
-            [
-              220.3,
+              150.1,
               73.0
             ],
             [
-              275.4,
-              68.2
+              200.2,
+              77.4
             ],
             [
-              330.5,
-              54.4
+              250.2,
+              72.3
             ],
             [
-              385.5,
-              31.7
+              300.2,
+              57.7
             ],
             [
-              440.6,
-              0.0
-            ]
-          ]
-        },
-        {
-          "archetype": "center_carry",
-          "exit_velocity_mph": 101.0,
-          "launch_angle_deg": 29.0,
-          "spray_angle_deg": 0.0,
-          "points_ft": [
-            [
-              0.0,
-              3.0
+              350.3,
+              33.6
             ],
             [
-              53.5,
-              35.0
-            ],
-            [
-              106.9,
-              57.8
-            ],
-            [
-              160.4,
-              71.3
-            ],
-            [
-              213.8,
-              75.6
-            ],
-            [
-              267.3,
-              70.6
-            ],
-            [
-              320.8,
-              56.3
-            ],
-            [
-              374.2,
-              32.8
-            ],
-            [
-              427.7,
+              400.3,
               0.0
             ]
           ]
@@ -3442,35 +3472,35 @@
               3.0
             ],
             [
-              46.4,
-              24.5
+              44.4,
+              25.1
             ],
             [
-              92.8,
-              39.8
+              88.8,
+              40.7
             ],
             [
-              139.2,
-              48.8
+              133.2,
+              50.0
             ],
             [
-              185.6,
-              51.5
+              177.7,
+              52.8
             ],
             [
-              231.9,
-              48.0
+              222.1,
+              49.2
             ],
             [
-              278.3,
-              38.2
+              266.5,
+              39.2
             ],
             [
-              324.7,
-              22.2
+              310.9,
+              22.8
             ],
             [
-              371.1,
+              355.3,
               0.0
             ]
           ]
