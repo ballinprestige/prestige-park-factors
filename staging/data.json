@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-07",
-  "generated_at": "2026-08-08T00:27:33.144310+00:00",
+  "generated_at": "2026-08-08T00:42:33.997783+00:00",
   "builder_id": "ballpark-release-fc01dbe",
-  "build_seq": 704,
+  "build_seq": 705,
   "freshness": {
-    "generated_at": "2026-08-08T00:27:33.144310+00:00",
+    "generated_at": "2026-08-08T00:42:33.997783+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -44,8 +44,8 @@
       "pf_weather_delta_hr": -0.1827,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 2.568,
-      "away_lineup_pf_hr": 2.527,
-      "lineup_pf_hr_diff": 0.0411,
+      "away_lineup_pf_hr": 2.755,
+      "lineup_pf_hr_diff": -0.1869,
       "lineup_pf_hr_residual": 1.7534,
       "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
