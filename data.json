@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-08",
-  "generated_at": "2026-08-08T21:27:44.306506+00:00",
+  "generated_at": "2026-08-08T21:43:05.345141+00:00",
   "builder_id": "ballpark-release-fc01dbe",
-  "build_seq": 787,
+  "build_seq": 788,
   "freshness": {
-    "generated_at": "2026-08-08T21:27:44.306506+00:00",
+    "generated_at": "2026-08-08T21:43:05.345141+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -43,13 +43,13 @@
       "pf_weather_delta_runs": 0.2005,
       "pf_weather_delta_hr": 0.2725,
       "wind_venue_sensitivity": 1.0,
-      "home_lineup_pf_hr": 2.572,
-      "away_lineup_pf_hr": 2.792,
-      "lineup_pf_hr_diff": -0.2203,
-      "lineup_pf_hr_residual": 1.1971,
-      "has_lineups": true,
-      "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "CONFIRMED",
+      "home_lineup_pf_hr": null,
+      "away_lineup_pf_hr": null,
+      "lineup_pf_hr_diff": null,
+      "lineup_pf_hr_residual": null,
+      "has_lineups": false,
+      "home_lineup_status": "UNKNOWN",
+      "away_lineup_status": "UNKNOWN",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -66,19 +66,20 @@
       "away_injury_runs_loss": 0.27,
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
-      "home_lineup_war_expected": 18.58,
-      "away_lineup_war_expected": 25.08,
-      "home_lineup_war_actual": 12.62,
-      "away_lineup_war_actual": 22.4,
-      "home_lineup_war_delta": 5.96,
-      "away_lineup_war_delta": 2.67,
-      "home_lineup_slots_downgraded": 8,
-      "away_lineup_slots_downgraded": 4,
+      "home_lineup_war_expected": null,
+      "away_lineup_war_expected": null,
+      "home_lineup_war_actual": null,
+      "away_lineup_war_actual": null,
+      "home_lineup_war_delta": null,
+      "away_lineup_war_delta": null,
+      "home_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
       "confidence_reasons": [
-        "degraded weather"
+        "degraded weather",
+        "lineups not fully confirmed"
       ],
       "provenance": {
         "seasonal_pf_runs": {
@@ -95,11 +96,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": true
+          "available": false
         },
         "weather": {
           "source": "forecast_cache_stale",
