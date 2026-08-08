@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-08-08",
-  "captured_at": "2026-08-08T05:34:53.854975+00:00",
-  "generated_at": "2026-08-08T05:57:33.733981+00:00",
+  "captured_at": "2026-08-08T06:09:10.492850+00:00",
+  "generated_at": "2026-08-08T06:12:35.547149+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -19,7 +19,7 @@
     {
       "game_pk": 824726,
       "posted_total": 9.0,
-      "over_implied_prob": 0.4787,
+      "over_implied_prob": 0.5146,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -28,7 +28,7 @@
     {
       "game_pk": 823834,
       "posted_total": 8.0,
-      "over_implied_prob": 0.509,
+      "over_implied_prob": 0.4809,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -91,7 +91,7 @@
     {
       "game_pk": 823188,
       "posted_total": 8.0,
-      "over_implied_prob": 0.5045,
+      "over_implied_prob": 0.5023,
       "total_open": null,
       "book_count": 21,
       "park_adjusted_total": null,
@@ -100,7 +100,7 @@
     {
       "game_pk": 823021,
       "posted_total": 9.0,
-      "over_implied_prob": 0.4743,
+      "over_implied_prob": 0.5023,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -127,7 +127,7 @@
     {
       "game_pk": 825049,
       "posted_total": 8.5,
-      "over_implied_prob": 0.5213,
+      "over_implied_prob": 0.5146,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -135,13 +135,13 @@
     },
     {
       "game_pk": 823102,
-      "posted_total": 7.0,
-      "over_implied_prob": 0.5235,
+      "posted_total": 7.5,
+      "over_implied_prob": 0.5023,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-08-08T05:34:27.230116+00:00"
+  "oldest_input_captured_at": "2026-08-08T05:34:53.854975+00:00"
 }
