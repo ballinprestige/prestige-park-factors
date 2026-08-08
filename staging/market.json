@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-08-08",
-  "captured_at": "2026-08-08T21:57:09.908423+00:00",
-  "generated_at": "2026-08-08T22:27:56.590553+00:00",
+  "captured_at": "2026-08-08T22:29:03.327073+00:00",
+  "generated_at": "2026-08-08T22:43:02.935107+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -10,16 +10,16 @@
     {
       "game_pk": 823426,
       "posted_total": 9.5,
-      "over_implied_prob": 0.4772,
+      "over_implied_prob": null,
       "total_open": null,
-      "book_count": 22,
+      "book_count": 1,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
       "game_pk": 823348,
       "posted_total": 9.0,
-      "over_implied_prob": 0.5228,
+      "over_implied_prob": 0.5238,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -28,7 +28,7 @@
     {
       "game_pk": 822701,
       "posted_total": 8.5,
-      "over_implied_prob": 0.5102,
+      "over_implied_prob": 0.5092,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -37,7 +37,7 @@
     {
       "game_pk": 824079,
       "posted_total": 9.0,
-      "over_implied_prob": 0.5125,
+      "over_implied_prob": 0.5138,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -82,7 +82,7 @@
     {
       "game_pk": 822864,
       "posted_total": 7.5,
-      "over_implied_prob": 0.4784,
+      "over_implied_prob": 0.4772,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -91,7 +91,7 @@
     {
       "game_pk": 824565,
       "posted_total": 7.0,
-      "over_implied_prob": 0.5069,
+      "over_implied_prob": 0.5092,
       "total_open": null,
       "book_count": 22,
       "park_adjusted_total": null,
@@ -116,5 +116,5 @@
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-08-08T21:52:45.625864+00:00"
+  "oldest_input_captured_at": "2026-08-08T21:57:09.908423+00:00"
 }
