@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-09",
-  "generated_at": "2026-08-09T17:27:34.650396+00:00",
+  "generated_at": "2026-08-09T17:42:31.956288+00:00",
   "builder_id": "ballpark-release-fc01dbe",
-  "build_seq": 867,
+  "build_seq": 868,
   "freshness": {
-    "generated_at": "2026-08-09T17:27:34.650396+00:00",
+    "generated_at": "2026-08-09T17:42:31.956288+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -29,10 +29,10 @@
       "wind_cross_mph": 4.7,
       "air_density_index": 93.1,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T16:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -76,8 +76,10 @@
       "away_lineup_slots_downgraded": 6,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -100,9 +102,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T16:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -260,10 +262,10 @@
       "wind_cross_mph": 7.8,
       "air_density_index": 93.5,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T17:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -307,8 +309,10 @@
       "away_lineup_slots_downgraded": 1,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -331,9 +335,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T17:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -491,10 +495,10 @@
       "wind_cross_mph": 0.9,
       "air_density_index": 92.7,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T17:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -538,8 +542,10 @@
       "away_lineup_slots_downgraded": 4,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -562,9 +568,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T17:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -722,10 +728,10 @@
       "wind_cross_mph": 4.7,
       "air_density_index": 93.0,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T17:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -769,8 +775,10 @@
       "away_lineup_slots_downgraded": 7,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -793,9 +801,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T17:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -953,10 +961,10 @@
       "wind_cross_mph": 8.7,
       "air_density_index": 93.3,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T17:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -1000,8 +1008,10 @@
       "away_lineup_slots_downgraded": 4,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -1024,9 +1034,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T17:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -1184,10 +1194,10 @@
       "wind_cross_mph": -6.8,
       "air_density_index": 93.6,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T17:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -1231,8 +1241,10 @@
       "away_lineup_slots_downgraded": 5,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -1255,9 +1267,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T17:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -1415,10 +1427,10 @@
       "wind_cross_mph": -9.4,
       "air_density_index": 90.6,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T18:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -1462,8 +1474,10 @@
       "away_lineup_slots_downgraded": 4,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -1486,9 +1500,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T18:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -1646,10 +1660,10 @@
       "wind_cross_mph": 8.5,
       "air_density_index": 92.2,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T18:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -1693,8 +1707,10 @@
       "away_lineup_slots_downgraded": 5,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -1717,9 +1733,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T18:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -1877,10 +1893,10 @@
       "wind_cross_mph": -4.0,
       "air_density_index": 93.6,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T18:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -1924,8 +1940,10 @@
       "away_lineup_slots_downgraded": 9,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -1948,9 +1966,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T18:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -2108,10 +2126,10 @@
       "wind_cross_mph": -10.5,
       "air_density_index": 91.6,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T18:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -2155,8 +2173,10 @@
       "away_lineup_slots_downgraded": 4,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -2179,9 +2199,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T18:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -2339,10 +2359,10 @@
       "wind_cross_mph": 2.6,
       "air_density_index": 90.7,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T18:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -2386,8 +2406,10 @@
       "away_lineup_slots_downgraded": 1,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -2410,9 +2432,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T18:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -2570,10 +2592,10 @@
       "wind_cross_mph": 7.5,
       "air_density_index": 96.5,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T20:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -2617,8 +2639,10 @@
       "away_lineup_slots_downgraded": 2,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "HIGH",
-      "confidence_reasons": [],
+      "confidence_tier": "LOW",
+      "confidence_reasons": [
+        "degraded weather"
+      ],
       "provenance": {
         "seasonal_pf_runs": {
           "source": "venue_registry",
@@ -2641,9 +2665,9 @@
           "available": true
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T20:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -2801,10 +2825,10 @@
       "wind_cross_mph": -0.0,
       "air_density_index": 87.0,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T20:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -2848,8 +2872,9 @@
       "away_lineup_slots_downgraded": 4,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "MEDIUM",
+      "confidence_tier": "LOW",
       "confidence_reasons": [
+        "degraded weather",
         "lineups not fully confirmed"
       ],
       "provenance": {
@@ -2874,9 +2899,9 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T20:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -3034,10 +3059,10 @@
       "wind_cross_mph": 3.4,
       "air_density_index": 97.6,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-09T20:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -3081,8 +3106,9 @@
       "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "MEDIUM",
+      "confidence_tier": "LOW",
       "confidence_reasons": [
+        "degraded weather",
         "lineups not fully confirmed"
       ],
       "provenance": {
@@ -3107,9 +3133,9 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-09T20:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
@@ -3267,10 +3293,10 @@
       "wind_cross_mph": 7.6,
       "air_density_index": 95.3,
       "dome_active": 0,
-      "weather_source": "forecast_cache",
-      "weather_degraded": false,
-      "weather_degraded_reason": null,
-      "weather_basis": "forecast",
+      "weather_source": "forecast_cache_stale",
+      "weather_degraded": true,
+      "weather_degraded_reason": "rate limited upstream; retrying after 2026-08-09T17:57:30.247689+00:00",
+      "weather_basis": "forecast_cache_stale",
       "weather_valid_at": "2026-08-10T00:00:00+00:00",
       "weather_fetched_at": "2026-08-09T17:12:39.097188+00:00",
       "weather_observed_at": null,
@@ -3314,8 +3340,9 @@
       "away_lineup_slots_downgraded": null,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
-      "confidence_tier": "MEDIUM",
+      "confidence_tier": "LOW",
       "confidence_reasons": [
+        "degraded weather",
         "lineups not fully confirmed"
       ],
       "provenance": {
@@ -3340,9 +3367,9 @@
           "available": false
         },
         "weather": {
-          "source": "forecast_cache",
-          "degraded": false,
-          "basis": "forecast",
+          "source": "forecast_cache_stale",
+          "degraded": true,
+          "basis": "forecast_cache_stale",
           "valid_at": "2026-08-10T00:00:00+00:00",
           "fetched_at": "2026-08-09T17:12:39.097188+00:00",
           "observed_at": null
