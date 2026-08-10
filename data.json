@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
   "date": "2026-08-10",
-  "generated_at": "2026-08-10T22:42:33.224776+00:00",
+  "generated_at": "2026-08-10T22:57:37.583941+00:00",
   "builder_id": "ballpark-release-fc01dbe",
-  "build_seq": 984,
+  "build_seq": 985,
   "freshness": {
-    "generated_at": "2026-08-10T22:42:33.224776+00:00",
+    "generated_at": "2026-08-10T22:57:37.583941+00:00",
     "stale_after_minutes": 45,
     "timezone": "America/New_York"
   },
@@ -1442,12 +1442,12 @@
       "pf_weather_delta_hr": 0.2885,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 2.676,
-      "away_lineup_pf_hr": null,
-      "lineup_pf_hr_diff": null,
+      "away_lineup_pf_hr": 2.873,
+      "lineup_pf_hr_diff": -0.1966,
       "lineup_pf_hr_residual": 1.3586,
-      "has_lineups": false,
+      "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "UNKNOWN",
+      "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -1465,19 +1465,18 @@
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
       "home_lineup_war_expected": 8.47,
-      "away_lineup_war_expected": null,
+      "away_lineup_war_expected": 11.82,
       "home_lineup_war_actual": 9.51,
-      "away_lineup_war_actual": null,
+      "away_lineup_war_actual": 8.76,
       "home_lineup_war_delta": -1.03,
-      "away_lineup_war_delta": null,
+      "away_lineup_war_delta": 3.06,
       "home_lineup_slots_downgraded": 0,
-      "away_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": 7,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
       "confidence_reasons": [
-        "degraded weather",
-        "lineups not fully confirmed"
+        "degraded weather"
       ],
       "provenance": {
         "seasonal_pf_runs": {
@@ -1494,11 +1493,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "weather": {
           "source": "forecast_cache_stale",
@@ -1909,12 +1908,12 @@
       "pf_weather_delta_hr": -0.0953,
       "wind_venue_sensitivity": 1.0,
       "home_lineup_pf_hr": 2.789,
-      "away_lineup_pf_hr": null,
-      "lineup_pf_hr_diff": null,
+      "away_lineup_pf_hr": 2.904,
+      "lineup_pf_hr_diff": -0.1155,
       "lineup_pf_hr_residual": 1.9077,
-      "has_lineups": false,
+      "has_lineups": true,
       "home_lineup_status": "CONFIRMED",
-      "away_lineup_status": "UNKNOWN",
+      "away_lineup_status": "CONFIRMED",
       "win_prob_home": null,
       "edge": null,
       "edge_side": null,
@@ -1932,19 +1931,18 @@
       "home_injury_runs_allowed_increase": 0.0,
       "away_injury_runs_allowed_increase": 0.0,
       "home_lineup_war_expected": 9.82,
-      "away_lineup_war_expected": null,
+      "away_lineup_war_expected": 23.46,
       "home_lineup_war_actual": 9.82,
-      "away_lineup_war_actual": null,
+      "away_lineup_war_actual": 19.91,
       "home_lineup_war_delta": 0.0,
-      "away_lineup_war_delta": null,
+      "away_lineup_war_delta": 3.55,
       "home_lineup_slots_downgraded": 0,
-      "away_lineup_slots_downgraded": null,
+      "away_lineup_slots_downgraded": 3,
       "home_lineup_top3_intact": null,
       "away_lineup_top3_intact": null,
       "confidence_tier": "LOW",
       "confidence_reasons": [
-        "degraded weather",
-        "lineups not fully confirmed"
+        "degraded weather"
       ],
       "provenance": {
         "seasonal_pf_runs": {
@@ -1961,11 +1959,11 @@
         },
         "home_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "away_lineup_pf_hr": {
           "source": "approach_c",
-          "available": false
+          "available": true
         },
         "weather": {
           "source": "forecast_cache_stale",
