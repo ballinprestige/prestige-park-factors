@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-08-12",
-  "captured_at": "2026-08-12T04:36:39.478654+00:00",
-  "generated_at": "2026-08-12T04:57:38.934043+00:00",
+  "captured_at": "2026-08-12T05:10:43.072013+00:00",
+  "generated_at": "2026-08-12T05:12:43.966272+00:00",
   "snapshot_kind": "live",
   "provenance": "engine",
   "source_label": "US consensus \u00b7 de-vigged median \u00b7 sharp-anchored",
@@ -26,9 +26,18 @@
       "runs_edge": null
     },
     {
+      "game_pk": 824967,
+      "posted_total": 9.5,
+      "over_implied_prob": 0.4775,
+      "total_open": null,
+      "book_count": 4,
+      "park_adjusted_total": null,
+      "runs_edge": null
+    },
+    {
       "game_pk": 825047,
       "posted_total": 9.5,
-      "over_implied_prob": 0.4809,
+      "over_implied_prob": 0.4787,
       "total_open": null,
       "book_count": 21,
       "park_adjusted_total": null,
@@ -57,7 +66,7 @@
       "posted_total": 8.5,
       "over_implied_prob": 0.5,
       "total_open": null,
-      "book_count": 20,
+      "book_count": 19,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -66,7 +75,7 @@
       "posted_total": 9.5,
       "over_implied_prob": 0.4892,
       "total_open": null,
-      "book_count": 20,
+      "book_count": 19,
       "park_adjusted_total": null,
       "runs_edge": null
     },
@@ -91,16 +100,16 @@
     {
       "game_pk": 824883,
       "posted_total": 8.5,
-      "over_implied_prob": 0.5,
+      "over_implied_prob": 0.5043,
       "total_open": null,
-      "book_count": 19,
+      "book_count": 20,
       "park_adjusted_total": null,
       "runs_edge": null
     },
     {
       "game_pk": 824562,
       "posted_total": 9.0,
-      "over_implied_prob": 0.4955,
+      "over_implied_prob": 0.5023,
       "total_open": null,
       "book_count": 21,
       "park_adjusted_total": null,
@@ -125,5 +134,5 @@
       "runs_edge": null
     }
   ],
-  "oldest_input_captured_at": "2026-08-12T04:36:17.950569+00:00"
+  "oldest_input_captured_at": "2026-08-12T04:36:39.478654+00:00"
 }
