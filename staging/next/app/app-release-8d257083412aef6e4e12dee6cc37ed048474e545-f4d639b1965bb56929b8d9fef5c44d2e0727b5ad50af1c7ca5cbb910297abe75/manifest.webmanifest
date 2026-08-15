@@ -1,0 +1,29 @@
+{
+  "name": "Prestige Atmospheric",
+  "short_name": "Atmospheric",
+  "description": "A field instrument for baseball weather physics.",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#faf8f5",
+  "theme_color": "#faf8f5",
+  "icons": [
+    {
+      "src": "./app-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "./maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "The Slate", "url": "./#/" },
+    { "name": "Accuracy & Trust", "url": "./#/trust" },
+    { "name": "Methodology", "url": "./#/method" }
+  ]
+}
