@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#faf8f5"/>
+  <path d="M0 78h1200M0 158h1200M0 238h1200M0 318h1200M0 398h1200M0 478h1200M0 558h1200M80 0v630M240 0v630M400 0v630M560 0v630M720 0v630M880 0v630M1040 0v630" stroke="#e9e0d5" stroke-width="1"/>
+  <rect x="54" y="48" width="1092" height="534" fill="none" stroke="#9f9286" stroke-width="2"/>
+  <circle cx="105" cy="102" r="29" fill="none" stroke="#1a1714" stroke-width="3"/>
+  <path d="m82 88 46 28m-46 0 46-28" stroke="#1a1714" stroke-width="2"/>
+  <circle cx="95" cy="107" r="4" fill="#b44a1c"/><circle cx="110" cy="91" r="4" fill="#b44a1c"/><circle cx="120" cy="112" r="4" fill="#b44a1c"/>
+  <text x="154" y="94" fill="#1a1714" font-family="monospace" font-size="21" letter-spacing="5">PRESTIGE</text>
+  <text x="154" y="121" fill="#b44a1c" font-family="monospace" font-size="13" letter-spacing="7">ATMOSPHERIC</text>
+  <text x="86" y="242" fill="#b44a1c" font-family="monospace" font-size="18" letter-spacing="4">TODAY VS PARK BASELINE</text>
+  <text x="82" y="347" fill="#1a1714" font-family="Georgia,serif" font-size="80">The ball flies</text>
+  <text x="82" y="431" fill="#1a1714" font-family="Georgia,serif" font-size="80">through real air.</text>
+  <path d="M785 470c88-168 167-244 290-261" fill="none" stroke="#9f9286" stroke-width="5" stroke-dasharray="12 14"/>
+  <path d="M785 470c93-193 180-281 310-310" fill="none" stroke="#3d7a8c" stroke-width="8"/>
+  <path d="m1070 151 31 8-18 27" fill="none" stroke="#3d7a8c" stroke-width="8"/>
+  <text x="85" y="535" fill="#544b43" font-family="sans-serif" font-size="22">Weather physics, with its uncertainty left on.</text>
+  <text x="1065" y="548" fill="#b44a1c" font-family="monospace" font-size="16" text-anchor="end">FIELD INSTRUMENT · V2</text>
+</svg>
